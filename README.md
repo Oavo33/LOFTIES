@@ -1,6 +1,4 @@
-# karl.github.io
 
-<!DOCTYPE html>
 <html>
   <head>
     <title>My Website</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -119,7 +117,7 @@
 	  <h2>Payment Methods</h2>
 	  <p>We accept cash,cryptocurrency(you pay exchange fee), and all major credit cards.</p>
 	</aside>
-</article></main>
+
   <footer>
     <p>&copy; 2023 Loftieswindows. Connect with us:</p>
     <div class="social-media">
@@ -129,4 +127,3 @@
     </div>
   </footer>
   </body>
-  </html>
