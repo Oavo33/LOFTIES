@@ -71,47 +71,7 @@
     </head>
     <body>
         
-        <div id="game-container-wrapper">
-            <div id="game-container">
-                <div class="dartboard"></div>
-                <div class="dart"></div>
-                <div class="prize">Your windows where cleaned today Thanks!</div>
-            </div>
-        </div>
-        <button onclick="throwDart()">Did you get a note?Press here if yes</button>
-    
-        <script>
-            var dartboard = document.querySelector(".dartboard");
-            var dart = document.querySelector(".dart");
-            var prize = document.querySelector(".prize");
-            var score = 0;
-            var maxScore = 100;
-    
-            function throwDart() {
-                var x = Math.floor(Math.random() * dartboard.offsetWidth);
-                var y = Math.floor(Math.random() * dartboard.offsetHeight);
-                dart.style.left = x + "px";
-                dart.style.top = y + "px";
-                dart.style.display = "block";
-    
-                if (x > 30 && x < 50 && y > 30 && y < 50) {
-                    score += 50;
-                } else if (x > 20 && x < 60 && y > 20 && y < 60) {
-                    score += 25;
-                } else if (x > 10 && x < 70 && y > 10 && y < 70) {
-                    score += 10;
-                } else {
-                    score += 0;
-                }
-    
-                if (score >= maxScore) {
-                    prize.style.display = "block";
-                }
-    
-                setTimeout(function() {
-                    dart.style.display = "none";
-                }, 1000);
-            }
+        
         </script>
 	<aside>
 	  <h2>Payment Methods</h2>
