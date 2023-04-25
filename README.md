@@ -72,7 +72,7 @@
     <body>
         
         
-        </script>
+        
 	<aside>
 	  <h2>Payment Methods</h2>
 	  <p>We accept cash,cryptocurrency(you pay exchange fee), and all major credit cards.</p>
