@@ -45,11 +45,11 @@
   </head>
   <body>
 	  <header style="text-align: center;">
-		  <div style="display: flex; align-items: center; justify-content: center;">
-			  <img src="C:\Users\DEMO\Downloads\site1.jpg" alt="Picture of Loftieswindows" style="width: 70px; height: auto;" />
-			  <h1 style="margin: 0;">Loftieswindows</h1>
-			  <img src="C:\Users\DEMO\Downloads\site2.jpg" alt="Picture of Loftieswindows" style="width: 70px; height: auto;" />
-		  </div>
+		 
+			  
+			  <h1>Loftieswindows</h1>
+			  
+		  
 	  </header>
 <article>
 			  <h2>About Us</h2>
