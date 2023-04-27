@@ -9,16 +9,17 @@
     <style>
       body {
         font-family: 'Montserrat', sans-serif;
-        background-color: #eaeaea; /* light grey */
-        color: #1a1a1a; /* dark */
+        background-color: #f1f1f1;
+        color: #1a1a1a;
       }
       header {
         text-align: center;
         margin-top: 50px;
-        background-color: #c8102e; /* dark red */
+        background-color: #c8102e;
         color: #fff;
         padding: 20px;
-        border: 2px solid #c8102e; /* dark red */
+        border: none;
+        border-radius: 10px;
       }
       h1 {
         font-size: 60px;
@@ -29,14 +30,17 @@
       article {
         margin-top: 50px;
         background-color: #fff;
-        color: #1a1a1a; /* dark */
+        color: #1a1a1a;
         padding: 20px;
-        border: 2px solid #c8102e; /* dark red */
-        box-shadow: 0px 0px 5px #333; /* black */
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
       }
       h2 {
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #c8102e;
+        padding-bottom: 10px;
       }
       ul {
         list-style: none;
@@ -49,10 +53,11 @@
       footer {
         margin-top: 50px;
         text-align: center;
-        background-color: #c8102e; /* dark red */
+        background-color: #c8102e;
         color: #fff;
         padding: 20px;
-        border: 2px solid #c8102e; /* dark red */
+        border: none;
+        border-radius: 10px;
       }
       .social-media {
         margin-top: 20px;
@@ -88,33 +93,58 @@
     </article>
     <article>
       <h2>Players</h2>
+       <h3>Goalkeepers</h3>
       <ul>
         <li>Alisson Becker</li>
+        <li>Caoimhin Kelleher</li>
+        <li>Adrian</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Defenders</h3>
+      <ul>
         <li>Trent Alexander-Arnold</li>
         <li>Joe Gomez</li>
         <li>Virgil van Dijk</li>
+        <li>Joel Matip</li>
         <li>Andrew Robertson</li>
+        <li>Kostas Tsimikas</li>
+        <li>Neco Williams</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Midfielders</h3>
+      <ul>
         <li>Fabinho</li>
         <li>Thiago Alcantara</li>
+        <li>James Milner</li>
+        <li>Naby Keita</li>
         <li>Jordan Henderson</li>
-        <li>Sadio Mane</li>
-        <li>Mohamed Salah</li>
-        <li>Roberto Firmino</li>
+        <li>Curtis Jones</li>
+        <li>Harvey Elliott</li>
       </ul>
-    </article>
-    <article>
-      <h2>Stadium</h2>
-      <p>Anfield is a football stadium in the district of Anfield, Liverpool, England. It has a seating capacity of 53,394, making it the seventh largest stadium in England. It has been the home of Liverpool F.C. since their formation in 1892. The stadium has four stands: the Spion Kop, the Main Stand, the Sir Kenny Dalglish Stand and the Anfield Road End. The Spion Kop is one of the most famous stands in football and was once the largest single-tier stand in Europe.</p>
-    </article>
-    <footer>
-      <p>Follow us on social media:</p>
-      <div class="social-media">
-        <a href="https://www.facebook.com/LiverpoolFC/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/LFC" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/liverpoolfc/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/user/LiverpoolFC" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@liverpoolfc" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
-      </div>
-    </footer>
+    </li>
+    <li>
+      <h3>Forwards</h3>
+      <ul>
+        <li>Mohamed Salah</li>
+        <li>Sadio Mane</li>
+        <li>Roberto Firmino</li>
+        <li>Diogo Jota</li>
+        <li>Takumi Minamino</li>
+      </ul>
+    </li>
+  </ul>
+</article>
+<footer>
+  <div class="social-media">
+    <a href="https://www.facebook.com/LiverpoolFC/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/LFC" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/liverpoolfc/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/user/LiverpoolFC" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@liverpoolfc" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <p>&copy; 2023 Liverpool F.C. All rights reserved.</p>
+</footer>
   </body>
 </html>
