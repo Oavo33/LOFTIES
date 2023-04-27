@@ -221,7 +221,7 @@
 	</script>
 </body>
     <footer>
-      <p>&copy; 2023 Loftieswindows. Connect with us:</p>
+      <p>&copy; 2023 Lofties. Connect with us:</p>
       <div class="social-media">
   <a href="https://www.facebook.com"><i class="fab fa-facebook-f facebook"></i></a>
   <a href="https://www.twitter.com"><i class="fab fa-twitter twitter"></i></a>
