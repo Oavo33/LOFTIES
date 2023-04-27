@@ -9,38 +9,40 @@
     <style>
       body {
         font-family: 'Montserrat', sans-serif;
-        background-color: #f1f1f1;
+        background-color: #f5f5f5;
         color: #1a1a1a;
       }
       header {
         text-align: center;
         margin-top: 50px;
-        background-color: #c8102e;
+        background: linear-gradient(180deg, rgba(197, 31, 55, 0.8) 0%, rgba(116, 16, 44, 0.8) 100%), url('https://i.imgur.com/nA4MbVo.jpg') no-repeat center center fixed;
+        background-size: cover;
         color: #fff;
         padding: 20px;
-        border: none;
         border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       }
       h1 {
         font-size: 60px;
         letter-spacing: 10px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        color: #f5f5f5;
       }
       article {
         margin-top: 50px;
-        background-color: #fff;
+        background-color: #ffffff;
         color: #1a1a1a;
         padding: 20px;
-        border: none;
         border-radius: 10px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       }
       h2 {
         font-size: 30px;
         margin-bottom: 20px;
-        border-bottom: 2px solid #c8102e;
+        border-bottom: 2px solid #c61f37;
         padding-bottom: 10px;
+        color: #1a1a1a;
       }
       ul {
         list-style: none;
@@ -49,102 +51,126 @@
       }
       li {
         margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
       }
       footer {
         margin-top: 50px;
         text-align: center;
-        background-color: #c8102e;
+        background: linear-gradient(180deg, rgba(197, 31, 55, 0.8) 0%, rgba(116, 16, 44, 0.8) 100%), url('https://i.imgur.com/nA4MbVo.jpg') no-repeat center center fixed;
+        background-size: cover;
         color: #fff;
         padding: 20px;
-        border: none;
         border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       }
       .social-media {
         margin-top: 20px;
       }
       .social-media a {
-        color: #fff;
+        color: #f5f5f5;
         margin-right: 10px;
       }
       .facebook:hover {
-        color: #3b5998;
-      }
-      .twitter:hover {
-        color: #1da1f2;
-      }
-      .instagram:hover {
-        color: #e1306c;
-      }
-      .youtube:hover {
-        color: #c4302b;
-      }
-      .tiktok:hover {
-        color: #69c9d0;
-      }
-    </style>
-  </head>
+        color: #c61f37;
+}
+.twitter:hover {
+color: #1da1f2;
+}
+.instagram:hover {
+color: #e1306c;
+}
+.youtube:hover {
+color: #ff0000;
+}  /* new color scheme */
+  body {
+    background-color: #f5f5ff;
+    color: #1a1a1a;
+  }
+  header {
+    background: linear-gradient(180deg, rgba(176, 48, 68, 0.8) 0%, rgba(128, 22, 48, 0.8) 100%), url('https://i.imgur.com/nA4MbVo.jpg') no-repeat center center fixed;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    color: #f5f5ff;
+  }
+  article {
+    background-color: #fff;
+    color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  h2 {
+    border-bottom: 2px solid #b03044;
+    color: #1a1a1a;
+  }
+  li {
+    background-color: #f5f5ff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  footer {
+    background: linear-gradient(180deg, rgba(176, 48, 68, 0.8) 0%, rgba(128, 22, 48, 0.8) 100%), url('https://i.imgur.com/nA4MbVo.jpg') no-repeat center center fixed;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .social-media a {
+    color: #f5f5ff;
+  }
+  .facebook:hover {
+    color: #b03044;
+  }
+  .twitter:hover {
+    color: #1da1f2;
+  }
+  .instagram:hover {
+    color: #e1306c;
+  }
+  .youtube:hover {
+    color: #ff0000;
+  }
+</style></head>
   <body>
     <header>
       <h1>Liverpool F.C.</h1>
+      <div class="social-media">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube fa-lg"></i></a>
+      </div>
     </header>
     <article>
-      <h2>About Us</h2>
-      <p>Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. Founded in 1892, the club has won six European Cups, more than any other English club, three UEFA Cups, four UEFA Super Cups, and one FIFA Club World Cup. The club has also won nineteen League titles, seven FA Cups, a record eight League Cups, and fifteen FA Community Shields.</p>
-    </article>
-    <article>
-      <h2>Players</h2>
-       <h3>Goalkeepers</h3>
+      <h2>About Liverpool F.C.</h2>
+      <p>Liverpool Football Club is a professional football club based in Liverpool, England. They play in the Premier League, and have won 19 league titles, 7 FA Cups, 8 League Cups, and 6 European Cups.</p>
+      <h2>Current Squad</h2>
       <ul>
-        <li>Alisson Becker</li>
-        <li>Caoimhin Kelleher</li>
-        <li>Adrian</li>
-      </ul>
-    </li>
-    <li>
-      <h3>Defenders</h3>
-      <ul>
+        <li>Alisson Beckeri>Alisson Becker</li>
         <li>Trent Alexander-Arnold</li>
-        <li>Joe Gomez</li>
         <li>Virgil van Dijk</li>
-        <li>Joel Matip</li>
+        <li>Joe Gomez</li>
         <li>Andrew Robertson</li>
-        <li>Kostas Tsimikas</li>
-        <li>Neco Williams</li>
-      </ul>
-    </li>
-    <li>
-      <h3>Midfielders</h3>
-      <ul>
-        <li>Fabinho</li>
         <li>Thiago Alcantara</li>
-        <li>James Milner</li>
-        <li>Naby Keita</li>
         <li>Jordan Henderson</li>
-        <li>Curtis Jones</li>
-        <li>Harvey Elliott</li>
-      </ul>
-    </li>
-    <li>
-      <h3>Forwards</h3>
-      <ul>
-        <li>Mohamed Salah</li>
         <li>Sadio Mane</li>
         <li>Roberto Firmino</li>
+        <li>Mohamed Salah</li>
         <li>Diogo Jota</li>
-        <li>Takumi Minamino</li>
       </ul>
-    </li>
-  </ul>
-</article>
-<footer>
-  <div class="social-media">
-    <a href="https://www.facebook.com/LiverpoolFC/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://twitter.com/LFC" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com/liverpoolfc/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/user/LiverpoolFC" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.tiktok.com/@liverpoolfc" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
-  <p>&copy; 2023 Liverpool F.C. All rights reserved.</p>
-</footer>
+    </article>
+    <footer>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram instagram"></i></a>
+      </div>
+      <p>&copy; 2023 Liverpool F.C.</p>
+    </footer>
   </body>
 </html>
+
+
