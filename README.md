@@ -1,122 +1,80 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>LoftiesWindows</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-  <style>
-    header {
-      background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
-      background-size: cover;
-      background-position: left;
-      color: #800000;
-      font-family: 'Dancing Script', cursive;
-      padding: 8vw;
-      text-align: right;
-      text-shadow: 1vw 1vw #000;
-      position: relative;
-    }
-
-    .triangle {
-      width: 10vw;
-      height: 7vw;
-      background-color: #800000;
-      position: absolute;
-      bottom: 5vw;
-      left: 2vw;
-      transform: translate(10%, 90%);
-      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 2;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .triangle-text {
-      color: #00B3B3;
-      font-size: 2vw;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.5vw;
-      padding: 2vw;
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .logo {
-      font-size: 6vw;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 7s ease;
-      position: absolute;
-      left: 14vw;
-      top: 2vw;
-    }
-
-    .logo span {
-      background-color: #00B3B3;
-      border-radius: 50%;
-      display: inline-block;
-      height: 5vw;
-      width: 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 2vw;
-      text-align: center;
-      box-shadow: 2px 2px black;
-  transition: all 0.3s ease;
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.logo span::before {
-  content: "L";
-  display: inline-block;
-  font-size: 25px;
-  font-weight: bold;
-  transform: rotate(-20deg);
-  transition: all 0.3s ease;
-}
-
-.logo-text {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  margin: 0;
-  padding: 0;
-}
-	
-</style>
-</head>
-<body>
-	<header>
-  <div class="logo">
-    <span></span>
-    <div class="logo-text">LoftiesWindows</div>
-  </div>
-  <div class="triangle">
-    <div class="triangle-text">&copyLOFTIES</div>
-  </div>
-</header></head>
-
-<script>
-	const triangle = document.querySelector('.triangle');
-
-	triangle.addEventListener('click', () => {
-  		alert('your windows where cleaned today  !');
-	});
-</script>
-</body>
-</html>
+      h1 {
+        margin: 0;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type=text], input[type=email], textarea {
+        border: none;
+        border-bottom: 2px solid #CCCCCC;
+        padding: 10px;
+        width: 100%;
+        transition: border-bottom-color 0.2s ease-in-out;
+      }
+      input[type=text]:focus, input[type=email]:focus, textarea:focus {
+        outline: none;
+        border-bottom-color: #2C3E50;
+      }
+      input[type=submit] {
+        background-color: #2C3E50;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      input[type=submit]:hover {
+        background-color: #7C92D3;
+      }
+      .error-message {
+        color: #FF0000;
+        margin-bottom: 10px;
+      }
+      .section {
+        background-color: #F1F1F1;
+        border: 2px solid #CCCCCC;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: border-color 0.2s ease-in-out;
+      }
+      .section:hover {
+        border-color: #2C3E50;
+      }
+      .section h2 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      .section ul {
+        margin-bottom: 0;
+      }
+      .section li {
+        margin-bottom: 5px;
+      }
 
 
 
