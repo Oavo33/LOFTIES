@@ -102,7 +102,7 @@ transform: translate(-50%, -50%);
 	const triangle = document.querySelector('.triangle');
 
 	triangle.addEventListener('click', () => {
-  		alert('FREEKING LOVE YOU !');
+  		alert('FREEKING LOVE YOU KIDS !');
 	});
 </script>
 </body>
