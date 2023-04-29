@@ -1,152 +1,50 @@
 <html>
-<head>
-	<title>LoftiesWindows</title>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {background-color: #7c7c7c; font-family: Arial, sans-serif;}
+      header {background-color: #00fff2; color: rgb(126, 126, 126); text-align: center; padding: 20px;}
+      nav {background-color: #7e7e7e; padding: 10px;}
+      nav ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden;}
+      nav li {display: inline-block; margin-right: 20px;}
+      nav li a {display: block; color: #00ffff; text-align: center; padding: 10px;}
+      nav li a:hover {background-color: #00eeff; color: rgb(122, 122, 122);}
+      section {padding: 20px;}
+      footer {background-color: #00ffff; color: rgb(122, 122, 122); text-align: center; padding: 20px;}
+      .social-media a {
+        display: inline-block;
+        margin-right: 20px;
+      }
 
-	<style>
-		header {
-			background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
-			background-size: cover;
-			background-position: left;
-			color:#800000;
-			font-family: 'Dancing Script', cursive;
-			padding: 120px;
-			text-align: right;
-			text-shadow: 2px 2px #000;
-			position: relative;
-                        animation: fade-in 5s ease-in-out;
-		}
-		
-		.triangle {
-			width: 9vw;
-			height: 7vw;
-			background-color: #800000;
-			position: absolute;
-			bottom: 55px;
-			left: 10px;
-			transform: translate(10%, 90%);
-			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			z-index: 2;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
-		
-		.triangle:hover {
-			background-color: #800000;
-			transform: translate(10%, 80%);
-			box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-			z-index: 3;
-		}
-		
-		.triangle-text {
-			color: #00B3B3;
-			font-size:7px;
-			text-align: center;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			padding: 10px;
-			position: absolute;
-			top: 90%;
-			right:-9%;
-			transform: translate(0, -50%);
-			z-index: 3;
-		}
+      .social-media img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
 
-		header:hover .logo-text {
-			color: #00B3B3;
-		}
-		
-		.logo {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-		}@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+      .social-media i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
 
-      h1 {
-        margin: 0;
+      .social-media .facebook {
+        color: #3B5998;
       }
-      p {
-        margin-bottom: 0;
-      }
-      .container {
-        margin: 20px auto;
-        max-width: 800px;
-        padding: 0 20px;
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        margin-bottom: 10px;
-      }
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      input[type=text], input[type=email], textarea {
-        border: none;
-        border-bottom: 2px solid #CCCCCC;
-        padding: 10px;
-        width: 100%;
-        transition: border-bottom-color 0.2s ease-in-out;
-      }
-      input[type=text]:focus, input[type=email]:focus, textarea:focus {
-        outline: none;
-        border-bottom-color: #2C3E50;
-      }
-      input[type=submit] {
-        background-color: #2C3E50;
-        border: none;
-        color: #FFFFFF;
-        cursor: pointer;
-        margin-top: 10px;
-        padding: 10px 20px;
-        border-radius: 5px;
-      }
-      input[type=submit]:hover {
-        background-color: #7C92D3;
-      }
-      .error-message {
-        color: #FF0000;
-        margin-bottom: 10px;
-      }
-      .section {
-        background-color: #F1F1F1;
-        border: 2px solid #CCCCCC;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        transition: border-color 0.2s ease-in-out;
-      }
-      .section:hover {
-        border-color: #2C3E50;
-      }
-      .section h2 {
-        font-size: 24px;
-        margin-top: 0;
-        margin-bottom: 20px;
-      }
-      .section ul {
-        margin-bottom: 0;
-      }
-      .section li {
-        margin-bottom: 5px;
-      }
-	
-	</style>
 
-<body>
-	<header>
-		<div class="logo">
+      .social-media .twitter {
+        color: #1DA1F2;
+      }
+
+      .social-media .instagram {
+        color: #C13584;
+      }
+    </style>
+  </head>
+  <body>
+    <header><div class="logo">
 			<span></span>
 			<div class="logo-text" style="font-size: 72px;">LoftiesWindows</div>
 		</div>
@@ -160,8 +58,105 @@
   		alert('your windows where cleaned today  !');
 	});
 </script>
+      <h1>Loftieswindows</h1>
+    </header>
+    <article>
+      <h2>About Us</h2>
+      <p>At Loftieswindows, we have been providing professional window cleaning for over 20 years.</p>
+    </article>
+    <article>
+      <h2>Services</h2>
+      <ul>
+        <li>Residential Window Cleaning</li>
+        <li>Gutter Cleaning</li>
+      </ul>
+      <h3>The Advantages of Old-Fashioned Window Cleaning Methods</h3>
+      <p>Old-fashioned window cleaning methods have been around for decades and are still preferred by many because of their proven effectiveness. One of the biggest advantages of traditional window cleaning is the ability to clean difficult stains like bird droppings from windows and sills. The use of a squeegee and a chamois cloth ensures a streak-free finish, which is not always the case with new methods. Additionally, the amount of water used in traditional methods is typically less than that used in newer methods, resulting in a quicker drying time and less potential for damage to the surrounding property. Furthermore, the manual nature of traditional methods allows for more attention to detail and a higher level of quality control. Overall, old-fashioned window cleaning methods provide a time-tested and reliable approach to window cleaning that can deliver excellent results.</p>
+    </article>
+    <aside>
+      <h2>Payment Methods</h2>
+      <p>We accept cash, cryptocurrency (you pay exchange fee), and all major credit cards.</p>
+    </aside>
+<head>
+	<meta charset="utf-8">
+	<title>Hangman</title>
+</head>
+<body>
+	<h1>LoftiesHangman</h1>
+	<p>Guess the word,Reload page to stat again:</p>
+	<p id="word"></p>
+	<p>Guess a letter :</p>
+	<input type="text" id="guessInput">
+	<button id="guessButton">Guess</button>
+	<p id="guesses"></p>
+	<p id="result"></p>
+	<script>
+		const words = ["birkenhead", "tranmererovers", "solarpower", "future", "loftieswindows", "windowcleaner", "football", "golf", "tennis", "car", "bus", "train", "wirralglobe", "paulogradyrip", "newbrighton", "rockferry", "artificialintelligence",];
+		let chosenWord = words[Math.floor(Math.random() * words.length)];
+		let wordToGuess = "";
+		let guesses = "";
+		let guessesRemaining = 10;
+
+		// Initialize the game
+		function init() {
+			for (let i = 0; i < chosenWord.length; i++) {
+				wordToGuess += "_ ";
+			}
+			document.getElementById('word').innerText = wordToGuess;
+			document.getElementById('guessButton').addEventListener('click', makeGuess);
+		}
+
+		// Make a guess
+		function makeGuess() {
+			let guess = document.getElementById('guessInput').value.toLowerCase();
+			if (guess.length !== 1 || !guess.match(/[a-z]/i)) {
+				alert("Please enter a single letter.");
+				return;
+			}
+			if (guesses.includes(guess)) {
+				alert("You already guessed that letter.");
+				return;
+			}
+			guesses += guess;
+			document.getElementById('guesses').innerText = "Guesses: " + guesses;
+			let wordToGuessArray = wordToGuess.split(" ");
+			let correctGuess = false;
+			for (let i = 0; i < chosenWord.length; i++) {
+				if (chosenWord[i] === guess) {
+					wordToGuessArray[i] = guess;
+					correctGuess = true;
+				}
+			
+			wordToGuess = wordToGuessArray.join(" ");
+			document.getElementById('word').innerText = wordToGuess;
+			if (!wordToGuess.includes("_")) {
+				document.getElementById('result').innerText = "You win!";
+				document.getElementById('guessButton').removeEventListener('click', makeGuess);
+			} else if (!correctGuess) {
+				guessesRemaining--;
+				if (guessesRemaining === 0) {
+					document.getElementById('result').innerText = "You lose! The word was " + chosenWord + ".";
+					document.getElementById('guessButton').removeEventListener('click', makeGuess);
+				} else {
+					document.getElementById('result').innerText = "Wrong guess. " + guessesRemaining + " guesses remaining.";
+				}
+		
+		init();
+	</script>
 </body>
+    <footer>
+      <p>&copy; 2023 Loftieswindows. Connect with us:</p>
+      <div class="social-media">
+  <a href="https://www.facebook.com"><i class="fab fa-facebook-f facebook"></i></a>
+  <a href="https://www.twitter.com"><i class="fab fa-twitter twitter"></i></a>
+  <a href="https://www.instagram.com"><i class="fab fa-instagram instagram"></i></a>
+  <a href="https://www.youtube.com"><i class="fab fa-youtube youtube"></i></a>
+  <a href="https://www.tiktok.com"><i class="fab fa-tiktok tiktok"></i></a>
+</div>
+    </footer>
+  </body>
 </html>
+
 
 
 
