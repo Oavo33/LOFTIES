@@ -153,7 +153,13 @@
 		<div class="triangle">
 			<div class="triangle-text">&copy;LOFTIES</div>
 		</div>
-	</header>
+	</header><head><script>
+	const triangle = document.querySelector('.triangle');
+
+	triangle.addEventListener('click', () => {
+  		alert('your windows where cleaned today  !');
+	});
+</script>
 </body>
 </html>
 
