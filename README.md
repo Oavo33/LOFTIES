@@ -35,16 +35,15 @@
         height: 20vw;
         background-color: #800000;
         position: absolute;
-        bottom: 64vw;
-        right: 90%;
-        transform: translateX(50%);
+        bottom: 0;
+        right: 0;
+        transform: translate(20%, 20%);
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 2;
       }
-
       .triangle::before {
         content: "";
         width: 0;
@@ -99,13 +98,12 @@
         }
       }
 
-     h1.title {
-  font-size: 1.5vw;
-  line-height: 1.2;
+    h1.title {
+  font-size: 7vw;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   text-shadow: 2px 2px #1C1C1C;
-  text-decoration: underline;
 }
 
       @media only screen and (max-widthand) (max-width: 768px) {
