@@ -143,7 +143,7 @@
       }
 	
 	</style>
-</head>
+
 <body>
 	<header>
 		<div class="logo">
