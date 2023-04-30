@@ -13,7 +13,7 @@
   background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
   background-size: cover;
   background-position: center;
-  color: #fff; /* change to white */
+  color: #00B3B3; /* change to white */
   font-family: 'Pacifico', cursive;
   padding: 140px;
   text-shadow: 2px 2px #800000;
@@ -35,7 +35,7 @@
   font-size: 30px;
   margin: 20px;
   text-shadow: 2px 2px #800000;
-  color: #fff; /* add this line to set the color to white */
+  color: #00B3B3; /* add this line to set the color to white */
   animation-name: moveText;
   animation-duration: 7s;
   animation-direction: alternate;
