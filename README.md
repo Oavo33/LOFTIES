@@ -14,36 +14,42 @@
       text-shadow: 2px 2px #000;
       position: relative;
     }.logo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 40px;
-  margin: 0;
-}.logo-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 10px;
+      margin: 0;
+    }.logo-text {
   position: absolute;
   top: 30px;
   right: 30px;
-  font-size: 30px;
+  font-size: 20px;
   margin: 20px;
   text-shadow: 2px 2px #000;
+  animation-name: moveText;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }.logo:after {
-  content: "LOFTIES";
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-top: 30px solid #800000;
-  border-right: 30px solid transparent;
-  transform: rotate(0deg);
-  margin-left: 18px;
-  color: #800000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  line-height: 20px; /* Adjust this value */
-  text-align: center;
-}.logo:hover:after {
-  border-top: 50px solid #00B3B3;
+      content: "LOFTIES";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      border-bottom: 50px solid #800000;
+      border-right: 50px solid transparent;
+   }.logo:hover:after {
+      border-bottom: 150px solid #00B3B3;
+    }@keyframes moveText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50px);
+  }
 }
-</style>
+  </style>
 </head>
 <body>
   <header>
@@ -51,4 +57,4 @@
     <div class="logo-text">windowcleaner</div>
   </header>
 </body>
-</html>
+</html>.
