@@ -3,28 +3,11 @@
     
   </head>
   <body>
-    <article>
-      <header>
+   
+  <header>
         
-      </h1>
-      <ul class="social">
-        <li>
-          <a href="#">
-            <i class="twitter"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="facebook"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="instagram"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></i>
-          </a>
-        </li>
-      </ul>    
-      <header>
+         
+  <header>
         <article>
           <main>
             <section>
@@ -47,24 +30,7 @@
       </aside>
     </main>
     <footer>
-    <nav>
-      <ul class="social">
-        <li>
-          <a href="#">
-            <i class="twitter"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-      <i class="facebook"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"></i>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <i class="instagram"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></i>
-    </a>
-  </li>
-</ul>
+    
   </body>
 </html>
 <style>
