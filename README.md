@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -90,8 +90,8 @@
     <aside>
       <h2>Payment Methods</h2>
       <p>We accept cash, cryptocurrency (you pay exchange fee), and all major credit cards.</p>
-    </section></aside>
-<head>
+    </aside> 
+	<head>
 	<meta charset="utf-8">
 	<title>Hangman</title>
 </head>
@@ -159,8 +159,4 @@
 
 		init();
 	</script>
-</body>
-   
-  </body>
-</html>
-</html>
+</body></html>
