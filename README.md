@@ -1,70 +1,84 @@
-<!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>Modern Bucket</title>
-    <style>
-      body {
-        background-color: #800000;
-      }
-      
-      .bucket {
-        width: 300px;
-        height: 300px;
-        border-radius: 0 0 50% 50%;
-        border: 8px solid #006400;
-        margin: 80px auto;
-        position: relative;
-        overflow: hidden;
-        transition: all 4s ease-out;
-        transform-origin: bottom center;
-      }
-
-      .bucket:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 1%;
-        background-color: black;
-      }
-      
-      .bucket .water {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: #F7DC6F;
-        transition: height 0.5s ease-in-out;
-        border-radius: 0 0 50% 50%;
-        border: 8px solid #F7DC6F;
-        border-top: none;
-      }
-
-      .bucket:hover .water {
-        height: 95%;
-      }
-
-      .bucket:hover {
-        animation: shake 8s ease-in-out 0s 2 alternate;
-      }
-
-      @keyframes shake {
-        0% {
-          transform: rotate(-14deg);
-        }
-        100% {
-          transform: rotate(14deg);
-        }
-      }
-      
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lofties Windows</title>
+    <meta name="description" content="Loftie">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/path/to/favicon.png">
+    <link rel="stylesheet" href="/My.First.Site/assets/css/style.css?v=c61e1577585ebe24df4f8190e73674368a10cb67">
   </head>
   <body>
-    <div class="bucket">
-      <div class="water"></div>
-    </div>
+    <article>
+      <header>
+        <div class="triangle"></div>
+        <div class="triangle-content">
+          LOFTIES
+        </div>
+        <div class="logo-text">Lofties Windows</div>
+      </header><h1 style="display: flex; flex-direction: column; align-items: center;">
+        <span style="display: block; text-align: center; font-family: 'Pacifico', cursive;">LOFTIES</span>
+        <span style="display: block; text-align: center; font-family: 'Pacifico', cursive;">WINDOWS</span>
+      </h1>
+      <ul class="social">
+        <li>
+          <a href="#">
+            <i class="twitter"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="facebook"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="instagram"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></i>
+          </a>
+        </li>
+      </ul>    
+      <header>
+        <article>
+          <main>
+            <section>
+              <h2>About Us</h2>
+              <p>Our work.</p>
+            </section>
+            <section>
+              <h2>Our Services</h2>
+              <ul>
+                <li>Golf</li>
+                <li>Gutter Cleaning</li>
+              </ul>
+            </section>
+            <section>
+              <h2>The Team</h2>
+              <p>Old team.</p>
+            </section><aside>
+        <h2>Payment Methods</h2>
+        <p>cards.</p>
+      </aside>
+    </main>
+    <footer>
+    <nav>
+      <ul class="social">
+        <li>
+          <a href="#">
+            <i class="twitter"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+      <i class="facebook"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="instagram"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></i>
+    </a>
+  </li>
+</ul>
   </body>
 </html>
-
+<style>
