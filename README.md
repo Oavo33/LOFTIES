@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>My Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -25,13 +26,13 @@
 
     .logo-text {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 20px;
+  top: 1px;
+  right: 34px;
+  font-size: 30px;
   margin: 20px;
   text-shadow: 2px 2px #800000;
   animation-name: moveText;
-  animation-duration: 2s;
+  animation-duration: 7s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
@@ -41,7 +42,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 0;
+      height: 26;
       width: 0;
       border-bottom: 50px solid #800000;
       border-right: 50px solid transparent;
@@ -59,6 +60,7 @@
 }
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo"></div>
