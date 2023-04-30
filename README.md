@@ -1,13 +1,6 @@
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lofties Windows</title>
-    <meta name="description" content="Loftie">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/path/to/favicon.png">
-    <link rel="stylesheet" href="/My.First.Site/assets/css/style.css?v=c61e1577585ebe24df4f8190e73674368a10cb67">
+    
   </head>
   <body>
     <article>
