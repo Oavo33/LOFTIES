@@ -5,14 +5,7 @@
   <body>
     <article>
       <header>
-        <div class="triangle"></div>
-        <div class="triangle-content">
-          LOFTIES
-        </div>
-        <div class="logo-text">Lofties Windows</div>
-      </header><h1 style="display: flex; flex-direction: column; align-items: center;">
-        <span style="display: block; text-align: center; font-family: 'Pacifico', cursive;">LOFTIES</span>
-        <span style="display: block; text-align: center; font-family: 'Pacifico', cursive;">WINDOWS</span>
+        
       </h1>
       <ul class="social">
         <li>
