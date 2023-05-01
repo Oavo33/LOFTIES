@@ -1,8 +1,8 @@
 <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      * {
+    <style>                                   
+    {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -13,6 +13,9 @@
       ul {
         list-style: none;
       }
+      hr {
+        display: none;
+}
     </style>
   </head>
   <body>
@@ -35,3 +38,5 @@
     </footer>
   </body>
 </html>
+
+
