@@ -11,7 +11,8 @@ header, footer, section {
 			font-family: 'Indie Flower'cursive;
 		}
 	</style>
-</head>
+</head><p style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">My Heading</p>
+
 <section>
 		<h2>Body section 1</h2>
 		<p style="font-family: 'Indie Flower', cursive;">This is the first body section.</p>
