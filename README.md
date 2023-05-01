@@ -1,34 +1,19 @@
 <html lang="en-US">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    {
-box-sizing: border-box;
-   margin: 0;
+      * {
+        box-sizing: border-box;
+        margin: 0;
         padding: 0;
         border: none;
         outline: none;
-        text-decoration: none;}, body {
-        margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-h1, h2, h3, h4, h5, h6, p, ul, li {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-header, article, footer {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-ul {
-  list-style: none;
-} 
-</style>
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
     <header>
