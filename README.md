@@ -5,20 +5,22 @@
 </head>
 <body>
 	<header>
-		<div style="font-size: 36px; font-weight: bold;">Header section</div>
+		<div>karls windows</div>
 	</header>
 
 	<section>
-		<div style="font-size: 24px; font-weight: bold;">Body section 1</div>
+		<div>karls windows</div>
 		<p>This is the first body section.</p>
 	</section>
 
 	<section>
-		<div style="font-size: 24px; font-weight: bold;">Body section 2</div>
+		<div >karl window</div>
 		<p>This is the second body section.</p>
 	</section>
-<footer>
+
+	<footer>
 		<div>Footer section</div>
 	</footer>
 </body>
 </html>
+
