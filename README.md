@@ -1,5 +1,5 @@
 <html lang="en-US">
-  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><head>
     <style>
       * {
         box-sizing: border-box;
@@ -7,9 +7,28 @@
         padding: 0;
         border: none;
         outline: none;
-        text-decoration: none;
-      }
-    </style>
+        text-decoration: none;}html, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+header, article, footer {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+} 
+</style>
   </head>
   <body>
     <header>
