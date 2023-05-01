@@ -1,6 +1,10 @@
 <html lang="en-US">
   <head>
-    <style>
+    <style>{
+        border: none;
+        outline: none;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
