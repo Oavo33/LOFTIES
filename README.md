@@ -21,6 +21,7 @@ header, footer, section {
     
     And here's some more text for the second section.
 	</section>
+<div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">My Heading</div>
 
 	<footer style="font-family: 'Indie Flower', cursive;">
 		<p>Footer section</p>
