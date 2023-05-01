@@ -2,30 +2,23 @@
 <html>
 <head>
 	<title>My HTML Layout</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
-	<style>h2 {
-  border: none;
-  margin: 0;
-}
-header, footer, section {
-			font-family: 'Indie Flower'cursive;
-		}
-	</style>
-</head><p style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">My Heading</p>
+</head>
+<body>
+	<header>
+		<div style="font-size: 36px; font-weight: bold;">Header section</div>
+	</header>
 
-<section>
-		<h2>Body section 1</h2>
-		<p style="font-family: 'Indie Flower', cursive;">This is the first body section.</p>
-		<p style="font-family: 'Indie Flower', cursive;">Here's some more text for this section.</p> Body section 2
-		This is the second body section.
-		
-    
-    And here's some more text for the second section.
+	<section>
+		<div style="font-size: 24px; font-weight: bold;">Body section 1</div>
+		<p>This is the first body section.</p>
 	</section>
-<div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">My Heading</div>
 
-	<footer style="font-family: 'Indie Flower', cursive;">
-		<p>Footer section</p>
-		<p>Copyright 2023</p>
+	<section>
+		<div style="font-size: 24px; font-weight: bold;">Body section 2</div>
+		<p>This is the second body section.</p>
+	</section>
+<footer>
+		<div>Footer section</div>
 	</footer>
-</body></html>
+</body>
+</html>
