@@ -1,14 +1,14 @@
 <html lang="en-US">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><head>
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
+    {
+box-sizing: border-box;
+   margin: 0;
         padding: 0;
         border: none;
         outline: none;
-        text-decoration: none;}html, body {
-  margin: 0;
+        text-decoration: none;}, body {
+        margin: 0;
   padding: 0;
   border: none;
   outline: none;
