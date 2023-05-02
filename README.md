@@ -26,9 +26,9 @@
       }
       #planet-system {
   position: absolute;
-  top: 30%;
-  right: 12%;
-  transform: scale(0.7) translate(-50%, -50%);
+  top: 25%;
+  right: 20%;
+  transform: scale(0.4) translate(-50%, -50%);
   transform-origin: center center;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -114,7 +114,7 @@
 .header-text {
   position: absolute;
   top: 32%; 
-  left: 25%;
+  left: 32%;
   transform: translate(-50%, -50%);
   font-size: 44px;
 }
@@ -203,7 +203,7 @@ p {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(550px);
+    transform: translateX(400px);
   }
   100% {
     transform: translateX(0);
