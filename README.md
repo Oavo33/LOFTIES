@@ -62,7 +62,7 @@
 }
 
 .logo:hover::after {
-  content: "Spot.The.Bucket To.Win.Free.Clean!";
+  content: "Its.The.Window Cleaner";
   position: absolute;
   bottom: 0px;
   left: -5px;
