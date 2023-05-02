@@ -5,19 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<style>
-  header {
-    background-color: #800000;
-    background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-    background-size: cover;
-    background-position: center;
-    color: #00b3b3;
-    padding: 110px;
-    position: relative;
-    text-align: center;
-    text-shadow: 2px 2px #800000;
-  }
-@media only screen and (max-width: 600px) {
+<style>@media only screen and (max-width: 600px) {
   body {
     background-color: #333333;
     color: #f2f2f2;
