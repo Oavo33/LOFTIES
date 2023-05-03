@@ -70,7 +70,7 @@ content: "Ready.set.hunt gremlins!Win.free spotless.windows.as.your.prize.";
         margin: 0 10px;
         text-shadow: 2px 2px #800000;
       }.logo2-text {
-        font-size: 7px;
+        font-size: 5px;
         position: absolute;
         top: 0;
         left: 0%;
