@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <style>body {
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<style>body {
         font-family: 'Pacifico', cursive;
         background-color: #333333;
         color: #f2f2f2;
@@ -78,7 +79,9 @@ content: "Ready.set.hunt gremlins!Win.free spotless.windows.as.your.prize.";
         text-shadow: 2px 2px #800000;
         animation: moveText 50s ease-in-out infinite;
       }
-      .flash {
+      .logo-text-unique {
+  font-family: 'Alex Brush', cursive;
+}.flash {
   animation: flash 14s infinite;
 }.header-text {
   position: absolute;
@@ -233,7 +236,7 @@ var favicon = document.querySelector('link[rel="shortcut icon"]');
     <header>
       <div class="logo">
         <div class="logo-text-container">
-          <div class="logo-text">Lofties</div>
+           <span class="logo-text logo-text-unique">lofties</span>
         </div>
       </div>
       <div class="logo2">
