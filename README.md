@@ -10,6 +10,7 @@
         background-color: #333333;
         color: #f2f2f2;
       }header {
+        font-family: 'Pacifico', cursive;
         background-color: #800000;
         background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
         background-size: 100%;
