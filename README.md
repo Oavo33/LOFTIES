@@ -1,118 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<style>@media only screen and (max-width: 600px) {
-  body {
-    background-color: #333333;
-    color: #f2f2f2;
-  }
-}
-header {
-  background-color: #800000;
-  background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-  background-size: cover;
-  background-position: center;
-  color: #00b3b3;
-  padding: 110px;
-  position: relative;
-  text-align: center;
-  text-shadow: 2px 2px #800000;
-}
-#planet-system {
-  position: absolute;
-  top: 25%;
-  right: 20%;
-  transform: scale(0.4) translate(-50%, -50%);
-  transform-origin: center center;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.logo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}.logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #00b3b3;
-}.logo::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: -5px;
-  height: 35px;
-  width: 0;
-  border-bottom: 70px solid transparent;
-  border-right: 70px solid transparent;
-  opacity: 0.8;
-  transition: all 5s ease-in-out;
-}.logo:hover::after {
-  content: "Its.The.Window Cleaner";
-  position: absolute;
-  bottom: 0px;
-  left: -5px;
-  height: 35px;
-  width: 0;
-  border-bottom: 70px solid #00b3b3;
-  border-right: 70px solid transparent;
-  opacity: 1;
-  transition: all 3s ease-in-out;
-  filter: hue-rotate(270deg) drop-shadow(2px 2px 2px #00b3b3) invert(19%) sepia(57%) saturate(6287%) hue-rotate(346deg) brightness(102%) contrast(102%);
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>body {
+        background-color: #333333;
+        color: #f2f2f2;
+      }header {
+        background-color: #800000;
+        background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+        background-size: 100%;
+        background-position: center 65%;
+        color: #00b3b3;
+        padding: 50px;
+        position: relative;
+        text-align: center;
+        text-shadow: 2px 2px #800000;}.logo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }.logo a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #00b3b3;
+      }.logo::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -5px;
+        height: 35px;
+        width: 0;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid transparent;
+        opacity: 0.8;
+        transition: all 10s ease-in-out;
+      }.logo:hover::after {
+content: "Ready.set.hunt gremlins!Win.free spotless.windows.as.your.prize.";
+position: absolute;
+bottom: 0px;
+left: 20px;
+height: 35px;
+width: 0;
+border-bottom: 30px solid #800000;
+border-right: 30px solid transparent;
+opacity: 1;
+transition: all 3s ease-in-out;
+filter: hue-rotate(270deg) drop-shadow(2px 2px 2px #800000) invert(19%) sepia(57%) saturate(100%) hue-rotate(346deg) brightness(150%) contrast(90%);
 }.logo-text-container {
-  transform: rotate(45deg);
-  white-space: nowrap;
-  position: relative;
-  z-index: 1;
-  top: -10px;
-  left: -10px;
-  transition: all 4s ease-in-out;
-}.logo:hover .logo-text-container {
-  transform: rotate(360deg);
-  transition: all 4s ease-in-out;
-}.logo-text {
-  font-size: 14px;
-  margin: 0 10px;
-  text-shadow: 2px 2px #800000;
-}.logo2-text {
-  font-size: 7px;
-  position: absolute;
-  top: 0;
-  left: 0%;
-  margin: 0 10px;
-  text-shadow: 2px 2px #800000;
-  animation: moveText 50s ease-in-out infinite;
-}.flash {
+        transform: rotate(45deg);
+        white-space: nowrap;
+        position: relative;
+        z-index: 1;
+        top: -10px;
+        left: -10px;
+        transition: all 4s ease-in-out;
+      }.logo:hover .logo-text-container {
+        transform: rotate(360deg);
+        transition: all 50s ease-in-out;
+      }.logo-text {
+        font-size: 8px;
+        margin: 0 10px;
+        text-shadow: 2px 2px #800000;
+      }.logo2-text {
+        font-size: 7px;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        margin: 0 10px;
+        text-shadow: 2px 2px #800000;
+        animation: moveText 50s ease-in-out infinite;
+      }
+      .flash {
   animation: flash 14s infinite;
 }.header-text {
   position: absolute;
-  top: 32%;
-  left: 32%;
+  top: 64%;
+  left: 52%;
   transform: translate(-50%, -50%);
-  font-size: 44px;
+  font-size: 25px;
 }p {
-  font-size: 14px;
+  font-size: 7px;
 }
-.sun {
+ .sun {
 			position: absolute;
-			top: 50%;
-			left: 50%;
+			top: 30%;
+			left: 93%;
 			transform: translate(-50%, -50%);
 			background-color: #00B3B3;
 			border-radius: 50%;
-			width: 100px;
-			height: 100px;
+			width: 15px;
+			height: 15px;
 		}.planet {
 			position: absolute;
-			top: 50%;
-			left: 50%;
+			top: 30%;
+			left: 93%;
 			transform: translate(-50%, -50%);
 			border-radius: 50%;
 			animation-timing-function: linear;
@@ -120,43 +107,43 @@ header {
 			animation-name: flash14;
 			animation-duration: 10s;
 		}.mercury {
-  width: 5px;
-  height: 5px;
+  width: 3px;
+  height: 3px;
   background-color: #00B3B3;
   animation: orbit 39s linear infinite, flash14 240s infinite;
 }.venus {
-  width: 10px;
-  height: 10px;
+  width: 4px;
+  height: 4px;
   background-color: #800000;
   animation: orbit 28s linear infinite, flash14 150s infinite;
 }.earth {
-  width: 12px;
-  height: 12px;
+  width: 5px;
+  height: 5px;
   background-color: #00B3B3;
   animation: orbit 30s linear infinite, flash14 240s infinite;
 }.mars {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
   background-color: #800000;
   animation: orbit 42s linear infinite, flash14 170s infinite;
 }.jupiter {
-  width: 30px;
-  height: 30px;
+  width: 7px;
+  height: 7px;
   background-color: #00B3B3;
   animation: orbit 55s linear infinite, flash14 130s infinite;
 }.saturn {
-  width: 25px;
-  height: 25px;
+  width: 7px;
+  height: 7px;
   background-color: #800000;
   animation: orbit 65s linear infinite, flash14 150s infinite;
 }.uranus {
-  width: 20px;
-  height: 20px;
+  width: 6px;
+  height: 6px;
   background-color: #00B3B3;
   animation: orbit 75s linear infinite, flash14 780s infinite;
 }.neptune {
-  width: 18px;
-  height: 18px;
+  width: 6px;
+  height: 6px;
   background-color: #800000;
   animation: orbit 85s linear infinite, flash14 280s infinite;
 }.planet:hover {
@@ -169,22 +156,27 @@ header {
   border-radius: 5px;
 }@keyframes orbit {
   from {
-    transform: rotate(0deg) translateX(80px) rotate(0deg);
+    transform: rotate(0deg) translateX(19px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    transform: rotate(360deg) translateX(19px) rotate(-360deg);
   }
-}@keyframes flash14 {
+}
+@keyframes flash14 {
   0% {
-    background-color: #00B3B3;
+    opacity: 1;
   }
-  50% {
-    background-color: #800000;
+  14% {
+    opacity: 0.2;
+  }
+  28% {
+    opacity: 1;
   }
   100% {
-    background-color: #00B3B3;
+    opacity: 1;
   }
-}@keyframes moveText {
+}
+@keyframes moveText {
   0% {
     transform: translateX(0);
   }
@@ -205,9 +197,37 @@ header {
     opacity: 1;
   }
 }
+ @media only screen and (max-width: 600px) {
+        header {
+          padding: 60px;
+        }
+      }
+
 </style>
   </head>
-  <body>
+  <body><script>
+      function generateFavicon() {
+        var canvas = document.createElement('canvas');
+        canvas.width = 64;
+        canvas.height = 64;
+var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(32, 32, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = '#800000';
+        ctx.fill();
+        ctx.font = 'bold 48px sans-serif';
+        ctx.fillStyle = '#00B3B3';
+        ctx.fillText('L', 22, 50);
+var favicon = document.querySelector('link[rel="shortcut icon"]');
+        if (!favicon) {
+          favicon = document.createElement('link');
+          favicon.rel = 'shortcut icon';
+          document.head.appendChild(favicon);
+        }
+        favicon.href = canvas.toDataURL();
+      }
+      generateFavicon();
+    </script>
     <header>
       <div class="logo">
         <div class="logo-text-container">
