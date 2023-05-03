@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>body {
+        font-family: 'Pacifico', cursive;
         background-color: #333333;
         color: #f2f2f2;
       }header {
