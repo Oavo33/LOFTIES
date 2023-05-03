@@ -42,17 +42,17 @@
         transition: all 10s ease-in-out;
       }.logo:hover::after {
 content: "Ready.set.hunt gremlins!Win.free spotless.windows.as.your.prize.";
-position: absolute;
-bottom: 0px;
-left: 20px;
-height: 35px;
-width: 0;
-border-bottom: 30px solid #800000;
-border-right: 30px solid transparent;
-opacity: 1;
-transition: all 3s ease-in-out;
-filter: hue-rotate(270deg) drop-shadow(2px 2px 2px #800000) invert(19%) sepia(57%) saturate(100%) hue-rotate(346deg) brightness(150%) contrast(90%);
-}.logo-text-container {
+ position: absolute;
+  bottom: 0px;
+  left: 20px;
+  height: 35px;
+  width: 0;
+  border-bottom: 30px solid #800000;
+  border-right: 30px solid transparent;
+  opacity: 1;
+  transition: all 3s ease-in-out;
+  filter: hue-rotate(270deg) drop-shadow(2px 2px 2px #800000) invert(19%) sepia(57%) saturate(100%) hue-rotate(346deg) brightness(150%) contrast(90%);
+  writing-mode: horizontal-tb;}.logo-text-container {
         transform: rotate(45deg);
         white-space: nowrap;
         position: relative;
