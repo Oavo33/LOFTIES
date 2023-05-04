@@ -19,8 +19,8 @@
   }
   .confetti {
     position: fixed;
-    width: 7px; 
-    height: 7px; 
+    width: 14px; 
+    height: 14px; 
     background-color: #f00;
     pointer-events: none;
   }
@@ -28,8 +28,8 @@
     position: absolute;
     top: 10;
     left: 10;
-    width: 20%;
-    height: 20%;
+    width: 14%;
+    height: 14%;
     pointer-events: none;
   }.cube-container {
     position: absolute;
