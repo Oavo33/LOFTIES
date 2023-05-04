@@ -28,8 +28,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 34%;
-    height: 34%;
+    width: 28%;
+    height: 28%;
     pointer-events: none;
   }.cube-container {
     position: absolute;
