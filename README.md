@@ -26,10 +26,10 @@
   }
   canvas {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 28%;
-    height: 28%;
+    top: 10;
+    left: 10;
+    width: 25%;
+    height: 25%;
     pointer-events: none;
   }.cube-container {
     position: absolute;
