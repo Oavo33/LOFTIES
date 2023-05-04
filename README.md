@@ -2,35 +2,27 @@
 <html>
   <head>
     <title>Confetti Example</title>
-    <style>
-      /* Styles for the confetti animation */
-      .confetti {
+    <style>.confetti {
         position: fixed;
         width: 10px;
         height: 10px;
         background-color: #f00;
         pointer-events: none;
-      }
-
-      canvas {
+      }canvas {
         position: absolute;
         top: 0;
         left: 0;
         width: 110%;
         height: 110%;
         pointer-events: none;
-      }
-
-      .cube-container {
+      }.cube-container {
         position: relative;
         width: 8.33px;
         height: 8.33px;
         top: 60%;
         left: 10%;
-        transform: translate(10px, 10px); /* adjust the values as needed */
-      }
-
-      .cube {
+        transform: translate(10px, 10px);
+      }.cube {
         position: absolute;
         width: 23.33px;
         height: 23.33px;
@@ -41,13 +33,9 @@
         animation-duration: 34s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-      }
-
-      .cube:hover {
+      }.cube:hover {
         animation: spin-slow 20s infinite linear;
-      }
-
-      .cube .side {
+      }.cube .side {
         position: absolute;
         width: 23.33px;
         height: 23.33px;
@@ -63,60 +51,40 @@
         transform-style: preserve-3d;
         text-align: center;
         writing-mode: horizontal-tb;
-      }
-
-      .cube .front {
+      }.cube .front {
         transform: rotateY(0deg) translateZ(15px);
-      }
-
-      .cube .back {
+      }.cube .back {
         transform: rotateY(180deg) translateZ(15px);
-      }
-
-      .cube .right {
+      }.cube .right {
         transform: rotateY(-90deg) translateZ(15px);
-      }
-
-      .cube .left {
+      }.cube .left {
         transform: rotateY(90deg) translateZ(15px);
-      }
-
-      .cube .top {
+      }.cube .top {
         transform: rotateX(90deg) translateZ(15px);
-      }
-
-      .cube .bottom {
+      }.cube .bottom {
         transform: rotateX(-90deg) translateZ(15px);
-      }
-
-      @keyframes rotate {
+      }@keyframes rotate {
         from {
           transform: rotateY(0deg);
         }
         to {
           transform: rotateY(360deg);
         }
-      }
-
-      @keyframes spin {
+      }@keyframes spin {
         from {
           transform: rotateX(0deg) rotateY(0deg);
         }
         to {
           transform: rotateX(360deg) rotateY(360deg);
         }
-      }
-
-      @keyframes spin-slow {
+      }@keyframes spin-slow {
         from {
           transform: rotateX(0deg) rotateY(0deg);
         }
         to {
           transform: rotateX(360deg) rotateY(360deg);
         }
-      }
-
-      .cube .front:hover::before,
+      }.cube .front:hover::before,
       .cube .back:hover::before,
       .cube .right:hover::before,
       .cube .left:hover::before,
@@ -130,25 +98,15 @@ background-color: rgba(255, 255, 255, 0.8);
 z-index: 5;
 }  .cube .front:hover::before {
     content: "Front";
-  }
-
-  .cube .back:hover::before {
+  }.cube .back:hover::before {
     content: "Back";
-  }
-
-  .cube .right:hover::before {
+  }.cube .right:hover::before {
     content: "Right";
-  }
-
-  .cube .left:hover::before {
+  }.cube .left:hover::before {
     content: "Left";
-  }
-
-  .cube .top:hover::before {
+  }.cube .top:hover::before {
     content: "Top";
-  }
-
-  .cube .bottom:hover::before {
+  }.cube .bottom:hover::before {
     content: "Bottom";
   }
 </style>
@@ -169,20 +127,14 @@ const COLORS = ["#800000", "#800000", ];
 const canvas = document.getElementById("confetti");
 const context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-function ConfettiDot(x, y, color) {
+canvas.height = window.innerHeight;function ConfettiDot(x, y, color) {
   this.x = x;
   this.y = y;
   this.color = color;
   this.colorIndex = 0;
-}
-
-function randomInt(min, max) {
+}function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function initConfetti() {
+}function initConfetti() {
   const confetti = [];
   for (let i = 0; i < NUM_CONFETTI; i++) {
     const x = randomInt(0, canvas.width - DIAMETER);
@@ -191,9 +143,7 @@ function initConfetti() {
     confetti.push(new ConfettiDot(x, y, color));
   }
   return confetti;
-}
-
-function drawConfetti(confetti) {
+}function drawConfetti(confetti) {
   for (let i = 0; i < confetti.length; i++) {
     const dot = confetti[i];
     context.beginPath();
@@ -201,9 +151,7 @@ function drawConfetti(confetti) {
     context.fillStyle = dot.color;
     context.fill();
   }
-}
-
-function updateConfetti(confetti) {
+}function updateConfetti(confetti) {
   for (let i = 0; i < confetti.length; i++) {
     const dot = confetti[i];
     if (dot.colorIndex < COLORS.length - 1) {
@@ -229,16 +177,12 @@ function updateConfetti(confetti) {
       dot.x = randomInt(0, canvas.width - DIAMETER);
     }
   }
-}
-
-function animateConfetti() {
+}function animateConfetti() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   drawConfetti(confetti);
   updateConfetti(confetti);
   setTimeout(animateConfetti,DELAY);
-}
-
-const confetti = initConfetti();
+}const confetti = initConfetti();
 animateConfetti();</script>
  </body>
 </html> 
