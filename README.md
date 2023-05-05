@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Star Tunnel Background</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
   <style>
     canvas { position: fixed; z-index: -1; background: black; }
   </style>
