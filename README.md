@@ -16,7 +16,7 @@
         background-size: 100%;
         background-position: center 65%;
         color: #00b3b3;
-        padding: 60px;
+        padding: 30px;
         position: relative;
         text-align: center;
         text-shadow: 2px 2px #800000;}.logo {
@@ -167,28 +167,31 @@
       }
     }.confetti {
         position: fixed;
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         background-color: #f00;
         pointer-events: none;
-      }canvas {
+      }
+      canvas {
         position: absolute;
         top: 0;
         left: 0;
-        width: 110%;
-        height: 110%;
+        width: 280%;
+        height: 280%;
         pointer-events: none;
-      }.cube-container {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  top: 60%;
-  left: 10%;
-  transform: translate(10px, 10px); /* adjust the values as needed */
-}.cube {
+      }
+      .cube-container {
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 3.33px;
+  height: 3.33px;
+  bottom: -90px;
+  left: 20px;
+  transform: translate(1.67px, 1.67px); /* adjust the values as needed */
+}
+      .cube {
+  position: absolute;
+  width: 4.67px; /* 20px / 3 */
+  height: 4.67px; /* 20px / 3 */
   transform-style: preserve-3d;
   animation: rotate 10s infinite linear;
   cursor: pointer;
@@ -196,18 +199,20 @@
   animation-duration: 34s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}.cube:hover {
-  animation: spin-slow 20s infinite linear;
-}.cube .side {
+}
+      .cube:hover {
+        animation: spin-slow 20s infinite linear;
+      }
+      .cube .side {
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 15.33px; /* 70px / 3 */
+  height: 15.33px; /* 70px / 3 */
   background-color: #00B3B3;
-  border: 2px solid #260606;
+  border: 1px solid #260606;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 3px; /* 9px / 3 */
   font-weight: bold;
   color: #260606;
   text-transform: uppercase;
@@ -215,58 +220,92 @@
   text-align: center;
   writing-mode: horizontal-tb;
 }.cube .front {
-  transform: rotateY(0deg) translateZ(100px);
+  transform: rotateY(0deg) translateZ(10.67px); /* 50px / 3 */
 }.cube .back {
-  transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(10.67px); /* 50px / 3 */
 }.cube .right {
-  transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(10.67px); /* 50px / 3 */
 }.cube .left {
-  transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(10.67px); /* 50px / 3 */
 }.cube .top {
-  transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(10.67px); /* 50px / 3 */
 }.cube .bottom {
-  transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(10.67px); /* 50px / 3 */
 }@keyframes rotate {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}@keyframes spin {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
-  to {
-    transform: rotateX(360deg) rotateY(360deg);
-  }
-}@keyframes spin-slow {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
-  to {
-    transform: rotateX(360deg) rotateY(360deg);
-  }
-}.cube .front:hover::before,
-.cube .back:hover::before,
-.cube .right:hover::before,
-.cube .left:hover::before,
-.cube .top:hover::before,
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }@keyframes spin {
+        from {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        to {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }@keyframes spin-slow {
+        from {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        to {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }.cube .front:hover::before,
+      .cube .back:hover::before,
+      .cube .right:hover::before,
+      .cube .left:hover::before,
+      .cube .top:hover::before,
+      .cube .bottom:hover::before {
+        content: "Spot the squeegee on our webpage and you'll win a FREE window clean! Look closely!";
+        position: absolute;
+        top: 35px;
+        left: -130px;
+background-color: #fff;
+color: #260606;
+font-size: 10px;
+padding: 5px;
+border-radius: 5px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+opacity: 0;
+transition: opacity 0.2s ease-in-out;
+}
+.cube .front:hover::before {
+transform: rotateY(0deg) translateZ(50px);
+}
+.cube .back:hover::before {
+transform: rotateY(180deg) translateZ(50px);
+}
+.cube .right:hover::before {
+transform: rotateY(-90deg) translateZ(50px);
+}
+.cube .left:hover::before {
+transform: rotateY(90deg) translateZ(50px);
+}
+.cube .top:hover::before {
+transform: rotateX(90deg) translateZ(50px);
+}
 .cube .bottom:hover::before {
-  content: "Spot the squeegee on our webpage and you'll win a FREE window clean! Look closely!";
-  position: absolute;
-  top: 70px;
-  left: 140%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #260606;
-  text -transform: uppercase;
-  text-align: center;
-  writing-mode: horizontal-tb;
+transform: rotateX(-90deg) translateZ(50px);
+}
+.cube .front:hover::before {
+opacity: 1;
+}
+.cube .back:hover::before {
+opacity: 1;
+}
+.cube .right:hover::before {
+opacity: 1;
+}
+.cube .left:hover::before {
+opacity: 1;
+}
+.cube .top:hover::before {
+opacity: 1;
+}
+.cube .bottom:hover::before {
+opacity: 1;
 }</style>
 </head><body>
   <header>
