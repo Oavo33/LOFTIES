@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
     <style>body {
-        font-family: 'Pacifico', cursive;
+        font-family: 'UnifrakturMaguntia', sans-serif;
         background-color: #800000;
         color: #800000;
       }header {
-        font-family: 'Pacifico', cursive;
+        font-family: 'UnifrakturMaguntia', sans-serif;
         background-color: #800000;
         background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
         background-size: 100%;
@@ -44,7 +44,7 @@
         margin: 0 10px;
       }button {
         position: relative;
-        font: bold 1.2rem sans-serif;
+        font: bold 1.2rem 'UnifrakturMaguntia', cursive;
         color: #fff;
         background: #ff6600;
         border: none;
@@ -96,6 +96,7 @@
           transform: move-ball(calc(200vw * var(--x)), calc(200vh * var(--y)));
         }
       }ul {
+        font-family: 'UnifrakturMaguntia', sans-serif;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -109,6 +110,7 @@
       }li:nth-child(3) a {
       animation: zoomInRight 5s ease-out;
     }li a {
+      font-family: 'UnifrakturMaguntia', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -147,6 +149,7 @@
         transform: scale(1) translateX(0);
       }
     }.icon {
+      font-family: 'UnifrakturMaguntia', sans-serif;
       display: inline-block;
       margin-right: 8px;
       font-size: 24px;
@@ -157,11 +160,13 @@
     }.music-icon {
       color: blue;}@media screen and (max-width: 768px) {
       h1 {
+        font-family: 'UnifrakturMaguntia', sans-serif;
         font-size: 1.5rem;
         padding: 10px;
       }ul.social li {
         margin: 0 5px;
       }button {
+        font-family: 'UnifrakturMaguntia', sans-serif;
         margin-top: 30px;
         font-size: 1;
       }
@@ -204,6 +209,7 @@
         animation: spin-slow 20s infinite linear;
       }
       .cube .side {
+  font-family: 'UnifrakturMaguntia', sans-serif;
   position: absolute;
   width: 15.33px; /* 70px / 3 */
   height: 15.33px; /* 70px / 3 */
@@ -219,17 +225,17 @@
   transform-style: preserve-3d;
   text-align: center;
   writing-mode: horizontal-tb;
-}.cube .front {
+}.cube .front {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateY(0deg) translateZ(10.67px); /* 50px / 3 */
-}.cube .back {
+}.cube .back {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateY(180deg) translateZ(10.67px); /* 50px / 3 */
-}.cube .right {
+}.cube .right {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateY(-90deg) translateZ(10.67px); /* 50px / 3 */
-}.cube .left {
+}.cube .left {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateY(90deg) translateZ(10.67px); /* 50px / 3 */
-}.cube .top {
+}.cube .top {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateX(90deg) translateZ(10.67px); /* 50px / 3 */
-}.cube .bottom {
+}.cube .bottom {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateX(-90deg) translateZ(10.67px); /* 50px / 3 */
 }@keyframes rotate {
         from {
@@ -258,6 +264,7 @@
       .cube .left:hover::before,
       .cube .top:hover::before,
       .cube .bottom:hover::before {
+        font-family: 'UnifrakturMaguntia', sans-serif;
         content: "Spot the squeegee on our webpage and you'll win a FREE window clean! Look closely!";
         position: absolute;
         top: 35px;
