@@ -238,27 +238,27 @@
 }.cube .bottom {font-family: 'UnifrakturMaguntia', sans-serif;
   transform: rotateX(-90deg) translateZ(10.67px); /* 50px / 3 */
 }@keyframes rotate {
-        from {
-          transform: rotateY(0deg);
-        }
-        to {
-          transform: rotateY(360deg);
-        }
-      }@keyframes spin {
-        from {
-          transform: rotateX(0deg) rotateY(0deg);
-        }
-        to {
-          transform: rotateX(360deg) rotateY(360deg);
-        }
-      }@keyframes spin-slow {
-        from {
-          transform: rotateX(0deg) rotateY(0deg);
-        }
-        to {
-          transform: rotateX(360deg) rotateY(360deg);
-        }
-      }.cube .front:hover::before,
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}@keyframes spin-slow {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}.cube .front:hover::before,
       .cube .back:hover::before,
       .cube .right:hover::before,
       .cube .left:hover::before,
