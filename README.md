@@ -192,8 +192,7 @@
   bottom: 14px;
   left: 20px;
   transform: translate(1.67px, 1.67px); /* adjust the values as needed */
-}
-      .cube {
+}.cube {
   position: absolute;
   width: 4.67px; /* 20px / 3 */
   height: 4.67px; /* 20px / 3 */
