@@ -189,7 +189,7 @@
   position: absolute;
   width: 3.33px;
   height: 3.33px;
-  bottom: -50px;
+  bottom: -750px;
   left: 20px;
   transform: translate(1.67px, 1.67px); /* adjust the values as needed */
 }
