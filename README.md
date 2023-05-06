@@ -1,60 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
+<html lang="en">
+<head><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lofties Windows</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
   <style>
-    canvas { position: fixed; z-index: -1; background: black; }
+    ul{list-style:none;}
+    ul.social li{display:inline-block;margin:0 10px;}
+    button{position:relative;font:bold 1.2rem sans-serif;color:#fff;background:#ff6600;border:none;border-radius:25px;padding:15px 30px;cursor:pointer;}
+    .ball{width:50px;height:50px;border-radius:50%;background:#ffa500;opacity:0;position:absolute;left:14%;top:82%;transform:translate(-50%,-50%);z-index:-1;transition:all .5s ease-in-out;}
+    .move{display:inline-block;color:transparent;text-shadow:0 0 5px #ffa500;}
+    .move:hover{text-shadow:none;animation:move-text 14s ease-in-out;}
+    @keyframes move-text{0%{transform:translate(0,0) rotate(0deg);}25%{transform:translate(100px,100px) rotate(90deg);}50%{transform:translate(-100px,100px) rotate(180deg);}75%{transform:translate(-100px,-100px) rotate(270deg);}100%{transform:translate(100px,-100px) rotate(360deg);}}
+    button:focus+.ball{opacity:1;animation:move-ball 2s linear infinite;--x:.1;--y:.1;}
+    @keyframes move-ball{to{transform:move-ball(calc(200vw * var(--x)),calc(200vh * var(--y)));}}
   </style>
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-  <script>
-    var canvas = document.getElementById('canvas');
-    var ctx = canvas.getContext('2d');
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    var stars = [];
-    var speed = 0.1;
-    var maxSpeed = 5;
-    var starFrequency = 100;
-canvas.width = width;
-    canvas.height = height;
-function Star() {
-      this.x = Math.random() * width;
-      this.y = Math.random() * height;
-      this.radius = Math.random() * 1.2;
-      this.color = '#fff';
-      this.speed = (Math.random() * (maxSpeed - speed) + speed);
-    }
-for (var i = 0; i < 10; i++) {
-      stars.push(new Star());
-    }
-function drawStars() {
-      for (var i = 0; i < stars.length; i++) {
-        var star = stars[i];
-        star.x += (width / 2 - star.x) * (star.speed / -1000);
-        star.y += (height / 2 - star.y) * (star.speed / -1000);
-        if (star.x < 0 || star.x > width || star.y < 0 || star.y > height) {
-          stars[i] = new Star();
-        }
-        ctx.beginPath();
-        ctx.fillStyle = star.color;
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }function addStar() {
-      stars.push(new Star());
-    }
-setInterval(addStar, starFrequency);
-function animate() {
-      ctx.clearRect(0, 0, width, height);
-      drawStars();
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-  </script>
-</body>
+  <h1><span class="move">L</span>of</span>ties<span class="move">W</span>indo<span class="move">w</span>s</h1>
+  <button>Click me!</button>
+  <div class="ball"></div>
+  <ul class="social">
+    <li><a href="#"><i class="icon1"><img src="https://img.icons8.com/clouds/64/000000/facebook.png" alt="Facebook"></i></a></li>
+    <li><a href="#"><i class="icon4"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png" alt="Discord"></i></a></li>
+    <li><a href="#"><i class="icon3"><img src="https://img.icons8.com/clouds/64/000000/youtube.png" alt="YouTube"></i></a></li>
+    <li><a href="#"><i class="icon4"><img src="https://img.icons8.com/clouds/64/000000/tiktok.png" alt="TikTok"></i></a></li>
+  </ul></body>
 </html>
 
