@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lofties Windows</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>Lofties Windows</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>body {
-        color: #00b3b3;
+        font-family: 'Pacifico', cursive;
         background-color: #800000;
+        color: #800000;
+      }header {
+        font-family: 'Pacifico', cursive;
+        background-color: #800000;
+        background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+        background-size: 100%;
+        background-position: center 65%;
+        color: #00b3b3;
+        padding: 60px;
+        position: relative;
+        text-align: center;
+        text-shadow: 2px 2px #800000;}.logo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
         margin: 0;
-        font-family: UnifrakturMaguntia , cursive;
+        display: flex;
+        align-items: center;
       }.logo-container {
         display: inline-block;
         border: 1px solid #ff6600;
