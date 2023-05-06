@@ -81,7 +81,69 @@
      to {
         transform: move-ball(calc(200vw * var(--x)), calc(200vh * var(--y)));
       }
-    }@media screen and (max-width: 768px) {
+ ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden;
+      }li:nth-child(1) a {
+        animation: fadeInLeft 5s ease-out;
+      }li:nth-child(2) a {
+        animation: pop 0.5s ease-out forwards;
+        animation-delay: 5s;
+      }li:nth-child(3) a {
+        animation: zoomInRight 5s ease-out;
+      }li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+      }@keyframes fadeInLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }@keyframes pop {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }@keyframes zoomInRight {
+        0% {
+          opacity: 0;
+          transform: scale(0.1) translateX(200%);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateX(0);
+        }
+      }.icon {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 24px;
+      }.video-icon {
+        color: red;
+      }.game-icon {
+        color: green;
+      }.music-icon {
+        color: blue;
+      }
+}@media screen and (max-width: 768px) {
       h1 {
         font-size: 1.5rem;
         padding: 10px;
@@ -95,7 +157,13 @@
    }
     }</style>
     </head> 
-    <body>
+    <body><header>
+      <ul>
+        <li><a href="#home"><span class="icon video-icon">&#x1F3A5;</span> Videos</a></li>
+        <li><a href="#about"><span class="icon game-icon">&#x1F3AE;</span> Games</a></li>
+        <li><a href="#contact"><span class="icon music-icon">&#x1F3B5;</span> Music</a></li>
+      </ul>
+    </header>
   <div class="logo-container">
     <span class="move">L</span>ofties<span class="move">W</span>indo<span class="move">w</span>s
   </div>
