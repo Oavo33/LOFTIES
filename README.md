@@ -162,9 +162,7 @@
         <li><a href="#home"><span class="icon video-icon">&#x1F3A5;</span> Videos</a></li>
         <li><a href="#about"><span class="icon game-icon">&#x1F3AE;</span> Games</a></li>
         <li><a href="#contact"><span class="icon music-icon">&#x1F3B5;</span> Music</a></li>
-      </ul>
-    </header>
-  <div class="logo-container">
+      </ul><div class="logo-container">
     <span class="move">L</span>ofties<span class="move">W</span>indo<span class="move">w</span>s
   </div>
   <button>Click me!</button>
@@ -174,7 +172,7 @@
     <li><a href="#"><i class="icon4"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png" alt="Discord"></i></a></li>
     <li><a href="#"><i class="icon3"><img src="https://img.icons8.com/clouds/64/000000/youtube.png" alt="YouTube"></i></a></li>
     <li><a href="#"><i class="icon4"><img src="https://img.icons8.com/clouds/64/000000/tiktok.png" alt="TikTok"></i></a></li>
-  </ul>
+  </ul></header>
 </body>
 </html>
 
