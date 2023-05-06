@@ -94,8 +94,8 @@
         font-size: 1;
    }
     }</style>
-</head>
-<body>
+    </head> 
+    <body>
   <div class="logo-container">
     <span class="move">L</span>ofties<span class="move">W</span>indo<span class="move">w</span>s
   </div>
