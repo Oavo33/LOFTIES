@@ -164,9 +164,7 @@
       }
     }
   </style>
-</head>
-
-<body>
+</head><body>
   <header>
     <ul>
       <li><a href="#home"><span class="icon video-icon">&#x1F3A5;</span> Videos</a></li>
@@ -181,9 +179,7 @@
     <ul class="social">
       <li><a href="#"><i class="icon1"><img src="https://img.icons8.com/clouds/64/000000/facebook.png" alt="Facebook"></i></a></li>
       <li><a href="#"><i class="icon4"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png" alt="Discord"></i></a></li>
-      <li><a href="#"><i class="icon3"><img src="https://img.icons8.com/clouds/64/000000/youtube.png" alt="YouTube"></i></a></li>
-      <li><a href="#"><i class="icon4"><img src="https://img.icons8.com/clouds/64/000000/tiktok.png" alt="TikTok"></i></a></li>
-  </ul></header>
+      <li><a href="#"><i class="icon3"><img src="https://img.icons8.com/clouds/64/000000/youtube.png" alt="YouTube"></i></a></li></ul></header>
 </body>
 </html>
 
