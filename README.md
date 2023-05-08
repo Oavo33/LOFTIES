@@ -6,18 +6,11 @@
   <title>Lofties Windows</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
-  <style>
-    body {
-      background-color: #800000;
-      color: #800000;
-    }
-    header {
-      background-color: #800000;
+  <style>header {
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
       background-size: 100%;
       background-position: center 65%;
-      color: #00b3b3;
-      padding: 60px;
+      padding: 100px;
       position: relative;
       text-align: center;}ul {
   list-style-type: none;
@@ -25,19 +18,17 @@
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  bottom: 0px;
-  right: 0;
-  margin-bottom: -1px;
-}
-li a {
+  bottom: -14px;
+  right: 0;}
+    li a {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 0px 0px;
+      padding: 1px 1px;
       text-decoration: none;
-      font-size: 7px;
+      font-size: 10px;
       font-weight: bold;
       animation-duration: 5s;
       animation-fill-mode: forwards;
@@ -55,15 +46,18 @@ li a {
     }
     .icon {
       display: inline-block;
-      font-size: 10px;}
+      font-size: 14px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
     .video-icon {
-      color: red;
+      color: #f00;
     }
     .game-icon {
-      color: green;
+      color: #0f0;
     }
     .music-icon {
-      color: blue;
+      color: #00f;
     }
     #space-info {
       position: absolute;
@@ -80,7 +74,8 @@ li a {
       font-family: Arial, sans-serif;
       font-size: 1.2em;
       line-height: 1.5;
-    }@keyframes fadeInLeft {
+    }
+    @keyframes fadeInLeft {
       0% {
         opacity: 0;
         transform: translateX(-100%);
@@ -89,7 +84,8 @@ li a {
         opacity: 1;
         transform: translateX(0);
       }
-    }@keyframes pop {
+    }
+    @keyframes pop {
       0% {
         transform: scale(1);
       }
@@ -99,9 +95,10 @@ li a {
       100% {
         transform: scale(1);
       }
-    }@keyframes zoomInRight {
+    }
+    @keyframes zoomInRight {
       0% {
-        opacity: 0;
+        opacity:: 0;
         transform: scale(0.1) translateX(200%);
       }
       100% {
@@ -109,9 +106,7 @@ li a {
         transform: scale(1) translateX(0);
       }
     }@media only screen and (max-width: 600px) {
-        header {
-          padding: 60px;
-        }}</style>
+        header }</style>
   </head>
   <body>
     <header>
@@ -149,12 +144,12 @@ li a {
 	</div>
     </header>
     <script>
-const spaceInfo = document.querySelector('#space-info');
+    const spaceInfo = document.getElementById("space-info");
 		const hoverText = document.querySelector('ul');
-hoverText.addEventListener('mouseover', () => {
+    hoverText.addEventListener('mouseover', () => {
 			spaceInfo.style.visibility = 'visible';
 		});
-hoverText.addEventListener('mouseout', () => {
+    hoverText.addEventListener('mouseout', () => {
 			spaceInfo.style.visibility = 'hidden';
 		});
 
@@ -164,4 +159,3 @@ hoverText.addEventListener('mouseout', () => {
 </html>
 
 
-   
