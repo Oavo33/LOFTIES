@@ -22,10 +22,10 @@
   right: 0;}
     li a {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex;
+      justify-content: flex;
       color: #fff;
-      text-align: center;
+      text-align: flex;
       padding: 1px 1px;
       text-decoration: none;
       font-size: 10px;
@@ -45,7 +45,7 @@
       animation-name: zoomInRight;
     }
     .icon {
-      display: inline-block;
+      display: flex;
       font-size: 14px;
       margin-right: 0px;
       margin-left: 0px;
