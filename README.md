@@ -77,6 +77,45 @@
       font-family: Arial, sans-serif;
       font-size: 0.7em;
       line-height: 1.5;
+    }.social {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-35px, -10px);
+      display: flex;
+    }
+    .social li {
+      display: inline-block;
+      margin:  0 -14px;
+      position: relative;
+    }
+    .social li a img {
+      width: 30%;
+    }
+    .star {
+  display: none;
+  position: absolute;
+  top: -40%;
+  left: 40%;
+  margin-left: -10px;
+  width: 35px;
+  height: 35px;
+  background-image: url('https://img.icons8.com/color/96/000000/star.png');
+  background-size: cover;
+  animation: twinkle 3s ease-in-out forwards;
+}@keyframes twinkle {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 0;
+      }
     }
     @keyframes fadeInLeft {
       0% {
@@ -113,6 +152,11 @@
   </head>
   <body>
     <header>
+    <ul class="social">
+      <li class="icon"><a href="#"><img src="https://img.icons8.com/clouds/64/000000/facebook.png" alt="Facebook"><span class="star"></span></a></li>
+      <li class="icon"><a href="#"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png" alt="Discord"><span class="star"></span></a></li>
+        <li class="icon"><a href="#"><img src="https://img.icons8.com/clouds/64/000000/youtube.png" alt="YouTube"><span class="star"></span></a></li>
+      </ul>
       <ul>
         <li>
           <a href="#contact" class="video-tab">
@@ -135,8 +179,8 @@
 <div id="space-info">
 		<h2>Did you know?</h2>
 		<p>Space is vast and full of mysteries. There are countless stars, planets, and galaxies out there waiting to be explored. Some of the most fascinating space facts include:</p>
-		
-		<p>There is so much more to learn about space. Keep exploring!</p>
+
+<p>There is so much more to learn about space. Keep exploring!</p>
 	</div>
     </header>
     <script>
@@ -148,7 +192,16 @@
     hoverText.addEventListener('mouseout', () => {
 			spaceInfo.style.visibility = 'hidden';
 		});
-
+  const icons = document.querySelectorAll('.icon');
+icons.forEach(icon => {
+        const star = icon.querySelector('.star');
+        icon.addEventListener('mouseenter', () => {
+          star.style.display = 'block';
+        });
+        icon.addEventListener('animationend', () => {
+          star.style.display = 'none';
+        });
+      });
 </script>
 
 </body>
