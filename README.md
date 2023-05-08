@@ -41,7 +41,7 @@
       text-align: center;
       padding: 0px 0px;
       text-decoration: none;
-      font-size: 8px;
+      font-size: 6px;
       font-weight: bold;
       animation-duration: 5s;
       animation-fill-mode: forwards;
@@ -59,7 +59,7 @@
     }
     .icon {
       display: flex;
-      font-size: 8px;
+      font-size: 6px;
       margin-right: -1px;
       }
     #space-info {
