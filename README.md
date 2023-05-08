@@ -43,7 +43,11 @@
   filter: brightness(100%)}
     .bottom-right{position:absolute;bottom:0;right:0;display:flex;gap:1px;}
     .bottom-right jake{list-style:none;}
-    .icon{font-size:10px;}
+    .icon{font-size:10px;}@media only screen and (max-width: 600px) {
+        header {
+          padding: 60px;
+        }
+      }
   </style>
 </head>
 <body>
