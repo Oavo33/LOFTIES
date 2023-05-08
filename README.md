@@ -55,6 +55,10 @@
         list-style: none;
       }.icon {
         font-size: 10px;
+      }@media only screen and (max-width: 600px) {
+        header {
+          padding: 60px;
+        }
       }
 	</style>
 </head>
