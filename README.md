@@ -37,7 +37,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #00B3B3
       text-align: center;
       padding: 0px 0px;
       text-decoration: none;
@@ -70,7 +70,7 @@
       background-color: #fff;
       padding: 20px;
       border: 1px solid #ccc;
-      box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+      box-shadow: 0 0 10px #00B3B3;
       visibility: hidden;
       z-index: 50;
       text-align: center;
