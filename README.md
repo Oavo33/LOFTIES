@@ -28,12 +28,14 @@
 			font-size: 32px;
 			font-weight: 700;
 		}.social {
-			display: flex;
-			align-items: center;
-			position: absolute;
-			top: 0px;
-			left: 0px;
-		}.social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}.social li {
 			list-style: none;
 			margin-right: 0px;
 		}.social li:last-child {
