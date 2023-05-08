@@ -31,23 +31,23 @@
 			display: flex;
 			align-items: center;
 			position: absolute;
-			top: 5px;
-			left: 5px;
+			top: 0px;
+			left: 0px;
 		}.social li {
 			list-style: none;
-			margin-right: 3px;
+			margin-right: 0px;
 		}.social li:last-child {
-			margin-right: 3px;
+			margin-right: 0px;
 		}.social img {
 			height: 21px;
-			margin-right: 3px;
-			filter: brightness(50%);
-			transition: filter 0.9s ease-in-out;
+			margin-right: 0px;
+			filter: brightness(60%);
+			transition: filter 0.3s ease-in-out;
 		}.social img:hover {
 			filter: brightness(100%);
 		}.bottom-right {
         position: absolute;
-        bottom: 1px;
+        bottom: -2px;
         right: 1px;
         display: flex;
         gap: 2px;
