@@ -114,19 +114,16 @@
   <body>
     <header>
       <ul>
-        <li>
-          <a href="#contact" class="music-tab">
-            <span class="icon music-icon">&#x1F3B5;</span>
-            Music
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="video-tab">
+       <li>
+          <a> href="#contact" class="video-tab">
             <span class="icon video-icon">&#x1F3A5;</span>
             Videos
           </a>
-        </li>
-        <li>
+        </li> <li>
+          <a href="#contact" class="music-tab">
+            <span class="icon music-icon">&#x1F3B5;</span>
+            Music
+          </a><li>
           <a href="#contact" class="game-tab">
             <span class="icon game-icon">&#x1F3AE;</span>
             Games
