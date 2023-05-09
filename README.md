@@ -94,7 +94,8 @@
   </style>
 </head>
 <body>
-  <header>
+  <header><canvas id="canvas"></canvas>
+    <div id="text">LoftiesWindows</div>
     <div class="social-icons-container">
       <a href="https://www.facebook.com"><img src="https://img.icons8.com/clouds/64/000000/facebook.png" alt="Facebook"></a>
       <a href="https://www.discord.com"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png" alt="Discord"></a>
@@ -105,10 +106,7 @@
       <jake><a href="#contact" class="music-tab"><span class="icon music-icon">&#x1F3B5;</span>Music</a></jake>
       <jake><a href="#contact" class="game-tab"><span class="icon game-icon">&#x1F3AE;</span>Games</a></jake>
     </ul>
-  </header>
-<canvas id="canvas"></canvas>
-    <div id="text">LoftiesWindows</div>
-    <script>
+  </header><script>
       window.addEventListener('load', () => {
         const canvas = document.getElementById('canvas');
         const context = canvas.getContext('2d');
