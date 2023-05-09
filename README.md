@@ -30,7 +30,31 @@
     h1 {
       font-size:32px;
       font-weight:700;
-    }
+    }canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+      }
+      #text {
+        position: absolute;
+        top: -1%;
+        font-size: 14px;
+        color: #800000;
+        white-space: nowrap;
+        opacity: 66;
+        z-index: 5;
+        animation: bounce 60s linear infinite alternate;
+      }
+      @keyframes bounce {
+        0% {
+          left: 0%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
     .social-icons-container {
       position: absolute;
       top: 14px;
@@ -82,7 +106,31 @@
       <jake><a href="#contact" class="game-tab"><span class="icon game-icon">&#x1F3AE;</span>Games</a></jake>
     </ul>
   </header>
-</body>
+<canvas id="canvas"></canvas>
+    <div id="text">LoftiesWindows</div>
+    <script>
+      window.addEventListener('load', () => {
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = 100;
+        const numOfTriangles = 14;
+        const triangleWidth = canvas.width / numOfTriangles;
+        const triangleHeight = Math.sqrt(0.2) / 2 * triangleWidth;
+        const triangleColors = ['#FF0000', '#FF8000', '#FFFF00', '#80FF00', '#00FF00', '#00FF80', '#00FFFF', '#0080FF', '#0000FF', '#8000FF', '#FF00FF', '#FF0080', '#FFFFFF', '#000000'];
+        for (let i = 0; i < numOfTriangles; i++) {
+          context.beginPath();
+          context.moveTo(i * triangleWidth, 0);
+          context.lineTo((i + 0.414) * triangleWidth, triangleHeight);
+          context.lineTo((i + 1) * triangleWidth, 0);
+          context.closePath();
+          context.fillStyle = triangleColors[i % triangleColors.length];
+          context.fill();
+        }
+      });
+    </script>
+  </body>
 </html>
+
 
 
