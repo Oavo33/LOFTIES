@@ -59,7 +59,13 @@
       list-style:none;
     }.icon {
       font-size:10px;
-    }
+    }@media only screen and (max-width: 600px) {
+  .social-icons-container {
+    top: 10px;
+    left: 10px;
+    background: none;
+  }
+}
   </style>
 </head>
 <body>
