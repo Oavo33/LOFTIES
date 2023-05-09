@@ -39,15 +39,16 @@
       flex-direction: column;
       gap: 2px;
     }.social-icons-container img {
-      height: 14px;
-      width: 14px;
-      margin: 3px;
-      filter: brightness(60%);
-      transition: filter 0.3s ease-in-out;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }.social-icons-container img:hover {
+  height: 14px;
+  width: 14px;
+  margin: 3px;
+  filter: brightness(60%);
+  transition: filter 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+}.social-icons-container img:hover {
       filter: brightness(100%);
     }.bottom-right {
       position: absolute;
