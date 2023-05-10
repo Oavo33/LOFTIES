@@ -3,61 +3,80 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lofties Windows</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
-	<style>@media only screen and (max-width: 600px){header{font-family: "UnifrakturMaguntia";
+	<style>@media only screen and (max-width: 600px){header {
+			font-family: "UnifrakturMaguntia";
 			background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-		}.triangle-container 
-		.triangle 
-	nav 
-		nav ul
-			nav li 
-			nav li
-		nav li
-		nav li
-		nav img
-		nav li
-    .tab-menu li 
-.tab-menu li
-.tab-menu li 
-.tab-hover .tab-menu li
-.tab-menu li
-.tab-menu li
-.tab-menu li img
-h1
-h1 span 
-h1 span:hover
-#typewriter-text 
-@keyframes typing {
-			from {
-				width: 0;
-			}
-			to {
-				width: 100%;
-			}
-		}@keyframes blink-caret {
-			from, to {
-				border-color: transparent;
-			}
-			50% {
-				border-color: #333;
-			}
-		}@keyframes fade-in-out {
-			0% {
-				opacity: 0;
-			}
-			50% {
-				opacity: 1;
-			}
-			100% {
-				opacity: 0;}
-		}@keyframes zoomIn {
-			from {
-				transform: scale(0.1);
-				opacity: 0;
-			}
-			to {
-				transform: scale(1);
-				opacity: 1;
-			}
+			padding: 50px;
+			position: relative;
+		}.triangle-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}canvas {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}h1 {
+			position: absolute;
+			top: 20%;
+			left: 10%;
+			font-size: 48px;
+			color: white;
+		}nav {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}li {
+			margin-right: 10px;
+		}li:last-child {
+			margin-right: 0;
+		}img {
+			width: 15px;
+			height: 15px;
+		}.tab-menu {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			display: flex;
+		}.tab-menu li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 10px;
+			height: 10px;
+			background-color: white;
+			border: 1px solid black;
+			margin-right: 10px;
+			font-size: 10px;
+			color: black;
+			text-align: center;
+			cursor: pointer;
+		}.tab-menu li:hover .tab-hover {
+			display: block;
+		}.tab-menu li .tab-hover {
+			display: none;
+			position: absolute;
+			bottom: -25px;
+			left: -50%;
+			background-color: white;
+			color: black;
+			padding: 5px;
+			border: 1px solid black;
+			width: 100%;
+			text-align: center;
+			z-index: 1;
+		}
 		}</style>
 <script>
 		window.addEventListener('load', () => {
