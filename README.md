@@ -169,8 +169,8 @@
 			100% {
 				opacity: 0;
 			}
-		}
-	</style>
+		} @media only screen and (max-width: 600px) {
+  }</style>
 </style>
 <script>
 		window.addEventListener('load', () => {
