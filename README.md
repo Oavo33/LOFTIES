@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
 	<style>@media only screen and (max-width: 600px) {header {
 			background-size: 100%;
-			padding: 20px;
+			padding: 50px;
 			display: flex;
 			flex-direction: column;
 			background-position: center 65%;
