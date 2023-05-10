@@ -170,11 +170,7 @@
 				opacity: 0;
 			}
 		}@media only screen and (max-width: 600px) {
-        header {
-          padding: 50px;
-        }
-      }
-  </style>
+        }</style>
 <script>
 		window.addEventListener('load', () => {
 			const canvas = document.getElementById('canvas');
