@@ -3,9 +3,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lofties Windows</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
-	<style>header {
+	<style>@media only screen and (max-width: 600px) {header {
 			background-size: 100%;
-			padding: 50px;
+			padding: 20px;
 			display: flex;
 			flex-direction: column;
 			background-position: center 65%;
@@ -167,42 +167,10 @@
 				opacity: 1;
 			}
 			100% {
-				opacity: 0;
-			}}@media only screen and (max-width: 600px) {
-  header {
-    padding: 20px;
-  }nav {
-    position: static;
-    padding: 0;
-    margin-top: 20px;
-  }
-  nav ul {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .tab-menu {
-    position: static;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    flex-wrap: wrap;
-  }
-  .tab-menu li {
-    flex-basis: 45%;
-    margin: 5px;
-    font-size: 16px;
-    text-align: center;
-  }
-  .tab-menu li .tab-hover {
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-  </style>
-<script>
+				opacity: 0;}
+		}
+  }</style>
+<script>@media only screen and (max-width: 600px) {
 		window.addEventListener('load', () => {
 			const canvas = document.getElementById('canvas');
 			const context = canvas.getContext('2d');
@@ -222,10 +190,8 @@
 				context.fillStyle = triangleColors[i];
 				context.fill();
 			}
-		});
-	</script>
-	
-</head>
+		})};
+	</script></head>
 <body>
 	<header>
 		<div class="triangle-container">
@@ -257,7 +223,7 @@
         </li>
     </ul><p id="typewriter-text"></p>
 </header>
-	<script>
+	<script>@media only screen and (max-width: 600px) {
 		const text = "Attention all window lovers! Search our website for the squeegee and win a free clean!";
 		let i = 0;
 		function typeWriter() {
@@ -267,6 +233,6 @@
 				setTimeout(typeWriter, Math.floor(Math.random() * 200) + 50); // randomize the typing speed
 			}
 		}
-		typeWriter();
+		typeWriter();}
 	</script>
 </body></html>
