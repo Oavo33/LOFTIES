@@ -63,17 +63,7 @@
 			transition: transform 0.5s ease;
 		}nav li:hover img {
 			transform: scale(2);
-			filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
-		}@keyframes zoomIn {
-			from {
-				transform: scale(0.1);
-				opacity: 0;
-			}
-			to {
-				transform: scale(1);
-				opacity: 1;
-			}
-		}.tab-menu {
+			filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);}.tab-menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -144,7 +134,7 @@
     border-radius: 5px;
     animation: typing 6s steps(30, end) forwards, blink-caret .5s step-end infinite;
     top: 58px;
-    right: 68px;
+    right: 68px;}
 }@keyframes typing {
 			from {
 				width: 0;
@@ -168,9 +158,17 @@
 			}
 			100% {
 				opacity: 0;}
-		}
-  }</style>
-<script>@media only screen and (max-width: 600px) {
+		}@keyframes zoomIn {
+			from {
+				transform: scale(0.1);
+				opacity: 0;
+			}
+			to {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}</style>
+<script>
 		window.addEventListener('load', () => {
 			const canvas = document.getElementById('canvas');
 			const context = canvas.getContext('2d');
@@ -190,7 +188,7 @@
 				context.fillStyle = triangleColors[i];
 				context.fill();
 			}
-		})};
+		});
 	</script></head>
 <body>
 	<header>
