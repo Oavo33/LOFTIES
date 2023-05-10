@@ -168,9 +168,38 @@
 			}
 			100% {
 				opacity: 0;
-			}
-		}@media only screen and (max-width: 600px) {
-        }</style>
+			}}@media only screen and (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 18px;
+    transform: none;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
+  nav {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    justify-content: space-between;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav li {
+    margin-right: 10px;
+  }
+  nav img {
+    height: 24px;
+  }
+  .tab-menu {
+    display: none;
+  }
+}
+  </style>
 <script>
 		window.addEventListener('load', () => {
 			const canvas = document.getElementById('canvas');
