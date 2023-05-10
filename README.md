@@ -1,105 +1,104 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lofties Windows</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
-	<style>@media only screen and (max-width: 600px){header {
+	<style>
+		header {
 			font-family: "UnifrakturMaguntia";
 			background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+			background-size: cover;
 			padding: 50px;
+		}
+    .triangle-container {
 			position: relative;
-		}.triangle-container {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+		.canvas {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-		}canvas {
-			width: 100%;
-			height: 100%;
+		}
+		.tab-menu {
+			list-style: none;
+			margin: 0;
+			padding: 0;position: absolute;
+			bottom: 300px;
+			left: 50px;
+			display: flex;
+		}
+		.tab-menu li {
+			margin-right: 10px;width: 10px;
+			height: 10px;
+			background-color: #fff;
+			border-radius: 50%;
+			display: flex;align-items: center;
+			justify-content: center;
+			font-size: 0;
+			flex-shrink: 0;
+			cursor: pointer;
+		}
+		.tab-menu li.active {
+			background-color: #000;
+		}
+		.tab-menu li:hover .tab-hover {
 			display: block;
-		}h1 {
+		}
+		.tab-menu li .tab-hover {
+			display: none;
 			position: absolute;
-			top: 20%;
-			left: 10%;
-			font-size: 48px;
-			color: white;
-		}nav {
+			top: 10%;
+			left: 0;
+			background-color: #000;
+			color: #fff;
+			padding: 5px;
+			font-size: 14px;
+			line-height: 1.5;
+			z-index: 1;
+			max-width: 200px;
+			border-radius: 5px;
+			opacity: 0.8;
+		}
+		.social-icons {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 			position: absolute;
 			top: 10px;
 			right: 10px;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
-		}ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}li {
-			margin-right: 10px;
-		}li:last-child {
-			margin-right: 0;
-		}img {
+		}
+		.social-icons li {
+			margin-bottom: 10px;
+		}
+		.social-icons li:last-child {
+			margin-bottom: 0;
+		}
+		.social-icons li a {
+			display: block;
 			width: 15px;
 			height: 15px;
-		}.tab-menu {
-			position: absolute;
-			bottom: 10px;
-			left: 10px;
-			display: flex;
-		}.tab-menu li {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			width: 10px;
-			height: 10px;
-			background-color: white;
-			border: 1px solid black;
-			margin-right: 10px;
-			font-size: 10px;
-			color: black;
-			text-align: center;
-			cursor: pointer;
-		}.tab-menu li:hover .tab-hover {
-			display: block;
-		}.tab-menu li .tab-hover {
-			display: none;
-			position: absolute;
-			bottom: -25px;
-			left: -50%;
-			background-color: white;
-			color: black;
-			padding: 5px;
-			border: 1px solid black;
-			width: 100%;
-			text-align: center;
-			z-index: 1;
+			background-size: cover;
 		}
-		}</style>
-<script>
-		window.addEventListener('load', () => {
-			const canvas = document.getElementById('canvas');
-			const context = canvas.getContext('2d');
-			canvas.width = window.innerWidth;
-			canvas.height = 100;
-			const numOfTriangles = 14;
-			const triangleWidth = canvas.width / numOfTriangles;
-			const triangleHeight = Math.sqrt(0.2) / 2 * triangleWidth;
-			const triangleColors = ['#FF0000', '#FF8000', '#FFFF00', '#80FF00', '#00FF00', '#00FF80', '#00FFFF', '#0080FF', '#0000FF', '#8000FF', '#FF00FF', '#FF0080', '#FFFFFF', '#000000'];
-			const length = Math.min(numOfTriangles, triangleColors.length);
-			for (let i = 0; i < length; i++) {
-				context.beginPath();
-				context.moveTo(i * triangleWidth, 0);
-				context.lineTo((i + 0.414) * triangleWidth, triangleHeight);
-				context.lineTo((i + 1) * triangleWidth, 0);
-				context.closePath();
-				context.fillStyle = triangleColors[i];
-				context.fill();
-			}
-		});
-	</script></head>
+		.social-icons li a.facebook {
+			background-image: url("https://img.icons8.com/clouds/32/000000/facebook.png");
+		}
+		.social-icons li a.discord {
+			background-image: url("https://img.icons8.com/clouds/32/000000/discord-logo.png");
+		}
+		.social-icons li a.youtube {
+			background-image: url("https://img.icons8.com/clouds/64/000000/youtube.png");
+		}
+	</style>
+</script></head>
 <body>
 	<header>
 		<div class="triangle-container">
