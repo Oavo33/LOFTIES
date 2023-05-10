@@ -15,16 +15,16 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+      position: relative;
 		}
 h1 {
 			font-size: 36px;
 			margin-bottom: 10px;
 		}
-.social-icons {
-  display: flex;
-  position: absolute;
+.social-icons {position: absolute;
   top: 10px;
   right: 30px;
+  list-style: none;
   list-style: none;
 }
 .social-icons li {
