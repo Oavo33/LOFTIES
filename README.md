@@ -171,32 +171,34 @@
 			}}@media only screen and (max-width: 600px) {
   header {
     padding: 20px;
-  }
-  h1 {
-    font-size: 18px;
-    transform: none;
-    text-align: center;
-    top: 0;
-    right: 0;
-  }
-  nav {
-    top: 0;
-    left: 0;
-    padding: 10px;
-    justify-content: space-between;
-    height: auto;
+  }nav {
+    position: static;
+    padding: 0;
+    margin-top: 20px;
   }
   nav ul {
     flex-direction: row;
-  }
-  nav li {
-    margin-right: 10px;
-  }
-  nav img {
-    height: 24px;
+    justify-content: space-between;
   }
   .tab-menu {
-    display: none;
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .tab-menu li {
+    flex-basis: 45%;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .tab-menu li .tab-hover {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
   </style>
