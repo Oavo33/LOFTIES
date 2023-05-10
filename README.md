@@ -37,11 +37,8 @@ h1 {
 			height: 100%;
 			object-fit: contain;
 		}
-.tab-menu {
-			display: flex;
-			flex-wrap: wrap;
-			position: absolute;
-  top: 100px;
+.tab-menu {position: absolute;
+  top: 50px;
   right: 30px;
   list-style: none;
 		}
