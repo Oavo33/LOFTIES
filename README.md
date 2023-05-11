@@ -16,70 +16,68 @@
 			flex-direction: column;
 			align-items: center;
       position: relative;
-		}
-h1 {
-			font-size: 36px;
-			margin-bottom: 10px;
-		}
-.social-icons {position: absolute;
-  top: 10px;
-  right: 30px;
-  list-style: none;
-  list-style: none;
-}
-.social-icons li {
-			width: 20px;
-			height: 20px;
-			margin-right: 1px;
-		}
-.social-icons img {
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
-		}
-.tab-menu {position: absolute;
-  top: 50px;
-  right: 30px;
-  list-style: none;
-		}
-.tab-menu li {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			width: 14px;
-			height: 14px;
-			margin: 5px;
-			padding: 10px;
-			text-align: center;
-			font-size: 12px;
-			line-height: 1.2;
-		}
-.tab-menu img {
-			width: 14px;
-			height: 14px;
-			margin-bottom: 5px;
-		}}
-	</style>
-</head>
-<body>
-	<header>
-		<h1><span>L</span><span>o</span><span>f</span><span>t</span><span>i</span><span>e</span><span>s</span><span>W</span><span>i</span><span>n</span><span>d</span><span>o</span><span>w</span><span>S</span></h1>
-			<ul class="social-icons">
-				<li><a href="#"><img src="https://img.icons8.com/clouds/32/000000/facebook.png" alt="Facebook"></a></li>
-				<li><a href="#"><img src="https://img.icons8.com/clouds/32/000000/discord-logo.png" alt="Discord"></a></li>
-				<li><a href="#"><img src="https://img.icons8.com/clouds/64/000000/youtube.png" alt="YouTube"></a></li>
-			</ul>
-			<ul class="tab-menu">
-				<li>
-					<img src="https://img.icons8.com/color/48/000000/controller.png" alt="Games">
-					Games
-				</li>
-				<li>
-					<img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="Videos">
-					Videos
-				</li>
-			</ul>
-	</header>
-</body>
+		}.container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        perspective: 800px;
+        width: 200px;
+        height: 200px;
+      }.cube {
+        position: relative;
+        transform-style: preserve-3d;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(-100px);
+        animation: rotate 100s linear infinite;
+      }.face {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+        transition: transform 0.5s ease;
+        animation: fade-in 0.5s forwards;
+        border: 10px solid transparent;
+        background-image: linear-gradient(to right, #f00, #800000);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }.front { transform: rotateY(0deg) translateZ(100px); }
+      .back { transform: rotateY(180deg) translateZ(100px); }
+      .left { transform: rotateY(-90deg) translateZ(100px); }
+      .right { transform: rotateY(90deg) translateZ(100px); }
+      .top { transform: rotateX(90deg) translateZ(100px); }
+      .bottom { transform: rotateX(-90deg) translateZ(100px); }
+      .cube:hover .face {
+        transform: translateZ(100px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        animation: fade-out 0.5s forwards;
+      }@keyframes rotate {
+        from { transform: rotateX(0) rotateY(0) rotateZ(0); }
+        to { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+      }@keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }@keyframes fade-out {
+        from { opacity: 1; }
+        to { opacity: 0.1; }
+      }}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cube">
+        <div class="face front">LOFTIES</div>
+        <div class="face back">LOFTIES</div>
+        <div class="face left">LOFTIES</div>
+        <div class="face right">LOFTIES</div>
+        <div class="face top">LOFTIES</div>
+        <div class="face bottom">LOFTIES</div>
+      </div>
+    </div>
+  </body>
 </html>
 
