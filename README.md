@@ -1,22 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lofties Windows</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
-	<style>  @media only screen and (max-width: 600px) {
-  header {
-			font-family: "UnifrakturMaguntia";
-			background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-			background-size: cover;
-			background-position: center;
-			padding: 50px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-      position: relative;
-		}.container {
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS3 3D Cube</title>
+    <style>@media only screen and (max-width: 600px) {
+      body { margin: 0; padding: 0; }
+      .container {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -80,4 +69,5 @@
     </div>
   </body>
 </html>
+
 
