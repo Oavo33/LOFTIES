@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html>
-<head><style>@media only screen and (max-width: 600px) {
-       .container {
-            display: flex;
-        }
-        .button {
-            background-color: #30b3b3;
-            position: relative;
-            width: 200px;
-            height: 50px;
-            color: #30b3b3;
-            text-align: center;
-            line-height: 50px;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            cursor: pointer;
-            transition: transform 0.5s, background-color 0.5s;
-            overflow: hidden;
-            animation: colorTransition 3.5s infinite;
-            border: 2px solid #800000;
-            border-radius: 50px;
-            box-sizing: border-box;
-        }
-@keyframes colorTransition {
-            0% { background-color: #800000; }
-            6.25% { background-color: #751a1a; }
-            12.5% { background-color: #6b3434; }
-            18.75% { background-color: #605050; }
-            25% { background-color: #546b6b; }
-            31.25% { background-color: #488686; }
-            37.5% { background-color: #3c9fa0; }
-            43.75% { background-color: #00b3b3; }
-            50% { background-color: #00b3b3; }
-            56.25% { background-color: #3c9fa0; }
-            62.5% { background-color: #488686; }
-            68.75% { background-color: #546b6b; }
-            75% { background-color: #605050; }
-            81.25% { background-color: #6b3434; }
-            87.5% { background-color: #751a1a; }
-            93.75% { background-color: #800000; }
-            100% { background-color: #800000; }
-        }
-.button:hover:before {
-            border-right: 40px solid #00b3b3;
-            opacity: 1;
-            transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
-        }
-.button.clicked {
-            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-        }
-.button:after {
-            content: "";
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            width: calc(100% - 4px);
-            height: calc(100% - 4px);
-            opacity: 0;
-            border: 2px solid #00b3b3;
-            transition: opacity 1.5s;
-            pointer-events: none;
-            mix-blend-mode: overlay;
-        }
-.button span.number {
-            z-index: 3;
-            color: black;
-        }
-.button i {
-            margin-right: 5px;
-        }}
-    </style>
+<head>
+  <style> @media only screen and (max-width: 600px) {
+    .clock {
+      display: inline-block;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .timer {
+      display: inline-block;
+      font-size: 24px;
+      margin-left: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 8px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #800000;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .button:hover {
+      background-color: #00b3b3;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }}</style>
 </head>
 <body>
-    <div class="container">
-        <button class="button" onclick="handleClick(event)">
-            <i class="icon game-icon">&#x1F3AE;</i>
-            <span class="text">LoftiesGames</span>
-        </button>
-        <button class="button replica-button" onclick="handleClick(event)">
-            <i class="icon video-icon">&#x1F3A5;</i>
-            <span class="text">LoftiesVideos</span>
-        </button>
-    </div>
-<script>
-        var clickCount = 0;
-function handleClick(event) {
-            event.stopPropagation();
-            clickCount++;
-            var button = event.target.closest('.button');
-            var number = document.createElement('span');
-            switch (clickCount) {
-                case 1: number.textContent = 'Games'; break;
-                case 2: number.textContent = 'Are'; break;
-                case 3: number.textContent = 'Coming'; break;
-                case 4: number.textContent = 'Soon'; break;
-                case 5: number.textContent = 'I Hope'; break;
-                default: number.textContent = clickCount; break;
-            }
-            number.className = 'number';
-            button.innerHTML = '';
-            button.appendChild(document.createElement('i')).className = 'icon';
-            button.appendChild(number);
-            animateButton(button);
-            if (clickCount >= 5) window.location.href = "https://example.com";
-        }function animateButton(button) {
-            button.classList.add('clicked');
-            setTimeout(function() {
-                button.classList.remove('clicked');
-            }, 500);
-        }
-    </script>
+  <div id="clock" class="clock">00:00</div>
+  <button id="format-toggle" class="button">Toggle Format</button>
+  <div id="timer" class="timer">00:00:00</div>
+  <button id="timer-start" class="button">Start</button>
+  <button id="timer-reset" class="button">Reset</button>
+
+  <script>
+  function getRandomColor(){var letters="0123456789ABCDEF";var color="#";for(var i=0;i<6;i++){color+=letters[Math.floor(Math.random()*16)];}return color;}
+
+var buttons=document.getElementsByClassName("button");
+for(var i=0;i<buttons.length;i++){
+  buttons[i].addEventListener("mouseover",function(){
+    this.style.backgroundColor=getRandomColor();
+  });
+  buttons[i].addEventListener("mouseout",function(){
+    this.style.backgroundColor="#800000";
+  });
+}
+
+var clock=document.getElementById("clock");
+var timer=document.getElementById("timer");
+var formatToggle=document.getElementById("format-toggle");
+var timerStart=document.getElementById("timer-start");
+var timerReset=document.getElementById("timer-reset");
+
+formatToggle.addEventListener("click",function(){
+  clock.classList.toggle("timer");
+  timer.classList.toggle("clock");
+});
+
+timerStart.addEventListener("click",function(){
+  // Add functionality to start the timer
+  // Code for starting the timer goes here
+});
+
+timerReset.addEventListener("click",function(){
+  // Add functionality to reset the timer
+  // Code for resetting the timer goes here
+});
+
+function updateClock(){
+  const clockElement=document.getElementById('clock');
+  const date=new Date();
+  let hours=date.getHours();
+  let minutes=date.getMinutes();
+  let ampm='';
+
+  if(is24HourFormat()){
+    hours=padZero(hours);
+  }else{
+    hours=convertTo12Hour(hours);
+    ampm=hours>=12?'PM':'AM';
+  }
+
+  minutes=padZero(minutes);
+  const time=`${hours}:${minutes} ${ampm}`;
+  clockElement.textContent=time;
+}
+
+function is24HourFormat(){
+  return localStorage.getItem('format')==='24';
+}
+
+function toggleFormat(){
+  const formatToggle=document.getElementById('format-toggle');
+  formatToggle.addEventListener('click',function(){
+    const currentFormat=localStorage.getItem('format');
+    const newFormat=currentFormat==='24'?'12':'24';
+    localStorage.setItem('format',newFormat);
+    updateClock();
+  });
+}
+
+function padZero(value){
+  return value.toString().padStart(2,'0');
+}
+
+function convertTo12Hour(hours){
+  return hours>12?hours-12:hours;
+}
+
+let timerInterval;
+let timerSeconds=0;
+
+function startTimer(){
+  const timerElement=document.getElementById('timer');
+  const timerStartButton=document.getElementById('timer-start');
+  const timerResetButton=document.getElementById('timer-reset');
+
+  timerStartButton.addEventListener('click',function(){
+    if(timerInterval){
+      clearInterval(timerInterval);
+      timerInterval=null;
+      timerStartButton.textContent='Start';
+    }else{
+      timerInterval=setInterval(function(){
+        timerSeconds++;
+        const hours=Math.floor(timerSeconds/3600);
+        const minutes=Math.floor((timerSeconds%3600)/60);
+        const seconds=timerSeconds%60;
+        const time=`${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
+        timerElement.textContent=time;
+      },1000);
+      timerStartButton.textContent='Pause';
+    }
+  });
+
+  timerResetButton.addEventListener('click',function(){
+    clearInterval(timerInterval);
+    timerInterval=null;
+    timerSeconds=0;
+    timerElement.textContent='00:00:00';
+    timerStartButton.textContent='Start';
+  });
+}
+
+function initializeClock(){
+  localStorage.removeItem('format');
+  updateClock();
+  toggleFormat();
+  startTimer();
+}
+
+initializeClock();
+
+  </script>
 </body>
 </html>
+
 
 
 
