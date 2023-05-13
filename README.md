@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head><style>@media only screen and (max-width: 600px) {
-        .button {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }.button {
             background-color: #30b3b3;
             position: relative;
             width: 200px;
@@ -70,66 +75,74 @@
             transition: opacity 1.5s;
             pointer-events: none;
             mix-blend-mode: overlay;
-        }.button span.number {
+        }.icon {
+        font-size: 22px; /* Adjust the font size to make the icons larger */
+    }.button span.number {
             z-index: 3;
             color: black;
         }}
-        </style>
-        </head>
-        <body><button class="button" onclick="handleClick()">
-        <span class="number">LoftiesGames</span>
+    </style>
+</head>
+<body>
+     <div class="container">
+    <button class="button" onclick="handleClick()">
+        <i class="icon game-icon">&#x1F3AE;</i>
+        <span class="text">LoftiesGames</span>
     </button>
-    <button class="button replica-button" onclick="handleReplicaClick()">
-        <span class="number">LoftiesVideos</span>
+<button class="button replica-button" onclick="handleReplicaClick()">
+        <i class="icon video-icon">&#x1F3A5;</i>
+        <span class="text">LoftiesVideos</span>
     </button>
+</div>
 <script>
-        var clickCount = 0;
+    var clickCount = 0;
 function handleClick() {
-            clickCount++;
-            var button = document.querySelector('.button');
-            var number = document.createElement('span');
-            switch (clickCount) {
-                case 1: number.textContent = 'Games'; break;
-                case 2: number.textContent = 'Are'; break;
-                case 3: number.textContent = 'Coming'; break;
-                case 4: number.textContent = 'Soon'; break;
-                case 5: number.textContent = 'I Hope'; break;
-                default: number.textContent = clickCount; break;
-            }
-            number.className = 'number';
-            button.innerHTML = '';
-            button.appendChild(number);
-            animateButton(button);
-            if (clickCount >= 5) window.location.href = "https://example.com";
-        }function handleReplicaClick() {
-            clickCount++;
-            var replicaButton = document.querySelector('.replica-button');
-            var number = document.createElement('span');
-            switch (clickCount) {
-                case 1: number.textContent = 'Videos'; break;
-                case 2: number.textContent = 'Are'; break;
-                case 3: number.textContent = 'Coming'; break;
-                case 4: number.textContent = 'Soon'; break;
-                case 5: number.textContent = 'I Hope'; break;
-                default: number.textContent = clickCount; break;
-            }
-            number.className = 'number';
-            replicaButton.innerHTML = '';
-            replicaButton.appendChild(number);
-            animateButton(replicaButton);
-            if (clickCount >= 5) window.location.href = "https://example.com";
+        clickCount++;
+        var button = document.querySelector('.button');
+        var number = document.createElement('span');
+        switch (clickCount) {
+            case 1: number.textContent = 'Games'; break;
+            case 2: number.textContent = 'Are'; break;
+            case 3: number.textContent = 'Coming'; break;
+            case 4: number.textContent = 'Soon'; break;
+            case 5: number.textContent = 'I Hope'; break;
+            default: number.textContent = clickCount; break;
         }
+        number.className = 'number';
+        button.innerHTML = '';
+        button.appendChild(number);
+        animateButton(button);
+        if (clickCount >= 5) window.location.href = "https://example.com";
+    }
+function handleReplicaClick() {
+        clickCount++;
+        var replicaButton = document.querySelector('.replica-button');
+        var number = document.createElement('span');
+        switch (clickCount) {
+            case 1: number.textContent = 'Videos'; break;
+            case 2: number.textContent = 'Are'; break;
+            case 3: number.textContent = 'Coming'; break;
+            case 4: number.textContent = 'Soon'; break;
+            case 5: number.textContent = 'I Hope'; break;
+            default: number.textContent = clickCount; break;
+        }
+        number.className = 'number';
+        replicaButton.innerHTML = '';
+        replicaButton.appendChild(number);
+        animateButton(replicaButton);
+        if (clickCount >= 5) window.location.href = "https://example.com";
+    }
 function animateButton(button) {
-            button.classList.add('clicked');
-            setTimeout(function() {
-                button.classList.remove('clicked');
-            }, 500);
-        }
-    </script>
+        button.classList.add('clicked');
+        setTimeout(function() {
+            button.classList.remove('clicked');
+        }, 500);
+    }
+</script>
 </body>
 </html>
 
-        
+
 
 
 
