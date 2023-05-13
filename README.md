@@ -9,35 +9,35 @@
     }
     .clock {
       position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 8px;
+      top: 10px;
+      left: 14px;
+      font-size: 7px;
       cursor: pointer;
       color: white;
     }
     .timer {
       position: absolute;
-      top: 20px;
-      left: 61px;
-      font-size: 8px;
+      top: 10px;
+      left: 49px;
+      font-size: 7px;
       color: white;
     }
     .button-container {
       position: absolute;
-      top: 21px;
-      left: 20px;
+      top: 10.5px;
+      left: 10px;
     }
     .button {
       display: inline-block;
-      padding: 1px 1px;
+      padding: 0px 0.5px;
       font-size: 5px;
       cursor: pointer;
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
-      border-radius: 1px;
-      margin-right: 1px;
-      margin-bottom: 1px;
+      border-radius: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
     }
     .button:hover {
       background-color: #00b3b3;
