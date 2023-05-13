@@ -1,72 +1,65 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <style>@media only screen and (max-width: 600px) {
-    body {
-      margin: 0;
-      padding: 0;
-    }.header {
-      position: relative;
-      height: 30px; 
-    }.triangles {
-      position: absolute;
-      top: -23;
-      left: 0;
-      right: 0;
-      height: 20px; 
-      background-image: linear-gradient(to right, #800000, #00b3b3); 
-      border: 1px solid #000000; 
-      transform: skewX(-45deg); 
-      transform-origin: 0 0; 
-    }.clock-container {
-      text-align: center;
-      margin-top: 40px;
-      position: relative;
-      z-index: 1; 
-    }.clock {
-      display: inline-block;
-      font-size: 24px;
-      cursor: pointer;
-      position: relative;
-    }.timer {
-      display: inline-block;
-      font-size: 24px;
-      margin-left: 10px;
-    }.button {
-      display: inline-block;
-      padding: 8px 12px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: #800000;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
-      margin-right: 10px;
-      position: relative;
-      z-index: 2; 
-      opacity: 0.4;
-    }.button:hover {
-      background-color: #00b3b3;
-      animation: pulse 1s infinite;
-      opacity: 1;
-    }
-@keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }@keyframes moveTriangles {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(100%);
-      }
-    }}
+  <style>
+    @media only screen and (max-width: 600px) {body {
+        margin: 0;
+        padding: 0;
+      }.header {
+        position: relative;
+        height: 30px; 
+      }.triangles {
+        position: absolute;
+        top: -23px; 
+        left: 0;
+        right: 0;
+        height: 20px; 
+        background-image: linear-gradient(to right, #800000, #00b3b3); 
+        border: 1px solid #000000; 
+        transform: skewX(-45deg); 
+        transform-origin: 0 0; 
+        z-index: 2; 
+      }.clock-container {
+        text-align: center;
+        margin-top: 40px;
+        position: relative;
+        z-index: 1; 
+      }.clock {
+        display: inline-block;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+      }.timer {
+        display: inline-block;
+        font-size: 24px;
+        margin-left: 10px;
+      }.button {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #800000;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 2; 
+        opacity: 0.4;
+      }.button:hover {
+        background-color: #00b3b3;
+        animation: pulse 1s infinite;
+        opacity: 1;
+      }@keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }}}
   </style>
 </head>
 <body>
