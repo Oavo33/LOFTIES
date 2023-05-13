@@ -1,24 +1,25 @@
-<html><head>
+<html>
+<head>
   <style>@media only screen and (max-width: 600px) {
     body {
       margin: 0;
       padding: 0;
     }.header {
       position: relative;
-      height: 30px;
+      height: 30px; 
     }.triangles {
       position: absolute;
-      top: 0;
+      top: -23;
       left: 0;
       right: 0;
       height: 20px; 
       background-image: linear-gradient(to right, #800000, #00b3b3); 
       border: 1px solid #000000; 
-      transform: skewX(-45deg);
-      transform-origin: 0 0;
+      transform: skewX(-45deg); 
+      transform-origin: 0 0; 
     }.clock-container {
       text-align: center;
-      margin-top: 10px; 
+      margin-top: 40px;
       position: relative;
       z-index: 1; 
     }.clock {
@@ -29,7 +30,7 @@
     }.timer {
       display: inline-block;
       font-size: 24px;
-      margin-left: 20px;
+      margin-left: 10px;
     }.button {
       display: inline-block;
       padding: 8px 12px;
@@ -47,7 +48,8 @@
       background-color: #00b3b3;
       animation: pulse 1s infinite;
       opacity: 1;
-    }@keyframes pulse {
+    }
+@keyframes pulse {
       0% {
         transform: scale(1);
       }
