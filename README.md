@@ -108,7 +108,8 @@ function updateClock() {
   minutes = padZero(minutes);
   const time = `${hours}:${minutes} ${ampm}`;
   clockElement.textContent = time;
-  clockElement.className = "clock"; 
+  clockElement.className = "clock";
+}
 function is24HourFormat() {
   return localStorage.getItem("format") === "24";
 }
