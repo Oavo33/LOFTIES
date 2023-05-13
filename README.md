@@ -1,73 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS3 3D Cube</title>
-    <style>@media only screen and (max-width: 600px) {
-      body { margin: 0; padding: 0; }
-      .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        perspective: 800px;
-        width: 200px;
-        height: 200px;
-      }.cube {
-        position: relative;
-        transform-style: preserve-3d;
-        width: 100%;
-        height: 100%;
-        transform: translateZ(-100px);
-        animation: rotate 100s linear infinite;
-      }.face {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        box-sizing: border-box;
-        border-radius: 5px;
-        clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
-        transition: transform 0.5s ease;
-        animation: fade-in 0.5s forwards;
-        border: 10px solid transparent;
-        background-image: linear-gradient(to right, #f00, #800000);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }.front { transform: rotateY(0deg) translateZ(100px); }
-      .back { transform: rotateY(180deg) translateZ(100px); }
-      .left { transform: rotateY(-90deg) translateZ(100px); }
-      .right { transform: rotateY(90deg) translateZ(100px); }
-      .top { transform: rotateX(90deg) translateZ(100px); }
-      .bottom { transform: rotateX(-90deg) translateZ(100px); }
-      .cube:hover .face {
-        transform: translateZ(100px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-        animation: fade-out 0.5s forwards;
-      }@keyframes rotate {
-        from { transform: rotateX(0) rotateY(0) rotateZ(0); }
-        to { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
-      }@keyframes fade-in {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }@keyframes fade-out {
-        from { opacity: 1; }
-        to { opacity: 0.1; }
-      }}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="cube">
-        <div class="face front">LOFTIES</div>
-        <div class="face back">LOFTIES</div>
-        <div class="face left">LOFTIES</div>
-        <div class="face right">LOFTIES</div>
-        <div class="face top">LOFTIES</div>
-        <div class="face bottom">LOFTIES</div>
-      </div>
-    </div>
-  </body>
+<head><style>@media only screen and (max-width: 600px) {
+        .button {
+            background-color: #30b3b3;
+            position: relative;
+            width: 200px;
+            height: 50px;
+            color: #30b3b3;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            transition: transform 0.5s, background-color 0.5s;
+            overflow: hidden;
+            animation: colorTransition 3.5s infinite;
+            border: 2px solid #800000;
+            border-radius: 50px;
+            box-sizing: border-box;
+        }@keyframes colorTransition {
+            0% { background-color: #800000; }
+            6.25% { background-color: #751a1a; }
+            12.5% { background-color: #6b3434; }
+            18.75% { background-color: #605050; }
+            25% { background-color: #546b6b; }
+            31.25% { background-color: #488686; }
+            37.5% { background-color: #3c9fa0; }
+            43.75% { background-color: #00b3b3; }
+            50% { background-color: #00b3b3; }
+            56.25% { background-color: #3c9fa0; }
+            62.5% { background-color: #488686; }
+            68.75% { background-color: #546b6b; }
+            75% { background-color: #605050; }
+            81.25% { background-color: #6b3434; }
+            87.5% { background-color: #751a1a; }
+            93.75% { background-color: #800000; }
+            100% { background-color: #800000; }
+        }.button span {
+            position: relative;
+            z-index: 2;
+        }.button:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-right: 40px solid #800000;
+            opacity: 0;
+            transition: opacity 0.5s, transform 1.5s;
+            z-index: 1;
+        }.button:hover:before {
+            border-right: 40px solid #00b3b3;
+            opacity: 1;
+            transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
+        }.button.clicked {
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }.button:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            opacity: 0;
+            border: 2px solid #00b3b3;
+            transition: opacity 1.5s;
+            pointer-events: none;
+            mix-blend-mode: overlay;
+        }.button span.number {
+            z-index: 3;
+            color: black;
+        }}
+        </style>
+        </head>
+        <body><button class="button" onclick="handleClick()">
+        <span class="number">LoftiesGames</span>
+    </button>
+    <button class="button replica-button" onclick="handleReplicaClick()">
+        <span class="number">LoftiesVideos</span>
+    </button>
+<script>
+        var clickCount = 0;
+function handleClick() {
+            clickCount++;
+            var button = document.querySelector('.button');
+            var number = document.createElement('span');
+            switch (clickCount) {
+                case 1: number.textContent = 'Games'; break;
+                case 2: number.textContent = 'Are'; break;
+                case 3: number.textContent = 'Coming'; break;
+                case 4: number.textContent = 'Soon'; break;
+                case 5: number.textContent = 'I Hope'; break;
+                default: number.textContent = clickCount; break;
+            }
+            number.className = 'number';
+            button.innerHTML = '';
+            button.appendChild(number);
+            animateButton(button);
+            if (clickCount >= 5) window.location.href = "https://example.com";
+        }function handleReplicaClick() {
+            clickCount++;
+            var replicaButton = document.querySelector('.replica-button');
+            var number = document.createElement('span');
+            switch (clickCount) {
+                case 1: number.textContent = 'Videos'; break;
+                case 2: number.textContent = 'Are'; break;
+                case 3: number.textContent = 'Coming'; break;
+                case 4: number.textContent = 'Soon'; break;
+                case 5: number.textContent = 'I Hope'; break;
+                default: number.textContent = clickCount; break;
+            }
+            number.className = 'number';
+            replicaButton.innerHTML = '';
+            replicaButton.appendChild(number);
+            animateButton(replicaButton);
+            if (clickCount >= 5) window.location.href = "https://example.com";
+        }
+function animateButton(button) {
+            button.classList.add('clicked');
+            setTimeout(function() {
+                button.classList.remove('clicked');
+            }, 500);
+        }
+    </script>
+</body>
 </html>
+
+        
+
 
 
