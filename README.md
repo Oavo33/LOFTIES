@@ -49,7 +49,7 @@
     }.container {
   position: absolute;
   top: 14px;
-  left: 14px;
+  left: -54px;
   display: flex;
   flex-direction: column;
   align-items: center;
