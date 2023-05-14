@@ -5,7 +5,7 @@
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=750&q=80");
       background-size: cover;
       background-position: center;
-      padding: 80px;
+      padding: 90px;
     }.triangle-container {
       display: flex;
       justify-content: center;
@@ -216,8 +216,11 @@
   <div id="container">
     <div id="planet" onclick="movePlanet()"></div>
     <div id="popup">
-      <h2>Planet Information</h2>
-      <p>This is a fascinating planet with diverse ecosystems and rich history. Explore more to uncover its wonders!</p>
+      <h2>Wer dat Squeegee</h2>
+      <p>In cyberspace, a squeegee hides,
+Find its place, and luck abides.
+A window's gleam, the prize shall be,
+On this webpage, solve and see.</p>
     </div>
   </div>
 </header>
