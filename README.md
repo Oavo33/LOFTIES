@@ -68,10 +68,10 @@
   margin-right: 1px;
   margin-left: 1px;
 }
-.nav-item:first-child {
+.nav-item:nth-child(1) {
   left: 1px;
 }
-.nav-item:last-child {
+.nav-item:nth-child(2) {
   right: 1px;
 }
 .nav-item:hover:before {
