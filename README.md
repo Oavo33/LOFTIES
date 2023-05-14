@@ -118,7 +118,7 @@
 </div>
 <div class="nav-item" onclick="handleClick(event)">
   <i class="icon video-icon">&#x1F3A5;</i>
-  <span class="text">LoftiesVideos</span>
+  <span class="text">LoftiesBingo</span>
 </div>
   </div>
   </header>
