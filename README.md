@@ -87,14 +87,13 @@
   text-align: center;
   font-size: 9px; 
   font-family: Arial, sans-serif;
-  cursor: pointer;
-  transition: transform 0.5s, background-color 0.5s;
-  overflow: hidden;
+  cursor: pointer;overflow: hidden;
   border: 1px solid #800000;
   border-radius: 50px;
   box-sizing: border-box;
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: background-color 0.5s, transform 0.5s;
 }.nav-item:hover:before {
       border-right: 40px solid #00b3b3;
       opacity: 1;
@@ -227,9 +226,7 @@ for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("mouseout", function() {
     this.style.backgroundColor = "#800000";
   });
-}
-
-getRandomColor() {
+}getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
