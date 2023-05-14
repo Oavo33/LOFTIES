@@ -8,6 +8,31 @@
       background-size: cover;
       background-position: center;
       padding: 100px;
+    }.triangle-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 340;
+    }
+.triangle {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid #800000; /* Initial color */
+      cursor: pointer;
+      transition: background-color 0.5s, transform 0.5s;
+    }
+.triangle.clicked {
+      transform: translateX(200px); /* Adjust the desired distance */
+    }
+.triangle:hover {
+      background-color: #00b3b3;
+    }
+.triangle:hover ~ .triangle {
+      background-color: #800000;
     }
     .clock {
       position: absolute;
@@ -140,7 +165,22 @@
 @media only screen and (max-width: 600px) {
       }
   </style>
-</head><header>
+</head><header><div class="triangle-container">
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+    </div>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
     <div class="button-container">
@@ -165,7 +205,31 @@
   </header>
   <body>
   <script>
+function const triangles = document.querySelectorAll('.triangle');
+triangles.forEach((triangle, index) => {
+      triangle.addEventListener('click', () => {
+        triangle.classList.toggle('clicked');
+      });
+    });
 function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+var buttons = document.getElementsByClassName("button");
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("mouseover", function() {
+    this.style.backgroundColor = getRandomColor();
+  });
+  buttons[i].addEventListener("mouseout", function() {
+    this.style.backgroundColor = "#800000";
+  });
+}
+
+getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
