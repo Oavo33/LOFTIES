@@ -5,7 +5,7 @@
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=750&q=80");
       background-size: cover;
       background-position: center;
-      padding: 60px;
+      padding: 80px;
     }.triangle-container {
       display: flex;
       justify-content: center;
