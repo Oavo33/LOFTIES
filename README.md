@@ -56,18 +56,18 @@
 }
 .nav-item {
   background-color: #30b3b3;
-  width: 100%; /* Adjusted width to fit mobile screens */
-  height: 40px; /* Decreased height for mobile devices */
+  width: 50%; /* Adjusted width to fit mobile screens */
+  height: 10px; /* Decreased height for mobile devices */
   color: white;
   text-align: center;
-  font-size: 12px; /* Increased font size for mobile devices */
+  font-size: 8px; /* Increased font size for mobile devices */
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.5s, background-color 0.5s;
   overflow: hidden;
   border: 1px solid #800000;
-  border-radius: 50px;box-sizing: border-box;
-  margin-bottom: 10px;
+  border-radius: 2px;box-sizing: border-box;
+  margin-bottom: 2px;
 }
 .nav-item:nth-child(1) {
   top: 1px;
@@ -76,7 +76,7 @@
   bottom: 1px;
 }
 .nav-item:hover:before {
-  border-bottom: 20px solid #00b3b3; /* Adjusted border size for mobile devices */
+  border-bottom: 2px solid #00b3b3; /* Adjusted border size for mobile devices */
   opacity: 1;
   transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
 }
@@ -90,7 +90,7 @@
       width: calc(100% - 4px);
       height: calc(100% - 4px);
       opacity: 0;
-      border: 2px solid #00b3b3;
+      border: 1px solid #00b3b3;
       transition: opacity 1.5s;
       pointer-events: none;
       mix-blend-mode: overlay;
@@ -104,7 +104,7 @@
   transform: translate(-50%, -50%);
 }
 .nav-item i {
-  font-size: 20px; /* Increased font size for mobile devices */
+  font-size: 5px; /* Increased font size for mobile devices */
   position: relative;
   top: auto;
   left: auto;
