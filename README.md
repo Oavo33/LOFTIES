@@ -132,6 +132,7 @@
 </div>
   </div>
   </header>
+  <body>
   <script>
 function getRandomColor() {
   var letters = "0123456789ABCDEF";
