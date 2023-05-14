@@ -57,7 +57,7 @@
   height: 25px;
   color: white;
   text-align: center;
-  font-size: 9px; 
+  font-size: 9px;
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.5s, background-color 0.5s;
@@ -67,6 +67,7 @@
   box-sizing: border-box;
   margin-right: 1px;
   margin-left: 1px;
+  z-index: 1; /* Add this line */
 }
 .nav-item:nth-child(1) {
   left: 1px;
