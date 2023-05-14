@@ -50,38 +50,33 @@
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
     }.container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 100px;
-  position: relative;
-  top: 95px; /* Adjust the top value as needed */
-  left: 240px; /* Adjust the left value as needed */
+  position: absolute;
+  top: 135px;
+  right: 5px;
 }.nav-item {
   background-color: #30b3b3;
   position: relative;
   width: 60px;
-  height: 30px;
-  color: black;
+  height: 25px;
+  color: white;
   text-align: center;
-  font-size: 8px;
+  font-size: 9px; 
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.5s, background-color 0.5s;
   overflow: hidden;
-  border: 2px solid #800000;
-  border-radius: 90px;
+  border: 1px solid #800000;
+  border-radius: 50px;
   box-sizing: border-box;
   margin-right: 0;
+  margin-left: 0;
 }.nav-item:hover:before {
       border-right: 40px solid #00b3b3;
       opacity: 1;
       transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
-    }
-    .nav-item.clicked {
+    }.nav-item.clicked {
       transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-    .nav-item:after {
+    }.nav-item:after {
       content: "";
       position: absolute;
       top: 10px;
@@ -93,27 +88,22 @@
       transition: opacity 1.5s;
       pointer-events: none;
       mix-blend-mode: overlay;
-    }
-    .nav-item span.number {
+    }.nav-item span.number {
       z-index: 3;
       color: black;
     }.nav-item .text {
   position: relative;
-  top: 3px; /* Adjust the top value to move the text up or down */
-}
-     .nav-item i {
-  font-size: 14px;
+  top: 6px;
+}.nav-item i {
+  font-size: 19px;
   position: absolute;
-  top: 70%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-    @media only screen and (max-width: 600px) {
+}@media only screen and (max-width: 600px) {
       }
   </style>
-</head>
-
-  <header>
+</head><header>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
     <div class="button-container">
