@@ -56,8 +56,8 @@
 }
 .nav-item {
   background-color: #30b3b3;
-  width: 50%; /* Adjusted width to fit mobile screens */
-  height: 10px; /* Decreased height for mobile devices */
+  width: 30px; /* Adjusted width to fit mobile screens */
+  height: 30px; /* Decreased height for mobile devices */
   color: white;
   text-align: center;
   font-size: 8px; /* Increased font size for mobile devices */
