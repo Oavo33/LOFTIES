@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
   <style>
     header {
@@ -47,12 +49,70 @@
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
+    }.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+  top: 95px; /* Adjust the top value as needed */
+  left: 260px; /* Adjust the left value as needed */
+}.nav-item {
+  background-color: #30b3b3;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  color: black;
+  text-align: center;
+  font-size: 8px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: transform 0.5s, background-color 0.5s;
+  overflow: hidden;
+  border: 2px solid #800000;
+  border-radius: 90px;
+  box-sizing: border-box;
+  margin-right: 0;
+}.nav-item:hover:before {
+      border-right: 40px solid #00b3b3;
+      opacity: 1;
+      transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
     }
+    .nav-item.clicked {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    .nav-item:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      opacity: 0;
+      border: 2px solid #00b3b3;
+      transition: opacity 1.5s;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+    .nav-item span.number {
+      z-index: 3;
+      color: black;
+    }.nav-item .text {
+  position: relative;
+  top: 3px; /* Adjust the top value to move the text up or down */
+}
+     .nav-item i {
+  font-size: 14px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
     @media only screen and (max-width: 600px) {
       }
   </style>
 </head>
-<body>
+
   <header>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
@@ -61,6 +121,16 @@
       <button id="timer-start" class="button">Start</button>
       <button id="timer-reset" class="button">Reset</button>
     </div>
+<div class="container">
+    <div class="nav-item" onclick="handleClick(event)">
+  <i class="icon game-icon">&#x1F3AE;</i>
+  <span class="text">LoftiesGames</span>
+</div>
+<div class="nav-item" onclick="handleClick(event)">
+  <i class="icon video-icon">&#x1F3A5;</i>
+  <span class="text">LoftiesVideos</span>
+</div>
+  
   </header>
   <script>
 function getRandomColor() {
@@ -166,9 +236,36 @@ function initializeClock() {
   startTimer();
 }
 initializeClock();
-
+ var clickCount = 0;
+function handleClick(event) {
+      event.stopPropagation();
+      clickCount++;
+      var navItem = event.target.closest('.nav-item');
+      var number = document.createElement('span');
+      switch (clickCount) {
+        case 1: number.textContent = 'Games'; break;
+        case 2: number.textContent = 'Are'; break;
+        case 3: number.textContent = 'Coming'; break;
+        case 4: number.textContent = 'Soon'; break;
+        case 5: number.textContent = 'I Hope'; break;
+        default: number.textContent = clickCount; break;
+      }
+      number.className = 'number';
+      navItem.innerHTML = '';
+      navItem.appendChild(document.createElement('i')).className = 'icon';
+      navItem.appendChild(number);
+      animateNavItem(navItem);
+      if (clickCount >= 5) window.location.href = "https://example.com";
+    }
+function animateNavItem(navItem) {
+      navItem.classList.add('clicked');
+      setTimeout(function() {
+        navItem.classList.remove('clicked');
+      }, 500);
+    }
 </script>
 </body>
 </html>
+
 
 
