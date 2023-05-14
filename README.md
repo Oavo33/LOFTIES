@@ -75,71 +75,41 @@
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
     }}@media only screen and (max-width: 600px) {
-   #planet {
-      position: relative;
-      width: 50px;
-      height: 50px;
+  #planet {
+      position: absolute;
+      bottom: 14;
+      right: 14;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
-      background: linear-gradient(to bottom, #003366 40%, #000000 60%);
-      overflow: hidden;
+      background: linear-gradient(#800000, #00b3b3);
       cursor: pointer;
-      border: 2px solid #003366;
+      transition: transform 0.3s, right 0.3s, bottom 0.3s;
+      box-shadow: 0px 0px 10px rgba(0, 88, 184, 0.5);
+      transform-origin: center;
     }
     #planet:hover {
       transform: scale(1.2);
-      border-color: #00ff7f;
-    }
-    .land {
+    }#popup {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url('land_texture.jpg');
-      background-repeat: repeat;
-      opacity: 0.8;
-      mix-blend-mode: multiply;
-      clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 60%);
+      top: calc(100% + 20px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      padding: 20px;
+      background: linear-gradient(#800000, #00b3b3);
+      color: #ffffff;
+      border-radius: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, top 0.3s;
+      text-align: center;
     }
-    .water {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url('water_texture.jpg');
-      background-repeat: repeat;
-      opacity: 0.6;
-      mix-blend-mode: overlay;
-      animation: waterAnimation 5s infinite linear;
-      clip-path: polygon(0% 40%, 100% 60%, 100% 100%, 0% 100%);
+    #planet:hover + #popup {
+      opacity: 1;
+      pointer-events: auto;
+      top: calc(100% + 10px);
     }
-    @keyframes waterAnimation {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 100% 100%;
-      }
-    }
-    #popup {
-    position: absolute;
-    top: 20px;
-    left: calc(100% + 20px);
-    width: 200px;
-    padding: 20px;
-    background-color: rgba(0, 51, 102, 0.8);
-    color: #ffffff;
-    border-radius: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
-  }
-#planet:hover + #popup {
-    opacity: 1;
-    pointer-events: auto;
-    left: calc(100% - 240px); /* Adjust the left value as needed */
-  }
    .container {
   position: absolute;
   top: 140px; /* Adjust the top value as needed */
@@ -154,7 +124,7 @@
   font-size: 7px; /* Adjust the font size as needed */
   font-family: Arial, sans-serif;
   cursor: pointer;
-  transition: transform 0.5s, background-color 0.5s;
+  transition: transform 0.5s, background-color: #00b3b3;
   overflow: hidden;
   border: 2px solid #800000;
   border-radius: 50px;
@@ -197,7 +167,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }}</style>
-</head><header><div class="triangle-container">
+</head><header>
+    
+  </script>
+</body>
+</html>
+<div class="triangle-container">
       <div class="triangle"></div>
       <div class="triangle"></div>
       <div class="triangle"></div>
@@ -228,30 +203,42 @@
 <div class="nav-item" onclick="handleClick(event)">
   <i class="icon video-icon">&#x1F3A5;</i>
   <span class="text">LoftiesVideos</span>
-</div><div id="planet" onclick="movePlanet()">
-      <div class="land"></div>
-      <div class="water"></div>
-    </div>
-  <div id="popup">
-      <p>"Need a squeegee? It's like finding a needle in a haystack on this webpage! But hey, once you spot it, you'll be rewarded with squeaky clean windows and a grin on your face. Happy hunting!"</p>
-    </div>
+</div>
   </header>
-  <script>function movePlanet() {
-    var planet = document.getElementById("planet");
-    var maxX = window.innerWidth - planet.offsetWidth;
-    var maxY = window.innerHeight - planet.offsetHeight;
-    var maxJump = 50;
-    var randomX = Math.floor(Math.random() * (2 * maxJump + 1)) - maxJump;
-    var randomY = Math.floor(Math.random() * (2 * maxJump + 1)) - maxJump;
-// Adjust coordinates to stay within the visible area
-    randomX = Math.max(randomX, -maxJump);
-    randomX = Math.min(randomX, maxX + maxJump);
-    randomY = Math.max(randomY, -maxJump);
-    randomY = Math.min(randomY, maxY + maxJump);
-    planet.style.left = randomX + "px";
-    planet.style.top = randomY + "px";
-  }
-const triangles = document.querySelectorAll('.triangle');
+  <script> getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+    function movePlanet() {
+      var planet = document.getElementById("planet");
+      var currentPosition = parseInt(planet.style.left) || 0;
+      var newPosition = currentPosition + 10;
+      planet.style.left = newPosition + "px";
+    }
+    function getRandomPosition() {
+      var headerWidth = document.querySelector('header').offsetWidth;
+      var planetWidth = 50;
+      var maxLeft = headerWidth - planetWidth;
+      var randomLeft = Math.floor(Math.random() * maxLeft);
+      return { left: randomLeft };
+    }
+    window.onload = function() {
+      var planet = document.getElementById("planet");
+      var popup = document.getElementById("popup");
+      planet.style.backgroundColor = getRandomColor();
+      var position = getRandomPosition();
+      planet.style.right = position.right + "px";
+      planet.style.bottom = position.bottom + "px";
+      planet.onclick = function() {
+        movePlanet();
+        planet.style.backgroundColor = getRandomColor();
+      };
+    };
+  const triangles = document.querySelectorAll('.triangle');
 triangles.forEach((triangle, index) => {
       triangle.addEventListener('click', () => {
         triangle.classList.toggle('clicked');
