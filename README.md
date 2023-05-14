@@ -56,7 +56,7 @@
   margin-top: 100px;
   position: relative;
   top: 95px; /* Adjust the top value as needed */
-  left: 260px; /* Adjust the left value as needed */
+  left: 240px; /* Adjust the left value as needed */
 }.nav-item {
   background-color: #30b3b3;
   position: relative;
