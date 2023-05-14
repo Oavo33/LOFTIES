@@ -130,7 +130,7 @@
   <i class="icon video-icon">&#x1F3A5;</i>
   <span class="text">LoftiesVideos</span>
 </div>
-  
+  </div>
   </header>
   <script>
 function getRandomColor() {
