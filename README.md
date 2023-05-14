@@ -55,7 +55,7 @@
   right: 5px;
 }.nav-item {
   background-color: #30b3b3;
-  position: relative;
+  position: absolute;
   width: 60px;
   height: 25px;
   color: white;
@@ -92,7 +92,7 @@
       z-index: 3;
       color: black;
     }.nav-item .text {
-  position: relative;
+  position: absolute;
   top: 6px;
 }.nav-item i {
   font-size: 19px;
