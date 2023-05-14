@@ -161,8 +161,8 @@
       top: calc(100% + 20px);
       left: 50%;
       transform: translateX(-50%);
-      width: 200px;
-      padding: 20px;
+      width: 140px;
+      padding: 1px;
       background: linear-gradient(#800000, #00b3b3);
       color: #ffffff;
       border-radius: 10px;
