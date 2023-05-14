@@ -70,7 +70,8 @@
 }
 .nav-item:first-child {
   left: 1px;
-}.nav-item:last-child {
+}
+.nav-item:last-child {
   right: 1px;
 }
 .nav-item:hover:before {
@@ -99,8 +100,7 @@
   top: 50%;
   right: -25px;
   transform: translate(-50%, -50%);
-}
-.nav-item i {
+}.nav-item i {
       font-size: 17px;
       position: absolute;
       top: 42%;
