@@ -5,7 +5,7 @@
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=750&q=80");
       background-size: cover;
       background-position: center;
-      padding: 100px;
+      padding: 60px;
     }.clock {
       position: absolute;
       top: 10px;
@@ -48,24 +48,25 @@
       100% { transform: scale(1); }
     }.container {
   position: absolute;
-  top: 174px;
-  right: 65px;
-}.nav-item {
+  top: 14px;
+  left: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-item {
   background-color: #30b3b3;
-  position: absolute;
-  width: 25px;
-  height: 60px;
+  width: 100%; /* Adjusted width to fit mobile screens */
+  height: 40px; /* Decreased height for mobile devices */
   color: white;
   text-align: center;
-  font-size: 9px;
+  font-size: 12px; /* Increased font size for mobile devices */
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.5s, background-color 0.5s;
   overflow: hidden;
   border: 1px solid #800000;
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin-top: 10px;
+  border-radius: 50px;box-sizing: border-box;
   margin-bottom: 10px;
 }
 .nav-item:nth-child(1) {
@@ -75,10 +76,11 @@
   bottom: 1px;
 }
 .nav-item:hover:before {
-  border-bottom: 40px solid #00b3b3;
+  border-bottom: 20px solid #00b3b3; /* Adjusted border size for mobile devices */
   opacity: 1;
   transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
-}.nav-item.clicked {
+}
+.nav-item.clicked {
       transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
     }.nav-item:after {
       content: "";
@@ -97,16 +99,16 @@
       color: black;
     }.nav-item .text {
   position: absolute;
-  bottom: -25px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 .nav-item i {
-  font-size: 17px;
-  position: absolute;
-  top: 48%;
-  left: 42%;
-  transform: translate(-50%, -50%);
+  font-size: 20px; /* Increased font size for mobile devices */
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
 }
     #planet {
       position: absolute;
