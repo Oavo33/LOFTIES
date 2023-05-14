@@ -123,22 +123,23 @@
       }
     }
     #popup {
-      position: absolute;
-      top: 20px;
-      left: calc(100% + 20px);
-      width: 200px;
-      padding: 20px;
-      background-color: rgba(0, 51, 102, 0.8);
-      color: #ffffff;
-      border-radius: 10px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-    }
-    #planet:hover + #popup {
-      opacity: 1;
-      pointer-events: auto;
-    }
+    position: absolute;
+    top: 20px;
+    left: calc(100% + 20px);
+    width: 200px;
+    padding: 20px;
+    background-color: rgba(0, 51, 102, 0.8);
+    color: #ffffff;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+#planet:hover + #popup {
+    opacity: 1;
+    pointer-events: auto;
+    left: calc(100% - 240px); /* Adjust the left value as needed */
+  }
    .container {
   position: absolute;
   top: 140px; /* Adjust the top value as needed */
