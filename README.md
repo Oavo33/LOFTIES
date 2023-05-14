@@ -1,4 +1,6 @@
-<html><head>
+<!DOCTYPE html>
+<html>
+<head>
   <style>
     header {
       position: relative;
@@ -6,7 +8,8 @@
       background-size: cover;
       background-position: center;
       padding: 100px;
-    }.clock {
+    }
+    .clock {
       position: absolute;
       top: 10px;
       left: 14px;
@@ -98,7 +101,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#planet {
+#container #planet {
       position: absolute;
       bottom: 14;
       right: 14;
@@ -111,10 +114,10 @@
       box-shadow: 0px 0px 10px rgba(0, 88, 184, 0.5);
       transform-origin: center;
     }
-    #planet:hover {
+    #container #planet:hover {
       transform: scale(1.2);
     }
-    #popup {
+    #container #popup {
       position: absolute;
       top: calc(100% + 20px);
       left: 50%;
@@ -129,7 +132,7 @@
       transition: opacity 0.3s, top 0.3s;
       text-align: center;
     }
-  #planet:hover + #popup {
+    #container #planet:hover + #popup {
       opacity: 1;
       pointer-events: auto;
       top: calc(100% + 10px);
@@ -137,11 +140,7 @@
 @media only screen and (max-width: 600px) {
       }
   </style>
-</head><header><div id="planet" onclick="movePlanet()"></div>
-  <div id="popup">
-      <h2>Planet Information</h2>
-      <p>This is a fascinating planet with diverse ecosystems and rich history. Explore more to uncover its wonders!</p>
-    </div>
+</head><header>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
     <div class="button-container">
@@ -158,43 +157,15 @@
   <i class="icon video-icon">&#x1F3A5;</i>
   <span class="text">LoftiesBingo</span>
 </div>
-  </div>
+  </div><div id="planet" onclick="movePlanet()"></div>
+    <div id="popup">
+        <h2>Planet Information</h2>
+        <p>This is a fascinating planet with diverse ecosystems and rich history. Explore more to uncover its wonders!</p>
+      </div>
   </header>
   <body>
   <script>
-function function getRandomColor() {
-      var letters = "0123456789ABCDEF";
-      var color = "#";
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
-    function movePlanet() {
-      var planet = document.getElementById("planet");
-      var currentPosition = parseInt(planet.style.left) || 0;
-      var newPosition = currentPosition + 10;
-      planet.style.left = newPosition + "px";
-    }
-    function getRandomPosition() {
-      var headerWidth = document.querySelector('header').offsetWidth;
-      var planetWidth = 50;
-      var maxLeft = headerWidth - planetWidth;
-      var randomLeft = Math.floor(Math.random() * maxLeft);
-      return { left: randomLeft };
-    }
-    window.onload = function() {
-      var planet = document.getElementById("planet");
-      var popup = document.getElementById("popup");
-      planet.style.backgroundColor = getRandomColor();
-      var position = getRandomPosition();
-      planet.style.right = position.right + "px";
-      planet.style.bottom = position.bottom + "px";
-      planet.onclick = function() {
-        movePlanet();
-        planet.style.backgroundColor = getRandomColor();
-      };
-    };getRandomColor() {
+function getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
@@ -324,7 +295,39 @@ function animateNavItem(navItem) {
         navItem.classList.remove('clicked');
       }, 500);
     }
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+    function movePlanet() {
+      var planet = document.getElementById("planet");
+      var currentPosition = parseInt(planet.style.left) || 0;
+      var newPosition = currentPosition + 10;
+      planet.style.left = newPosition + "px";
+    }
+    function getRandomPosition() {
+      var headerWidth = document.querySelector('header').offsetWidth;
+      var planetWidth = 50;
+      var maxLeft = headerWidth - planetWidth;
+      var randomLeft = Math.floor(Math.random() * maxLeft);
+      return { left: randomLeft };
+    }
+    window.onload = function() {
+      var planet = document.getElementById("planet");
+      var popup = document.getElementById("popup");
+      planet.style.backgroundColor = getRandomColor();
+      var position = getRandomPosition();
+      planet.style.right = position.right + "px";
+      planet.style.bottom = position.bottom + "px";
+      planet.onclick = function() {
+        movePlanet();
+        planet.style.backgroundColor = getRandomColor();
+      };
+    };
 </script>
 </body>
 </html>
-  
