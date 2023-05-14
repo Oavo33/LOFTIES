@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
   <style>
     header {
       position: relative;
@@ -8,33 +6,7 @@
       background-size: cover;
       background-position: center;
       padding: 100px;
-    }.triangle-container {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 340;
-    }
-.triangle {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 10px solid #800000; /* Initial color */
-      cursor: pointer;
-      transition: background-color 0.5s, transform 0.5s;
-    }
-.triangle.clicked {
-      transform: translateX(200px); /* Adjust the desired distance */
-    }
-.triangle:hover {
-      background-color: #00b3b3;
-    }
-.triangle:hover ~ .triangle {
-      background-color: #800000;
-    }
-    .clock {
+    }.clock {
       position: absolute;
       top: 10px;
       left: 14px;
@@ -76,8 +48,8 @@
       100% { transform: scale(1); }
     }.container {
   position: absolute;
-  top: 135px;
-  right: 5px;
+  top: 174px;
+  right: 65px;
 }.nav-item {
   background-color: #30b3b3;
   position: absolute;
@@ -87,14 +59,21 @@
   text-align: center;
   font-size: 9px; 
   font-family: Arial, sans-serif;
-  cursor: pointer;overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s, background-color 0.5s;
+  overflow: hidden;
   border: 1px solid #800000;
   border-radius: 50px;
   box-sizing: border-box;
-  margin-right: 10px;
-  margin-left: 10px;
-  transition: background-color 0.5s, transform 0.5s;
-}.nav-item:hover:before {
+  margin-right: 1px;
+  margin-left: 1px;
+}
+.nav-item:first-child {
+  left: 1px;
+}.nav-item:last-child {
+  right: 1px;
+}
+.nav-item:hover:before {
       border-right: 40px solid #00b3b3;
       opacity: 1;
       transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
@@ -117,15 +96,18 @@
       color: black;
     }.nav-item .text {
   position: absolute;
-  top: 6px;
-}.nav-item i {
-  font-size: 19px;
-  position: absolute;
-  top: 42%;
-  left: 50%;
+  top: 50%;
+  right: -25px;
   transform: translate(-50%, -50%);
 }
- #planet {
+.nav-item i {
+      font-size: 17px;
+      position: absolute;
+      top: 42%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+    #planet {
       position: absolute;
       bottom: 14;
       right: 14;
@@ -161,72 +143,38 @@
       pointer-events: auto;
       top: calc(100% + 10px);
     }
-@media only screen and (max-width: 600px) {
-      }
+    @media only screen and (max-width: 600px) {
+    }
   </style>
-</head><header><div class="triangle-container">
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-    </div>
-    <div id="clock" class="clock">00:00</div>
-    <div id="timer" class="timer">00:00:00</div>
-    <div class="button-container">
-      <button id="format-toggle" class="button">Toggle Format</button>
-      <button id="timer-start" class="button">Start</button>
-      <button id="timer-reset" class="button">Reset</button>
-    </div>
-<div class="container">
+</head>
+<header>
+  <div id="clock" class="clock">00:00</div>
+  <div id="timer" class="timer">00:00:00</div>
+  <div class="button-container">
+    <button id="format-toggle" class="button">Toggle Format</button>
+    <button id="timer-start" class="button">Start</button>
+    <button id="timer-reset" class="button">Reset</button>
+  </div>
+  <div class="container">
     <div class="nav-item" onclick="handleClick(event)">
-  <i class="icon game-icon">&#x1F3AE;</i>
-  <span class="text">LoftiesGames</span>
-</div>
-<div class="nav-item" onclick="handleClick(event)">
-  <i class="icon video-icon">&#x1F3A5;</i>
-  <span class="text">LoftiesBingo</span>
-</div>
-  </div><div id="planet" onclick="movePlanet()"></div>
+      <i class="icon game-icon">&#x1F3AE;</i>
+      <span class="text">LoftiesGames</span>
+    </div>
+    <div class="nav-item" onclick="handleClick(event)">
+      <i class="icon video-icon">&#x1F3A5;</i>
+      <span class="text">LoftiesVideos</span>
+    </div>
+  </div>
+  <div id="container">
+    <div id="planet" onclick="movePlanet()"></div>
     <div id="popup">
-        <h2>Planet Information</h2>
-        <p>This is a fascinating planet with diverse ecosystems and rich history. Explore more to uncover its wonders!</p>
-      </div>
-  </header>
-  <body>
-  <script>
-function const triangles = document.querySelectorAll('.triangle');
-triangles.forEach((triangle, index) => {
-      triangle.addEventListener('click', () => {
-        triangle.classList.toggle('clicked');
-      });
-    });
-function getRandomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-var buttons = document.getElementsByClassName("button");
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("mouseover", function() {
-    this.style.backgroundColor = getRandomColor();
-  });
-  buttons[i].addEventListener("mouseout", function() {
-    this.style.backgroundColor = "#800000";
-  });
-}getRandomColor() {
+      <h2>Planet Information</h2>
+      <p>This is a fascinating planet with diverse ecosystems and rich history. Explore more to uncover its wonders!</p>
+    </div>
+  </div>
+</header>
+<body>
+<script>function getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
