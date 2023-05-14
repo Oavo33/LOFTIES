@@ -1,40 +1,12 @@
-
-<html>
-<head>
-  <style>@media only screen and (max-width: 600px) {
+<html><head>
+  <style>
     header {
       position: relative;
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=750&q=80");
       background-size: cover;
       background-position: center;
       padding: 100px;
-    }.triangle-container {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 340;
-    }
-.triangle {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 10px solid #800000; /* Initial color */
-      cursor: pointer;
-      transition: background-color 0.5s, transform 0.5s;
-    }
-.triangle.clicked {
-      transform: translateX(200px); /* Adjust the desired distance */
-    }
-.triangle:hover {
-      background-color: #00b3b3;
-    }
-.triangle:hover ~ .triangle {
-      background-color: #800000;
-    }
-    .clock {
+    }.clock {
       position: absolute;
       top: 10px;
       left: 14px;
@@ -74,8 +46,59 @@
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
-    }}@media only screen and (max-width: 600px) {
-  #planet {
+    }.container {
+  position: absolute;
+  top: 135px;
+  right: 5px;
+}.nav-item {
+  background-color: #30b3b3;
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  color: white;
+  text-align: center;
+  font-size: 9px; 
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: transform 0.5s, background-color 0.5s;
+  overflow: hidden;
+  border: 1px solid #800000;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-left: 0;
+}.nav-item:hover:before {
+      border-right: 40px solid #00b3b3;
+      opacity: 1;
+      transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
+    }.nav-item.clicked {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }.nav-item:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      opacity: 0;
+      border: 2px solid #00b3b3;
+      transition: opacity 1.5s;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }.nav-item span.number {
+      z-index: 3;
+      color: black;
+    }.nav-item .text {
+  position: absolute;
+  top: 6px;
+}.nav-item i {
+  font-size: 19px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#planet {
       position: absolute;
       bottom: 14;
       right: 14;
@@ -90,7 +113,8 @@
     }
     #planet:hover {
       transform: scale(1.2);
-    }#popup {
+    }
+    #popup {
       position: absolute;
       top: calc(100% + 20px);
       left: 50%;
@@ -105,88 +129,18 @@
       transition: opacity 0.3s, top 0.3s;
       text-align: center;
     }
-    #planet:hover + #popup {
+  #planet:hover + #popup {
       opacity: 1;
       pointer-events: auto;
       top: calc(100% + 10px);
     }
-   .container {
-  position: absolute;
-  top: 140px; /* Adjust the top value as needed */
-  left: 10px; /* Adjust the left value as needed */
-}.nav-item {
-  background-color: #30b3b3;
-  position: relative;
-  width: 50px;
-  height: 25px;
-  color: white;
-  text-align: center;
-  font-size: 7px; /* Adjust the font size as needed */
-  font-family: Arial, sans-serif;
-  cursor: pointer;
-  transition: transform 0.5s, background-color: #00b3b3;
-  overflow: hidden;
-  border: 2px solid #800000;
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin-right: 0;
-  margin-left: 0;
-}
-    .nav-item:hover:before {
-      border-right: 40px solid #00b3b3;
-      opacity: 1;
-      transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
-    }
-    .nav-item.clicked {
-      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-    .nav-item:after {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: calc(100% - 4px);
-      height: calc(100% - 4px);
-      opacity: 0;
-      border: 2px solid #00b3b3;
-      transition: opacity 1.5s;
-      pointer-events: none;
-      mix-blend-mode: overlay;
-    }
-    .nav-item span.number {
-      z-index: 3;
-      color: white;
-    }.nav-item .text {
-  position: relative;
-  top: 3px; /* Adjust the top value to move the text up or down */
-}
-.nav-item i {
-  font-size: 10px; /* Adjust the font size as needed */
-  position: absolute;
-  top: 69%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}}</style>
-</head><header>
-    
-  </script>
-</body>
-</html>
-<div class="triangle-container">
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
+@media only screen and (max-width: 600px) {
+      }
+  </style>
+</head><header><div id="planet" onclick="movePlanet()"></div>
+  <div id="popup">
+      <h2>Planet Information</h2>
+      <p>This is a fascinating planet with diverse ecosystems and rich history. Explore more to uncover its wonders!</p>
     </div>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
@@ -202,10 +156,13 @@
 </div>
 <div class="nav-item" onclick="handleClick(event)">
   <i class="icon video-icon">&#x1F3A5;</i>
-  <span class="text">LoftiesVideos</span>
+  <span class="text">LoftiesBingo</span>
 </div>
+  </div>
   </header>
-  <script> getRandomColor() {
+  <body>
+  <script>
+function function getRandomColor() {
       var letters = "0123456789ABCDEF";
       var color = "#";
       for (var i = 0; i < 6; i++) {
@@ -237,14 +194,7 @@
         movePlanet();
         planet.style.backgroundColor = getRandomColor();
       };
-    };
-  const triangles = document.querySelectorAll('.triangle');
-triangles.forEach((triangle, index) => {
-      triangle.addEventListener('click', () => {
-        triangle.classList.toggle('clicked');
-      });
-    });
-function getRandomColor() {
+    };getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
@@ -346,7 +296,8 @@ function initializeClock() {
   toggleFormat();
   startTimer();
 }
-initializeClock();var clickCount = 0;
+initializeClock();
+ var clickCount = 0;
 function handleClick(event) {
       event.stopPropagation();
       clickCount++;
@@ -376,10 +327,4 @@ function animateNavItem(navItem) {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
+  
