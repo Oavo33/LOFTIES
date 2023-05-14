@@ -6,7 +6,15 @@
       background-size: cover;
       background-position: center;
       padding: 60px;
-    }.triangle {
+    }.triangle-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 340;
+    }
+.triangle {
       width: 0;
       height: 0;
       border-left: 5px solid transparent;
