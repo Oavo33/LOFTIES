@@ -46,15 +46,7 @@
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
-    }.container {
-  position: absolute;
-  top: 14px;
-  left: -54px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.nav-item {
+    }.nav-item {
   background-color: #30b3b3;
   width: 30px; /* Adjusted width to fit mobile screens */
   height: 30px; /* Decreased height for mobile devices */
