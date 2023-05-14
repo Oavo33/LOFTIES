@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <style>@media only screen and (max-width: 600px) {
@@ -8,6 +8,31 @@
       background-size: cover;
       background-position: center;
       padding: 100px;
+    }.triangle-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 340;
+    }
+.triangle {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid #800000; /* Initial color */
+      cursor: pointer;
+      transition: background-color 0.5s, transform 0.5s;
+    }
+.triangle.clicked {
+      transform: translateX(200px); /* Adjust the desired distance */
+    }
+.triangle:hover {
+      background-color: #00b3b3;
+    }
+.triangle:hover ~ .triangle {
+      background-color: #800000;
     }
     .clock {
       position: absolute;
@@ -52,16 +77,16 @@
     }}@media only screen and (max-width: 600px) {
    .container {
   position: absolute;
-  top: 100px; /* Adjust the top value as needed */
-  left: 350px; /* Adjust the left value as needed */
+  top: 140px; /* Adjust the top value as needed */
+  left: 10px; /* Adjust the left value as needed */
 }.nav-item {
   background-color: #30b3b3;
   position: relative;
-  width: 60px;
-  height: 30px;
-  color: black;
+  width: 50px;
+  height: 25px;
+  color: white;
   text-align: center;
-  font-size: 10px; /* Adjust the font size as needed */
+  font-size: 7px; /* Adjust the font size as needed */
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.5s, background-color 0.5s;
@@ -95,15 +120,15 @@
     }
     .nav-item span.number {
       z-index: 3;
-      color: black;
+      color: white;
     }.nav-item .text {
   position: relative;
   top: 3px; /* Adjust the top value to move the text up or down */
 }
 .nav-item i {
-  font-size: 14px; /* Adjust the font size as needed */
+  font-size: 10px; /* Adjust the font size as needed */
   position: absolute;
-  top: 50%;
+  top: 69%;
   left: 50%;
   transform: translate(-50%, -50%);
 }}
@@ -111,7 +136,22 @@
 </style>
 </head>
 
-  <header>
+  <header><div class="triangle-container">
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+    </div>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
     <div class="button-container">
@@ -130,7 +170,12 @@
 </div>
   
   </header>
-  <script>
+  <script> const triangles = document.querySelectorAll('.triangle');
+triangles.forEach((triangle, index) => {
+      triangle.addEventListener('click', () => {
+        triangle.classList.toggle('clicked');
+      });
+    });
 function getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
@@ -263,6 +308,10 @@ function animateNavItem(navItem) {
 </script>
 </body>
 </html>
+
+
+
+
 
 
 
