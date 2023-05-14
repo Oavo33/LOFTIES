@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
+  <style>@media only screen and (max-width: 600px) {
     header {
       position: relative;
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=750&q=80");
@@ -49,11 +49,11 @@
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
-    }
+    }}@media only screen and (max-width: 600px) {
    .container {
   position: absolute;
-  top: 100px; 
-  left: 150px; 
+  top: 100px; /* Adjust the top value as needed */
+  left: 350px; /* Adjust the left value as needed */
 }.nav-item {
   background-color: #30b3b3;
   position: relative;
@@ -61,64 +61,7 @@
   height: 30px;
   color: black;
   text-align: center;
-  font-size: 10px;
-  font-family: Arial, sans-serif;
-  cursor: pointer;
-  transition: transform 0.5s, background-color 0.5s;
-  overflow: hidden;
-  border: 2px solid #800000;
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin-right: 0;
-  margin-left: 0;
-}.nav-item:hover:before {
-      border-right: 40px solid #00b3b3;
-      opacity: 1;
-      transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
-    }.nav-item.clicked {
-      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-    .nav-item:after {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: calc(100% - 4px);
-      height: calc(100% - 4px);
-      opacity: 0;
-      border: 2px solid #00b3b3;
-      transition: opacity 1.5s;
-      pointer-events: none;
-      mix-blend-mode: overlay;
-    }
-    .nav-item span.number {
-      z-index: 3;
-      color: black;
-    }.nav-item .text {
-  position: relative;
-  top: 3px; 
-}
-.nav-item i {
-  font-size: 14px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-    @media only screen and (max-width: 600px) {
-  .container {
-  position: absolute;
-  top: 100px;
-  left: 400px; 
-}
-.nav-item {
-  background-color: #30b3b3;
-  position: relative;
-  width: 60px;
-  height: 30px;
-  color: black;
-  text-align: center;
-  font-size: 10px;
+  font-size: 10px; /* Adjust the font size as needed */
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.5s, background-color 0.5s;
@@ -155,16 +98,20 @@
       color: black;
     }.nav-item .text {
   position: relative;
-  top: 3px;
-}.nav-item i {
-  font-size: 14px;
+  top: 3px; /* Adjust the top value to move the text up or down */
+}
+.nav-item i {
+  font-size: 14px; /* Adjust the font size as needed */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}</style>
+}}
+
+</style>
 </head>
-<header>
+
+  <header>
     <div id="clock" class="clock">00:00</div>
     <div id="timer" class="timer">00:00:00</div>
     <div class="button-container">
@@ -180,12 +127,19 @@
 <div class="nav-item" onclick="handleClick(event)">
   <i class="icon video-icon">&#x1F3A5;</i>
   <span class="text">LoftiesVideos</span>
-</div></header><script>function getRandomColor() {var letters = "0123456789ABCDEF";
+</div>
+  
+  </header>
+  <script>
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
-  }return color;
-}var buttons = document.getElementsByClassName("button");
+  }
+  return color;
+}
+var buttons = document.getElementsByClassName("button");
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("mouseover", function() {
     this.style.backgroundColor = getRandomColor();
@@ -202,9 +156,12 @@ var timerReset = document.getElementById("timer-reset");
 formatToggle.addEventListener("click", function() {
   clock.classList.toggle("timer");
   timer.classList.toggle("clock");
-});timerStart.addEventListener("click", function() {
-  });timerReset.addEventListener("click", function() {
- });function updateClock() {
+});
+timerStart.addEventListener("click", function() {
+  });
+timerReset.addEventListener("click", function() {
+ });
+function updateClock() {
   const clockElement = document.getElementById("clock");
   const date = new Date();
   let hours = date.getHours();
@@ -215,12 +172,16 @@ formatToggle.addEventListener("click", function() {
   } else {
     hours = convertTo12Hour(hours);
     ampm = hours >= 12 ? "PM" : "AM";
-  }minutes = padZero(minutes);
+  }
+  minutes = padZero(minutes);
   const time = `${hours}:${minutes} ${ampm}`;
   clockElement.textContent = time;
   clockElement.className = "clock";
-}function is24HourFormat() {
-  return localStorage.getItem("format") === "24";}function toggleFormat() {
+}
+function is24HourFormat() {
+  return localStorage.getItem("format") === "24";
+}
+function toggleFormat() {
   const formatToggle = document.getElementById("format-toggle");
   formatToggle.addEventListener("click", function() {
     const currentFormat = localStorage.getItem("format");
@@ -228,9 +189,11 @@ formatToggle.addEventListener("click", function() {
     localStorage.setItem("format", newFormat);
     updateClock();
   });
-}function padZero(value) {
+}
+function padZero(value) {
   return value.toString().padStart(2, "0");
-}function convertTo12Hour(hours) {
+}
+function convertTo12Hour(hours) {
   return hours > 12 ? hours - 12 : hours;
 }
 let timerInterval;
@@ -263,17 +226,15 @@ function startTimer() {
     timerElement.textContent = "00:00:00";
     timerStartButton.textContent = "Start";
   });
-}function initializeClock() {
+}
+function initializeClock() {
     localStorage.removeItem('format');
   updateClock();
   toggleFormat();
   startTimer();
 }
-initializeClock();
- 
-var clickCount = 0;
-
-    function handleClick(event) {
+initializeClock();var clickCount = 0;
+function handleClick(event) {
       event.stopPropagation();
       clickCount++;
       var navItem = event.target.closest('.nav-item');
