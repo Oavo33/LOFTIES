@@ -75,6 +75,70 @@
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
     }}@media only screen and (max-width: 600px) {
+   #planet {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #003366 40%, #000000 60%);
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #003366;
+    }
+    #planet:hover {
+      transform: scale(1.2);
+      border-color: #00ff7f;
+    }
+    .land {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('land_texture.jpg');
+      background-repeat: repeat;
+      opacity: 0.8;
+      mix-blend-mode: multiply;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 60%);
+    }
+    .water {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('water_texture.jpg');
+      background-repeat: repeat;
+      opacity: 0.6;
+      mix-blend-mode: overlay;
+      animation: waterAnimation 5s infinite linear;
+      clip-path: polygon(0% 40%, 100% 60%, 100% 100%, 0% 100%);
+    }
+    @keyframes waterAnimation {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+    #popup {
+      position: absolute;
+      top: 20px;
+      left: calc(100% + 20px);
+      width: 200px;
+      padding: 20px;
+      background-color: rgba(0, 51, 102, 0.8);
+      color: #ffffff;
+      border-radius: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    #planet:hover + #popup {
+      opacity: 1;
+      pointer-events: auto;
+    }
    .container {
   position: absolute;
   top: 140px; /* Adjust the top value as needed */
@@ -131,12 +195,8 @@
   top: 69%;
   left: 50%;
   transform: translate(-50%, -50%);
-}}
-
-</style>
-</head>
-
-  <header><div class="triangle-container">
+}}</style>
+</head><header><div class="triangle-container">
       <div class="triangle"></div>
       <div class="triangle"></div>
       <div class="triangle"></div>
@@ -167,10 +227,30 @@
 <div class="nav-item" onclick="handleClick(event)">
   <i class="icon video-icon">&#x1F3A5;</i>
   <span class="text">LoftiesVideos</span>
-</div>
-  
+</div><div id="planet" onclick="movePlanet()">
+      <div class="land"></div>
+      <div class="water"></div>
+    </div>
+  <div id="popup">
+      <p>"Need a squeegee? It's like finding a needle in a haystack on this webpage! But hey, once you spot it, you'll be rewarded with squeaky clean windows and a grin on your face. Happy hunting!"</p>
+    </div>
   </header>
-  <script> const triangles = document.querySelectorAll('.triangle');
+  <script>function movePlanet() {
+    var planet = document.getElementById("planet");
+    var maxX = window.innerWidth - planet.offsetWidth;
+    var maxY = window.innerHeight - planet.offsetHeight;
+    var maxJump = 50;
+    var randomX = Math.floor(Math.random() * (2 * maxJump + 1)) - maxJump;
+    var randomY = Math.floor(Math.random() * (2 * maxJump + 1)) - maxJump;
+// Adjust coordinates to stay within the visible area
+    randomX = Math.max(randomX, -maxJump);
+    randomX = Math.min(randomX, maxX + maxJump);
+    randomY = Math.max(randomY, -maxJump);
+    randomY = Math.min(randomY, maxY + maxJump);
+    planet.style.left = randomX + "px";
+    planet.style.top = randomY + "px";
+  }
+const triangles = document.querySelectorAll('.triangle');
 triangles.forEach((triangle, index) => {
       triangle.addEventListener('click', () => {
         triangle.classList.toggle('clicked');
