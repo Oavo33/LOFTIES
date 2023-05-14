@@ -101,7 +101,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#container #planet {
+ #planet {
       position: absolute;
       bottom: 14;
       right: 14;
@@ -114,10 +114,10 @@
       box-shadow: 0px 0px 10px rgba(0, 88, 184, 0.5);
       transform-origin: center;
     }
-    #container #planet:hover {
+    #planet:hover {
       transform: scale(1.2);
     }
-    #container #popup {
+    #popup {
       position: absolute;
       top: calc(100% + 20px);
       left: 50%;
@@ -132,7 +132,7 @@
       transition: opacity 0.3s, top 0.3s;
       text-align: center;
     }
-    #container #planet:hover + #popup {
+    #planet:hover + #popup {
       opacity: 1;
       pointer-events: auto;
       top: calc(100% + 10px);
