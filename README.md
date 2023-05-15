@@ -16,12 +16,12 @@
       justify-content: center;
       position: absolute;
       top: 24%;
-      left: 42.5%;
+      left: 38.5%;
       transform: translate(-50%, -50%);
     }
     #wigz .heading {
       font-family: 'UnifrakturMaguntia', cursive;
-      font-size: 14px;
+      font-size: 18px;
       text-align: center;
       position: relative;
       text-shadow: #00b3b3;
