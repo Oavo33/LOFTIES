@@ -34,9 +34,9 @@
       transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
       color: #00b3b3;
       border: 1px solid #800000;
-      padding: 1px;
-      margin: 1px;
-      border-radius: 1px;
+      padding: 0px;
+      margin: 0px;
+      border-radius: 0px;
       box-shadow: 10px 10px 10px #00b3b3;
     }
     #wigz .heading span:hover {
@@ -67,7 +67,7 @@
   padding: 9px;
   position: absolute;
   top: 3px;
-  right: 5px;
+  right: 1px;
 }
 input[type="text"],
 input[type="password"] {
