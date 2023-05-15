@@ -10,34 +10,35 @@
       padding: 80px; /* Adjust the padding value as needed */
     }
     #wigz {
-      height: 30%;
-      display: inline-block;
-      align-items: center;
+      height: 20%;
+      display: flex;
       justify-content: center;
+      align-items: center;
       position: absolute;
-      top: 21.5%;
-      left: 41%;
+      top: 33%;
+      left: 50%;
       transform: translate(-50%, -50%);
     }
     #wigz .heading {
       font-family: 'UnifrakturMaguntia', cursive;
-      font-size: 19px;
+      font-size: 14px;
       text-align: center;
       position: relative;
       text-shadow: #00b3b3;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      width: 100%;
     }
     #wigz .heading span {
       display: inline-block;
       transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
-      color: #00b3b3;
+      color: #800000;
       border: 1px solid #800000;
-      padding: 0px;
-      margin: 0px;
-      border-radius: 0px;
-      box-shadow: 10px 10px 10px #00b3b3;
+      padding: 1px;
+      margin: 1px;
+      border-radius: 1px;
+      box-shadow: 0px 0px 10px #00b3b3;
     }
     #wigz .heading span:hover {
       animation-name: move;
