@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  padding: 9px;
+  padding: 1px;
   position: absolute;
   top: 3px;
   right: 1px;
