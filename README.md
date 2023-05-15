@@ -16,19 +16,7 @@
   position: absolute;
   top: 5;
   right: 5;
-}
-.header-form {
-  display: inline-block;
-  align-items: ;
-  justify-content: ;
-  height: 60px;
-  position: static; /* Changed from relative to static */
-  top: 20px;
-  right: 20px;
-  padding: 5px;
-  box-sizing: border-box;
-}
-input[type="text"],
+}input[type="text"],
 input[type="password"] {
   width: 40px;
   padding: 1px;
