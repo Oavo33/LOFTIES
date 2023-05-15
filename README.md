@@ -8,9 +8,9 @@
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-start;
-      height: 100vh;
+      height: 80vh;
       background-color: #f5f5f5;
-      padding: 20px;
+      padding: 10px;
     }
     .header-form {
       display: flex;
@@ -18,22 +18,22 @@
       justify-content: flex-end;
       height: 60px;
       position: absolute;
-      top: 0;
-      right: 0;
-      padding: 5px;
+      top: 5;
+      right: 5;
+      padding: 2px;
       box-sizing: border-box;
     }
     input[type="text"],
     input[type="password"] {
-      width: 35px;
-      padding: 2px;
+      width: 50px;
+      padding: 1px;
       margin-right: 1px;
-      border-radius: 4px;
+      border-radius: 1px;
       background-color: #333;
       color: #fff;
       font-family: Arial, sans-serif;
       border: 1px dashed #800000;
-      font-size: 6px;
+      font-size: 8px;
     }
     input[type="text"]:focus,
     input[type="password"]:focus {
@@ -41,16 +41,16 @@
       border: 1px dashed #800000;
     }
     .button {
-      padding: 2px 3px;
+      padding: 1px 3px;
       color: #fff;
       border: 1px double #800000;
-      border-radius: 12px;
+      border-radius: 8px;
       cursor: pointer;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #800000, #00b3b3);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       position: relative;
-      font-size: 7px;
+      font-size: 7.5px;
     }
     .button:hover {
       transform: scale(1.05);
@@ -106,4 +106,5 @@
       window.location.href = "signup.html"; // Replace with your sign up page URL
     });
   </script>
-</body></html>
+</body>
+</html>
