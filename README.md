@@ -10,13 +10,15 @@
     }
     .leah {
   display: inline-block;
-  align-items: ;
-  justify-content: ;
-  height: 80vh;padding: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 10px;
   position: absolute;
-  top: 5;
-  right: 5;
-}input[type="text"],
+  top: 5px;
+  right: 5px;
+}
+input[type="text"],
 input[type="password"] {
   width: 40px;
   padding: 1px;
@@ -32,7 +34,8 @@ input[type="text"]:focus,
 input[type="password"]:focus {
   box-shadow: 0 0 3px #00b3b3;
   border: 1px dashed #800000;
-}.button:hover {
+}
+.button:hover {
   transform: scale(1.05);
 }
 .button::before {
