@@ -72,9 +72,9 @@
 input[type="text"],
 input[type="password"] {
   width: 40px;
-  padding: 1px;
-  margin-right: 1px;
-  border-radius: 1px;
+  padding: 0px;
+  margin-right: 0px;
+  border-radius: 0px;
   background-color: #333;
   color: #fff;
   font-family: Arial, sans-serif;
