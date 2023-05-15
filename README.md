@@ -1,5 +1,6 @@
 <html>
-<head>
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
+  <style>
   <style>
     header {
       position: relative;
@@ -7,6 +8,44 @@
       background-size: cover;
       background-position: center;
       padding: 80px; /* Adjust the padding value as needed */
+    }
+    .header .heading {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 28px;
+      text-align: center;
+      position: relative;
+      text-shadow: #00b3b3;
+    }
+    .header .heading span {
+      display: inline-block;
+      transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+      color: #800000;
+      border: 1px solid #800000;
+      padding: 1px;
+      margin: 1px;
+      border-radius: 1px;
+      box-shadow: 0px 0px 10px #00b3b3;
+    }
+    .header .heading span:hover {
+      animation-name: move;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      color: yellow;
+      background-color: #000;
+      transform: rotate(440deg);
+      box-shadow: #800000;
+    }
+    @keyframes move {
+      0% {
+        transform: rotate(0) translateX(0);
+      }
+      50% {
+        transform: rotate(180deg) translateX(40px);
+      }
+      100% {
+        transform: rotate(0) translateX(0);
+      }
     }
     .leah {
   display: inline-block;
@@ -241,6 +280,26 @@ input[type="password"]:focus {
   </style>
 </head>
 <header>
+  <div class="header">
+    <h1 class="heading">
+      <span>L</span>
+      <span>o</span>
+      <span>f</span>
+      <span>t</span>
+      <span>i</span>
+      <span>e</span>
+      <span>s</span>
+      <span>W</span>
+      <span>i</span>
+      <span>n</span>
+      <span>d</span>
+      <span>o</span>
+      <span>w</span>
+      <span>S</span>
+    </h1>
+  </div>
+</body>
+</html>
   <div class="leah">
     <div class="header-form">
       <input type="text" id="username" placeholder="Username" required>
