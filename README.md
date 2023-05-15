@@ -17,36 +17,37 @@
     }
 input[type="text"],
     input[type="password"] {
-      width: 50px;
+      width: 35px;
       padding: 2px;
-      margin-right: 2px;
+      margin-right: 1px;
       border-radius: 4px;
       background-color: #333;
       color: #fff;
       font-family: Arial, sans-serif;
       border: 1px dashed #800000;
-      font-size: 10px;
-    } 
+      font-size: 6px;
+    }
     input[type="text"]:focus,
     input[type="password"]:focus {
       box-shadow: 0 0 3px #00b3b3;
       border: 1px dashed #800000;
     }
     .button {
-      padding: 2px 4px;
+      padding: 2px 3px;
       color: #fff;
       border: 1px double #800000;
-      border-radius: 12px;cursor: pointer;
+      border-radius: 12px;
+      cursor: pointer;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #800000, #00b3b3);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       position: relative;
-      font-size: 10px;
+      font-size: 7px;
     }
-.button:hover {
+    .button:hover {
       transform: scale(1.05);
     }
-.button::before {
+    .button::before {
       content: "Scrub away your worries and find the perfect squeegee for a crystal-clear view!";
       position: absolute;
       top: 18px;
@@ -64,7 +65,7 @@ input[type="text"],
       white-space: nowrap;
       border: 1px dashed #800000;
     }
-.button:hover::before {
+    .button:hover::before {
       visibility: visible;
       opacity: 1;}
   </style>
