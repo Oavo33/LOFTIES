@@ -32,7 +32,7 @@
     #wigz .heading span {
       display: inline-block;
       transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
-      color: #800000;
+      color: #00b3b3;
       border: 1px solid #800000;
       padding: 1px;
       margin: 1px;
