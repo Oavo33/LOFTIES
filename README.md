@@ -247,7 +247,7 @@ input[type="password"]:focus {
 .nav-item i {
   font-size: 8px; /* Increased font size for mobile devices */
   position: relative;
-  top: 24%;
+  top: 21%;
   left: auto;
   transform: none;
     }
