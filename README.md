@@ -239,14 +239,15 @@ input[type="password"]:focus {
     }
     .nav-item .text {
   position: absolute;
-  top: 14%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .nav-item i {
-  font-size: 7px; /* Increased font size for mobile devices */
+  font-size: 8px; /* Increased font size for mobile devices */
   position: relative;
-  top: 28%;
+  top: 26%;
   left: auto;
   transform: none;
     }
