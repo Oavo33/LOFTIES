@@ -21,7 +21,7 @@
     }
     #wigz .heading {
       font-family: 'UnifrakturMaguntia', cursive;
-      font-size: 17px;
+      font-size: 19px;
       text-align: center;
       position: relative;
       text-shadow: #00b3b3;
