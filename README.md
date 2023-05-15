@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  padding: 10px;
+  padding: 9px;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -72,7 +72,7 @@
 input[type="text"],
 input[type="password"] {
   width: 40px;
-  padding: -1px;
+  padding: 0px;
   margin-right: 0px;
   border-radius: 0px;
   background-color: #333;
