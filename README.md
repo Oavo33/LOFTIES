@@ -15,8 +15,8 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      top: 22%;
-      left: 40%;
+      top: 21.5%;
+      left: 41%;
       transform: translate(-50%, -50%);
     }
     #wigz .heading {
