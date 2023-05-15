@@ -9,14 +9,23 @@
       background-position: center;
       padding: 80px; /* Adjust the padding value as needed */
     }
-    .header .heading {
+    #wigz {
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+    }
+
+    #wigz .heading {
       font-family: 'UnifrakturMaguntia', cursive;
       font-size: 28px;
       text-align: center;
       position: relative;
       text-shadow: #00b3b3;
     }
-    .header .heading span {
+
+    #wigz .heading span {
       display: inline-block;
       transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
       color: #800000;
@@ -26,7 +35,8 @@
       border-radius: 1px;
       box-shadow: 0px 0px 10px #00b3b3;
     }
-    .header .heading span:hover {
+
+    #wigz .heading span:hover {
       animation-name: move;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
@@ -36,6 +46,7 @@
       transform: rotate(440deg);
       box-shadow: #800000;
     }
+
     @keyframes move {
       0% {
         transform: rotate(0) translateX(0);
@@ -280,7 +291,7 @@ input[type="password"]:focus {
   </style>
 </head>
 <header>
-  <div class="header">
+  <div id="wigz">
     <h1 class="heading">
       <span>L</span>
       <span>o</span>
@@ -298,8 +309,6 @@ input[type="password"]:focus {
       <span>S</span>
     </h1>
   </div>
-</body>
-</html>
   <div class="leah">
     <div class="header-form">
       <input type="text" id="username" placeholder="Username" required>
