@@ -37,7 +37,7 @@
       padding: 1px;
       margin: 1px;
       border-radius: 1px;
-      box-shadow: 0px 0px 10px #00b3b3;
+      box-shadow: 10px 10px 10px #00b3b3;
     }
     #wigz .heading span:hover {
       animation-name: move;
