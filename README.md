@@ -14,7 +14,7 @@
       display: inline-block;
       align-items: center;
       justify-content: center;position: absolute;
-      top: 17%;
+      top: 16%;
       left: 42%;
       transform: translate(-50%, -50%);
     }
