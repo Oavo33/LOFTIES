@@ -239,7 +239,7 @@ input[type="password"]:focus {
     }
     .nav-item .text {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -247,7 +247,7 @@ input[type="password"]:focus {
 .nav-item i {
   font-size: 8px; /* Increased font size for mobile devices */
   position: relative;
-  top: 26%;
+  top: 24%;
   left: auto;
   transform: none;
     }
