@@ -79,7 +79,7 @@ input[type="password"] {
   color: #fff;
   font-family: Arial, sans-serif;
   border: 1px dashed #800000;
-  font-size: 7px;
+  font-size: 6px;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -87,7 +87,7 @@ input[type="password"]:focus {
   border: 1px dashed #800000;
 }
 .button:hover {
-  transform: scale(1.05);
+  transform: scale(2);
 }
 .button::before {
   content: "wer dat squeegee!";
@@ -102,7 +102,7 @@ input[type="password"]:focus {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.2;
   z-index: 1000;
   white-space: nowrap;
