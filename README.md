@@ -27,7 +27,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 100%;
+      width: 110%;
     }
     #wigz .heading span {
       display: inline-block;
