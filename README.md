@@ -14,7 +14,7 @@
       display: inline-block;
       align-items: center;
       justify-content: center;position: absolute;
-      top: 16%;
+      top: 15%;
       left: 38%;
       transform: translate(-50%, -50%);
     }
@@ -27,7 +27,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 105%;
+      width: 100%;
     }
     #wigz .heading span {
       display: inline-block;
