@@ -97,8 +97,8 @@ input[type="password"]:focus {
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 2px;
+  border-radius: 2px;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
