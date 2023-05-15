@@ -3,19 +3,27 @@
 <head>
   <title>User Login/Registration</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
+    .leah {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      height: 100vh;
+      background-color: #f5f5f5;
+      padding: 20px;
     }
     .header-form {
       display: flex;
       align-items: flex-start;
       justify-content: flex-end;
       height: 60px;
+      position: absolute;
+      top: 0;
+      right: 0;
       padding: 5px;
       box-sizing: border-box;
     }
-input[type="text"],
+    input[type="text"],
     input[type="password"] {
       width: 35px;
       padding: 2px;
@@ -67,15 +75,18 @@ input[type="text"],
     }
     .button:hover::before {
       visibility: visible;
-      opacity: 1;}
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
-  <div class="header-form">
-    <input type="text" id="username" placeholder="Username" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button type="submit" id="login-button" class="button">Login</button>
-    <button id="register-button" class="button">Register</button>
+  <div class="leah">
+    <div class="header-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit" id="login-button" class="button">Login</button>
+      <button id="register-button" class="button">Register</button>
+    </div>
   </div>
 <script>
     // Simulating user login functionality
@@ -93,6 +104,6 @@ input[type="text"],
 // Redirect to sign up page
     document.getElementById("register-button").addEventListener("click", function() {
       window.location.href = "signup.html"; // Replace with your sign up page URL
-    });</script>
-</body>
-</html>
+    });
+  </script>
+</body></html>
