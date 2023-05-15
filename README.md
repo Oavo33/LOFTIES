@@ -14,8 +14,8 @@
       display: inline-block;
       align-items: center;
       justify-content: center;position: absolute;
-      top: 33%;
-      left: 50%;
+      top: 23%;
+      left: 25%;
       transform: translate(-50%, -50%);
     }
     #wigz .heading {
