@@ -34,8 +34,8 @@
       transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
       color: #00b3b3;
       border: 1px solid #800000;
-      padding: 2px;
-      margin: 2px;
+      padding: 1px;
+      margin: 1px;
       border-radius: 1px;
       box-shadow: 10px 10px 10px #00b3b3;
     }#wigz .heading span:hover {
