@@ -11,10 +11,9 @@
     }
     #wigz {
       height: 20%;
-      display: flex;
-      justify-content: center;
+      display: inline-block;
       align-items: center;
-      position: absolute;
+      justify-content: center;position: absolute;
       top: 33%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -39,8 +38,7 @@
       margin: 1px;
       border-radius: 1px;
       box-shadow: 0px 0px 10px #00b3b3;
-    }
-    #wigz .heading span:hover {
+    }#wigz .heading span:hover {
       animation-name: move;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
