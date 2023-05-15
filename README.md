@@ -15,7 +15,7 @@
       align-items: center;
       justify-content: center;position: absolute;
       top: 16%;
-      left: 42%;
+      left: 38%;
       transform: translate(-50%, -50%);
     }
     #wigz .heading {
@@ -247,7 +247,7 @@ input[type="password"]:focus {
 .nav-item i {
   font-size: 8px; /* Increased font size for mobile devices */
   position: relative;
-  top: 21%;
+  top: 18%;
   left: auto;
   transform: none;
     }
