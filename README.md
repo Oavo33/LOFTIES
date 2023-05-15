@@ -15,7 +15,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      top: 22%;
+      top: 25%;
       left: 42.5%;
       transform: translate(-50%, -50%);
     }
