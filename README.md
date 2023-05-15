@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  padding: 1px;
+  padding: 9px;
   position: absolute;
   top: 3px;
   right: 1px;
@@ -92,7 +92,7 @@ input[type="password"]:focus {
 .button::before {
   content: "wer dat squeegee!";
   position: fixed;
-  top: 18px;
+  top: 19px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
