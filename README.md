@@ -122,7 +122,7 @@ input[type="password"]:focus {
       padding: 0px 0.5px;
       font-size: 5px;
       cursor: pointer;
-      background-color: #00b3b3;
+      background: linear-gradient(to bottom, #800000, #00b3b3);
       color: #ffffff;
       border: none;
       border-radius: 0px;
