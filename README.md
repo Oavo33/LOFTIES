@@ -1,85 +1,77 @@
-<html><head>
+<html>
+<head>
   <style>
     header {
       position: relative;
       background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=750&q=80");
       background-size: cover;
       background-position: center;
-      padding: 90px;
-    }.leah {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: flex-start;
-      height: 80vh;
-      background-color: #f5f5f5;
-      padding: 10px;
+      padding: 80px; /* Adjust the padding value as needed */
     }
-    .header-form {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-end;
-      height: 60px;
-      position: absolute;
-      top: 5;
-      right: 5;
-      padding: 2px;
-      box-sizing: border-box;
-    }
-    input[type="text"],
-    input[type="password"] {
-      width: 50px;
-      padding: 1px;
-      margin-right: 1px;
-      border-radius: 1px;
-      background-color: #333;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      border: 1px dashed #800000;
-      font-size: 8px;
-    }
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-      box-shadow: 0 0 3px #00b3b3;
-      border: 1px dashed #800000;
-    }
-    .button {
-      padding: 1px 3px;
-      color: #fff;
-      border: 1px double #800000;
-      border-radius: 8px;
-      cursor: pointer;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #800000, #00b3b3);
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-      position: relative;
-      font-size: 7.5px;
-    }
-    .button:hover {
-      transform: scale(1.05);
-    }
-    .button::before {
-      content: "Scrub away your worries and find the perfect squeegee for a crystal-clear view!";
-      position: absolute;
-      top: 18px;
-      left: 50%;
-      transform: translateX(-95%);
-      background-color: #333;
-      color: #fff;
-      padding: 0px;
-      border-radius: 4px;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.5s linear;
-      font-size: 10px;
-      line-height: 1.2;
-      white-space: nowrap;
-      border: 1px dashed #800000;
-    }
-    .button:hover::before {
-      visibility: visible;
-      opacity: 1;
-    }
+    .leah {
+  display: inline-block;
+  align-items: ;
+  justify-content: ;
+  height: 80vh;padding: 10px;
+  position: absolute;
+  top: 5;
+  right: 5;
+}
+.header-form {
+  display: inline-block;
+  align-items: ;
+  justify-content: ;
+  height: 60px;
+  position: static; /* Changed from relative to static */
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="password"] {
+  width: 40px;
+  padding: 1px;
+  margin-right: 1px;
+  border-radius: 1px;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  border: 1px dashed #800000;
+  font-size: 7px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0 0 3px #00b3b3;
+  border: 1px dashed #800000;
+}.button:hover {
+  transform: scale(1.05);
+}
+.button::before {
+  content: "wer dat squeegee!";
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  font-size: 12px;
+  line-height: 1.2;
+  z-index: 1000;
+  white-space: nowrap;
+  border: 1px dashed #800000;
+  writing-mode: vertical-lr; /* Displays the text vertically */
+  text-orientation: upright; /* Ensures upright orientation of characters */
+}
+.button:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
     .triangle-container {
       display: flex;
       justify-content: center;
@@ -257,7 +249,8 @@
     }
   </style>
 </head>
-<header><div class="leah">
+<header>
+  <div class="leah">
     <div class="header-form">
       <input type="text" id="username" placeholder="Username" required>
       <input type="password" id="password" placeholder="Password" required>
@@ -265,22 +258,22 @@
       <button id="register-button" class="button">Register</button>
     </div>
   </div>
-<div class="triangle-container">
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-      <div class="triangle"></div>
-    </div>
+  <div class="triangle-container">
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+  </div>
   <div id="clock" class="clock">00:00</div>
   <div id="timer" class="timer">00:00:00</div>
   <div class="button-container">
@@ -303,9 +296,9 @@
     <div id="popup">
       <h2>Wer dat Squeegee</h2>
       <p>In cyberspace, a squeegee hides,
-Find its place, and luck abides.
-A window's gleam, the prize shall be,
-On this webpage, solve and see.</p>
+        Find its place, and luck abides.
+        A window's gleam, the prize shall be,
+        On this webpage, solve and see.</p>
     </div>
   </div>
 </header>
@@ -349,22 +342,24 @@ for (var i = 0; i < buttons.length; i++) {
   });
 }
 function getRandomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-var buttons = document.getElementsByClassName("button");
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("mouseover", function() {
-    this.style.backgroundColor = getRandomColor();
-  });
-  buttons[i].addEventListener("mouseout", function() {
-    this.style.backgroundColor = "#800000";
-  });
-}
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+// Get all the buttons with the "button" class
+    var buttons = document.getElementsByClassName("button");
+// Loop through each button and attach event listeners for mouseover and mouseout
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("mouseover", function() {
+        this.style.backgroundColor = getRandomColor();
+      });
+buttons[i].addEventListener("mouseout", function() {
+        this.style.backgroundColor = "#800000"; // Restores the default background color
+      });
+    }
 var clock = document.getElementById("clock");
 var timer = document.getElementById("timer");
 var formatToggle = document.getElementById("format-toggle");
