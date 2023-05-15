@@ -16,7 +16,7 @@
       justify-content: center;
       position: absolute;
       top: 23%;
-      left: 37%;
+      left: 39%;
       transform: translate(-50%, -50%);
     }
     #wigz .heading {
@@ -66,7 +66,7 @@
   height: 80vh;
   padding: 9px;
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 5px;
 }
 input[type="text"],
