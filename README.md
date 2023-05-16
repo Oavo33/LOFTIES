@@ -47,7 +47,8 @@
       height: 20%;
       display: inline-block;
       align-items: center;
-      justify-content: center;position: absolute;
+      justify-content: center;
+      position: absolute;
       top: 30%;
       left: 41%;
       transform: translate(-50%, -50%);
@@ -72,7 +73,8 @@
       margin: 1px;
       border-radius: 1px;
       box-shadow: 10px 10px 10px #00b3b3;
-    }#wigz .heading span:hover {
+    }
+    #wigz .heading span:hover {
       animation-name: move;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
@@ -81,7 +83,15 @@
       background-color: #000;
       transform: rotate(440deg);
       box-shadow: #800000;
-    }@keyframes move {
+    }
+    #subtitle {
+      color: #00b3b3;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 5px;
+    }
+    @keyframes move {
       0% {
         transform: rotate(0) translateX(0);
       }
@@ -329,28 +339,25 @@ input[type="password"]:focus {
   }
   </style>
 </head>
-<header><div id="jake">
-      <div id="jakey"></div>
-      <div class="message">Click the planet!</div>
+<header><div id="wigz">
+      <h1 class="heading">
+        <span>L</span>
+        <span>o</span>
+        <span>f</span>
+        <span>t</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+        <span>W</span>
+        <span>i</span>
+        <span>n</span>
+        <span>d</span>
+        <span>o</span>
+        <span>w</span>
+        <span>S</span>
+      </h1>
+      <div id="subtitle">Bringing Window Cleaning Online #LOFTIES</div>
     </div>
-  <div id="wigz">
-    <h1 class="heading">
-      <span>L</span>
-      <span>o</span>
-      <span>f</span>
-      <span>t</span>
-      <span>i</span>
-      <span>e</span>
-      <span>s</span>
-      <span>W</span>
-      <span>i</span>
-      <span>n</span>
-      <span>d</span>
-      <span>o</span>
-      <span>w</span>
-      <span>S</span>
-    </h1>
-  </div>
   <div class="leah">
     <div class="header-form">
       <input type="text" id="username" placeholder="Username" required>
