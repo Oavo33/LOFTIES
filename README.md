@@ -290,7 +290,10 @@ input[type="password"]:focus {
     }
     @media only screen and (max-width: 600px) {
     }@media screen and (max-width: 480px) {
-      }
+      }@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  }
+@media only screen and (device-width: 360px) and (device-height: 800px) and (-webkit-device-pixel-ratio: 4) {
+  }
   </style>
 </head>
 <header>
