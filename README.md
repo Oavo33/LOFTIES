@@ -289,7 +289,8 @@ input[type="password"]:focus {
       top: calc(100% + 10px);
     }
     @media only screen and (max-width: 600px) {
-    }
+    }@media screen and (max-width: 480px) {
+      }
   </style>
 </head>
 <header>
