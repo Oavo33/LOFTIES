@@ -9,7 +9,8 @@
       background-size: cover;
       background-position: center;
       padding: 80px; 
-    }#jake {
+    }
+    #jake {
       position: relative;
       margin-top: 30px;
     }
