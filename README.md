@@ -13,7 +13,15 @@
       position: relative;
       margin-top: 30px;
     }
-    #planet {
+    #jake {
+      position: absolute;
+      bottom: 4px;
+      left: 55%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+    }
+    #jakey {
       width: 20px;
       height: 20px;
       border-radius: 50%;
@@ -21,19 +29,18 @@
       cursor: pointer;
       transition: background-image 0.3s;
     }
-    #planet:hover {
+    #jakey:hover {
       background-color: #0056b8;
     }
-    #message {
-      position: absolute;
-      top: 110px;
+    .message {
       color: #fff;
       font-family: Arial, sans-serif;
       font-size: 12px;
       opacity: 0;
       transition: opacity 0.3s;
+      margin-left: 10px;
     }
-    #planet:hover + #message {
+    #jake:hover .message {
       opacity: 1;
     }
     #wigz {
@@ -323,8 +330,8 @@ input[type="password"]:focus {
   </style>
 </head>
 <header><div id="jake">
-      <div id="planet"></div>
-      <div id="message">Click the planet!</div>
+      <div id="jakey"></div>
+      <div class="message">Click the planet!</div>
     </div>
   <div id="wigz">
     <h1 class="heading">
@@ -397,19 +404,13 @@ input[type="password"]:focus {
   </div>
 </header>
 <body>
-<script>var planet = document.getElementById("planet");
-    var message = document.getElementById("message");
-planet.addEventListener("click", function() {
+<script>var jakey = document.getElementById("jakey");
+    var message = document.querySelector(".message");
+    jakey.addEventListener("click", function() {
       var randomColor = getRandomColor();
-      planet.style.backgroundImage = `radial-gradient(${randomColor}, #00b3b3)`;
+      jakey.style.backgroundImage = `radial-gradient(${randomColor}, #00b3b3)`;
     });
-planet.addEventListener("mouseover", function() {
-      message.style.opacity = 1;
-    });
-planet.addEventListener("mouseout", function() {
-      message.style.opacity = 0;
-    });
-function getRandomColor() {
+    function getRandomColor() {
       var letters = "0123456789ABCDEF";
       var color = "#";
       for (var i = 0; i < 6; i++) {
