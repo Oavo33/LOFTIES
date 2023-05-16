@@ -342,8 +342,8 @@ input[type="password"]:focus {
 </head>
 <header><div id="jake">
   <div id="jakey"></div>
-  <div class="message">Hover me!</div>
-</div><div id="wigz">
+  <div class="message">Hover me!</div></div>
+<div id="wigz">
       <h1 class="heading">
         <span>L</span>
         <span>o</span>
