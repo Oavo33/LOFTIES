@@ -14,6 +14,36 @@
       padding: 20px;
       text-align: center;
     }
+    .social {
+      display: flex;
+      flex-direction: column;
+    }
+    .social div {
+      margin-bottom: 5px; 
+    }
+    .social div a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+    }
+    .login-register {
+      display: flex;
+      justify-content: end;
+    }
+    .login-register a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 2px 5px;
+      font-size: 0.8em;
+      border-radius: 15px;
+      background: linear-gradient(90deg, #ffffff, #00b3b3);
+      transition: background .3s;
+    }
+    .login-register a:hover {
+      background: linear-gradient(90deg, #00b3b3, #ffffff);
+    }
     .header h1 {
       font-size: 56px;
       color: #ffffff;
@@ -215,6 +245,32 @@
 </head>
 <body>
   <div class="header">
+  <div class="social">
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
+        </a>
+      </div>
+      </div>
+    <div class="login-register">
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
     <h1>CommUnityCentralHub</h1>
     <p>Community-driven Collaboration: Strengthening Businesses, Inspiring Connections, and Fostering Change.</p>
   </div>
