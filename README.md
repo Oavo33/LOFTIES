@@ -68,7 +68,7 @@
       max-width: 500px;
       width: 90%;
       margin: 0 auto;
-      margin-top: -50px;
+      margin-top: -100px;
       position: relative;
       z-index: 1;
     }
