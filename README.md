@@ -1,4 +1,6 @@
-<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lofties Astronauts</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
@@ -13,7 +15,8 @@
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 20px;
       text-align: center;
-    }.login-register {
+    }
+    .login-register {
       display: flex;
       justify-content: end;
     }
@@ -55,25 +58,7 @@
     .social div a img {
       width: 15px;
       height: 15px;
-    }
-    .login-register {
-      display: flex;
-      justify-content: end;
-    }
-    .login-register a {
-      margin-left: 0px;
-      text-decoration: none;
-      color: white;
-      padding: 2px 5px;
-      font-size: 0.8em;
-      border-radius: 15px;
-      background: linear-gradient(90deg, #ffffff, #00b3b3);
-      transition: background .3s;
-    }
-    .login-register a:hover {
-      background: linear-gradient(90deg, #00b3b3, #ffffff);
-    }
-      .hub-card {
+    }.hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
