@@ -274,7 +274,7 @@
   </div>
   <div class="grid-item community-item">
     <i class="community-icon">🎨</i>
-    <p class="community-text">Graffiti Wall Sign Up</p>
+    <p class="community-text">Graffiti Wall/Website Change Request</p>
   </div>
   <div class="grid-item community-item">
     <i class="community-icon">📢</i>
