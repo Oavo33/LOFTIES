@@ -334,7 +334,7 @@ At the end of each year, the community will receive 60% of the profits generated
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🏰</i>
-      <p class="community-text">History of The Wirral</p>
+      <p class="community-text">Entrepreneurship</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🎨</i>
