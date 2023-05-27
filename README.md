@@ -268,6 +268,22 @@
       <i class="community-icon">🎭</i>
       <p class="community-text">Free Services</p>
     </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🏠</i>
+      <p class="community-text">H</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🍽️</i>
+      <p class="community-text">Elderly Assistance</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🌻</i>
+      <p class="community-text">Community Service</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🎭</i>
+      <p class="community-text">Free Services</p>
+    </div>
   </div><footer>
     <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
