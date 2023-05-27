@@ -13,29 +13,7 @@
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 20px;
       text-align: center;
-    }
-    .social {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  justify-content: space-evenly; 
-  height: 100%; 
-  margin-top: 50px; 
-}
-.social div {
-  transition: transform 0.3s ease-in-out;
-}
-.social div a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-.social div a img {
-  width: 20px; 
-  height: 20px; 
-}
-    .login-register {
+    }.login-register {
       display: flex;
       justify-content: end;
     }
@@ -60,6 +38,27 @@
       font-size: 14px;
       color: #ffffff;
     }
+    .social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: space-evenly; 
+  height: 100%; 
+  margin-top: 50px; 
+}
+.social div {
+  transition: transform 0.3s ease-in-out;
+}
+.social div a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.social div a img {
+  width: 20px; 
+  height: 20px; 
+}
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
