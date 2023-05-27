@@ -39,27 +39,19 @@
       color: #ffffff;
     }
     .social {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  justify-content: space-evenly; 
-  height: 100%; 
-  margin-top: 50px; 
-}
-.social div {
-  transition: transform 0.3s ease-in-out;
-}
-.social div a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-.social div a img {
-  width: 20px; 
-  height: 20px; 
-}
-    .hub-card {
+      display: flex;
+      justify-content: space-between;  
+      width: 20px;  
+    }.social a {
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease-in-out;
+    }
+    .social a img {
+      width: 15px; 
+      height: 15px;
+      }
+      .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
