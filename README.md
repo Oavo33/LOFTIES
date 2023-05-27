@@ -284,7 +284,9 @@
       <i class="community-icon">🎭</i>
       <p class="community-text">Free Services</p>
     </div>
-  </div><footer>
+  </div>
+  <h3>Graffitti wall</h3>
+  <footer>
     <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
