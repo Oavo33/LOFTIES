@@ -33,7 +33,7 @@
       background: linear-gradient(90deg, #00b3b3, #ffffff);
     }
     .header h1 {
-      font-size: 35px;
+      font-size: 55px;
       color: #ffffff;
       margin: 0;
     }
@@ -292,8 +292,12 @@
       </div>
     </div>
   </div>
+  <div>
   <div class="hub-card">
-    <h1>Uniting Business and Community: Empowering Collaboration and Growth</h1>
+    <h1>Empowering Business-Community Integration: Driving Growth Together</h1>
+    <p>Join us at CommUnityCentralHub: Where Businesses and Communities Thrive!</p>
+  </div>
+</div>
     <p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p>
     <div class="dropdown-container">
       <div class="dropdown">
