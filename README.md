@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +38,8 @@
       font-size: 24px;
       color: #ffffff;
       margin: 0;
-      }.header p {
+    }
+    .header p {
       font-size: 12px;
       color: #ffffff;
     }
@@ -58,7 +60,8 @@
     .social div a img {
       width: 15px;
       height: 15px;
-    }.hub-card {
+    }
+    .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
@@ -90,7 +93,8 @@
     .dropdown {
       display: inline-block;
       position: relative;
-    }.dropdown select {
+    }
+    .dropdown select {
       font-family: 'Space Mono', monospace;
       font-size: 14px;
       padding: 5px 10px;
@@ -103,7 +107,8 @@
     }
     .dropdown::after {
       content: '\25BC';
-      position: absolute;top: 50%;
+      position: absolute;
+      top: 50%;
       right: 10px;
       transform: translateY(-50%);
       font-size: 10px;
@@ -116,7 +121,8 @@
       margin: 20px auto;
     }
     .triangle {
-      position: absolute;top: 50%;
+      position: absolute;
+      top: 50%;
       left: 40.5%;
       transform: translate(-50%, -50%);
       width: 0;
@@ -155,7 +161,8 @@
       color: transparent;
       background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
       background-clip: text;
-      -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       transition: all 1s ease;
       z-index: 2;
     }
@@ -169,10 +176,12 @@
       color: transparent;
       background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
       background-clip: text;
-      -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       transition: all 1s ease;
       z-index: 2;
-    }#center-triangle:hover ~ .reflect-container .reflect-text {
+    }
+    #center-triangle:hover ~ .reflect-container .reflect-text {
       transform: translate(-50%, -50%) translateX(-25px) translateY(-45px) rotate(0.1deg);
     }
     #center-triangle:hover ~ .reflect-container .reflection {
@@ -183,7 +192,8 @@
     }
     .community-container {
       color: #00b3b3;
-      text-align: center;position: relative;
+      text-align: center;
+      position: relative;
       margin-bottom: 100px;
     }
     .community-heading,
@@ -191,10 +201,13 @@
     .community-benefits,
     .community-cta,
     .community-benefits-list {
-      color: #00b3b3;text-align: center;
-    }.community-heading {
+      color: #00b3b3;
+      text-align: center;
+    }
+    .community-heading {
       font-size: 18px;
-      margin-top: 20px;}
+      margin-top: 20px;
+    }
     .community-description {
       font-size: 14px;
       margin-bottom: 10px;
@@ -202,7 +215,8 @@
     .community-benefits {
       font-size: 14px;
       font-weight: bold;
-    }.community-benefits-list {
+    }
+    .community-benefits-list {
       margin-top: 5px;
       list-style-type: disc;
       margin-left: 15px;
@@ -228,7 +242,8 @@
       color: #ffffff;
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-      padding: 10px;text-align: center;
+      padding: 10px;
+      text-align: center;
       position: relative;
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
@@ -238,46 +253,51 @@
     .grid-item:hover {
       transform: translateY(-3px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
-    }footer {
+    }
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 15px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }.footer-container {
+    }
+    .footer-container {
       max-width: 1200px;
       margin: 0 auto;
-    }</style>
+    }
+  </style>
 </head>
 <body>
   <div class="header">
-  <h1>CommUnityCentralHub</h1>
-  <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p>
-  <div class="social">
-    <div>
-      <a href="#">
-        <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
-      </a>
+    <h1>CommUnityCentralHub</h1>
+    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p>
+    <div class="social">
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
+        </a>
+      </div>
     </div>
   </div>
-</div><div class="hub-card">
+  <div class="hub-card">
     <h1>Uniting Business and Community: Empowering Collaboration and Growth</h1>
-    <p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p><div class="dropdown-container">
+    <p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p>
+    <div class="dropdown-container">
       <div class="dropdown">
         <select>
           <option value="">Select a Local business</option>
@@ -288,7 +308,7 @@
         </select>
       </div>
     </div>
-  </div></div>
+  </div>
   <div class="container">
     <div id="center-triangle" class="triangle"></div>
     <div id="left-triangle" class="triangle"></div>
@@ -300,18 +320,20 @@
   </div>
   <h2 class="community-heading">Join Our Community</h2>
   <p class="community-description">
-Our mission is to establish a community-run hub that brings together the community and local businesses, with a strong focus on community involvement. We prioritize community empowerment through a 60/40 split, emphasizing community interests over business interests.
-
-The community holds a 60% say in determining the content and visual aspects of our hub. Whether it's choosing design elements, incorporating community-uploaded hand-drawn artwork, or selecting colors and bubbles, we value the community's vision. By actively involving both the community and small businesses, we aim to challenge corporate dominance and redirect support towards local enterprises. Over three years of collaboration, we envision an incredible hub created by the community.
-
-At the end of each year, the community will receive 60% of the profits generated by the hub. Together, we will identify areas for improvement and decide how to allocate funds for community projects. Our belief is that economic empowerment of the community leads to positive change. Rather than pursuing personal enrichment, our goal is to foster a strong sense of community spirit, drawing inspiration from the founder's upbringing in a council estate.</p>
+    Our mission is to establish a community-run hub that brings together the community and local businesses, with a strong focus on community involvement. We prioritize community empowerment through a 60/40 split, emphasizing community interests over business interests.
+    
+    The community holds a 60% say in determining the content and visual aspects of our hub. Whether it's choosing design elements, incorporating community-uploaded hand-drawn artwork, or selecting colors and bubbles, we value the community's vision. By actively involving both the community and small businesses, we aim to challenge corporate dominance and redirect support towards local enterprises. Over three years of collaboration, we envision an incredible hub created by the community.
+    At the end of each year, the community will receive 60% of the profits generated by the hub. Together, we will identify areas for improvement and decide how to allocate funds for community projects. Our belief is that economic empowerment of the community leads to positive change. Rather than pursuing personal enrichment, our goal is to foster a strong sense of community spirit, drawing inspiration from the founder's upbringing in a council estate.
+  </p>
   <p class="community-benefits">Benefits of joining our community:</p>
   <ul class="community-benefits-list">
     <li>Elderly Assistance: We approach elderly assistance with caution, gathering insights from local churches, elderly charities, and the wider community. Our goal is to provide targeted support, considering the unique needs of our senior community members. We are determined to make a positive impact while prioritizing their input.</li>
     <li>Personalized Exchange and Free Services: Unlike other platforms that offer unrealistic giveaways, we provide a more personalized service. Our window cleaner not only scans customers' backyards for unwanted items but also facilitates exchanges within the community. Additionally, we encourage builders to contribute to the hub by offering free services. This ensures that the community benefits from trustworthy assistance, alleviating concerns about previous negative experiences.</li>
     <li>Community Service: Community service is a collective effort involving our founder, their children, loyal customers, and anyone interested in making a difference. As we document and share pictures of these initiatives on the hub, we aim to inspire others to join in and foster a positive trend within our area.</li>
     <li>Personalized Web Pages: As a unique and innovative offering, we provide a full web page for lucky community members to commemorate important events in their lives. Whether it's celebrating a birth, wedding, or creating a memorial for a lost loved one, these individuals will have full responsibility for the page. We provide them with the password and login details, allowing them to curate the content within limits set by our platform.</li>
-    <li>The Engaging Graffiti Wall: We introduce an interactive feature called the "graffiti wall." Community members can submit their chosen nicknames, which we proudly display on this wall. This idea, developed for the community, promotes engagement and allows individuals of all ages to have their names forever associated with our hub.</li><li>Encouraging Young Entrepreneurship: Every year, we invite three young individuals from the community, regardless of age, to submit their business plans. As long as their proposals demonstrate clear direction and comply with legal requirements, we offer them the opportunity to start a business with full autonomy. They can invest in any legal stock or materials without requiring adult assistance. We aim to inspire and support the entrepreneurial aspirations of our young community members #SavePoketMoney.</li><li>Monthly Prizes: We are considering implementing monthly prizes to further engage the community. While the details are still under consideration, our initial thoughts include hiding symbolic items like menus, scissors, or lucky chips on respective hub pages. However, we are mindful of ensuring that these items remain accessible within the hub and not taken away.</li>
+    <li>The Engaging Graffiti Wall: We introduce an interactive feature called the "graffiti wall." Community members can submit their chosen nicknames, which we proudly display on this wall. This idea, developed for the community, promotes engagement and allows individuals of all ages to have their names forever associated with our hub.</li>
+    <li>Encouraging Young Entrepreneurship: Every year, we invite three young individuals from the community, regardless of age, to submit their business plans. As long as their proposals demonstrate clear direction and comply with legal requirements, we offer them the opportunity to start a business with full autonomy. They can invest in any legal stock or materials without requiring adult assistance. We aim to inspire and support the entrepreneurial aspirations of our young community members #SavePoketMoney.</li>
+    <li>Monthly Prizes: We are considering implementing monthly prizes to further engage the community. While the details are still under consideration, our initial thoughts include hiding symbolic items like menus, scissors, or lucky chips on respective hub pages. However, we are mindful of ensuring that these items remain accessible within the hub and not taken away.</li>
   </ul>
   <p class="community-cta">Don't miss out on the incredible opportunities awaiting you! Join our community today and embark on a journey filled with discovery, connections, and memorable experiences.</p>
   <div class="grid-container community-container">
@@ -347,12 +369,12 @@ At the end of each year, the community will receive 60% of the profits generated
       <i class="community-icon">🎁</i>
       <p class="community-text">Free Gifts</p>
     </div>
-  </div><div class="login-register">
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-    </div>
-  <h3>Graffitti wall</h3>
-
+  </div>
+  <div class="login-register">
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+  </div>
+  <h3>Graffiti wall</h3>
   <footer>
     <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
