@@ -34,11 +34,11 @@
       background: linear-gradient(90deg, #00b3b3, #ffffff);
     }
     .header h1 {
-      font-size: 36px;
+      font-size: 24px;
       color: #ffffff;
       margin: 0;
       }.header p {
-      font-size: 14px;
+      font-size: 12px;
       color: #ffffff;
     }
     .social {
@@ -73,13 +73,13 @@
       z-index: 1;
     }
     .hub-card h1 {
-      font-size: 24px;
+      font-size: 18px;
       margin-top: 0;
       margin-bottom: 10px;
       color: #ffffff;
     }
     .hub-card p {
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 10px;
       color: #ffffff;
     }
