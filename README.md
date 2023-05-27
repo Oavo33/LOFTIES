@@ -251,34 +251,30 @@
 </head>
 <body>
   <div class="header">
+  <h1>CommUnityCentralHub</h1>
   <div class="social">
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
-        </a>
-      </div>
-      </div>
-    <div class="login-register">
-      <a href="#">Login</a>
-      <a href="#">Register</a>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+      </a>
     </div>
-    <h1>CommUnityCentralHub</h1>
-    <p>Community-driven Collaboration: Strengthening Businesses, Inspiring Connections, and Fostering Change.</p>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
+      </a>
+    </div>
+  </div>
+</div><p>Community-driven Collaboration: Strengthening Businesses, Inspiring Connections, and Fostering Change.</p>
   </div>
   <div class="hub-card">
     <h1>Empowerment. Growth. Connection. Community.</h1>
@@ -291,9 +287,10 @@
           <option value="engineer">Window Cleaner</option>
           <option value="scientist">Hairdresser</option>
           <option value="pilot">RocketShip Parts</option>
-          </select>
+        </select>
       </div>
-    </div></div>
+    </div>
+  </div>
   <div class="container">
     <div id="center-triangle" class="triangle"></div>
     <div id="left-triangle" class="triangle"></div>
@@ -301,8 +298,9 @@
     <div class="reflect-container">
       <div class="reflect-text">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
       <div class="reflection">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
-    </div></div>
-<h2 class="community-heading">Join Our Community</h2>
+    </div>
+  </div>
+  <h2 class="community-heading">Join Our Community</h2>
   <p class="community-description">Connecting with CommUnityCentralHub is incredibly easy! We are absolutely delighted to receive your messages. Get in touch with us using our intuitive platform and actively contribute to shaping the hub according to your preferences. Share your valuable thoughts, suggestions, and aspirations for the site because your input has the extraordinary ability to revolutionize our online community and this page Literally!. And make sure not to overlook our digital graffiti wall, where you can make a lasting impression and proudly display your distinctive nickname. Additionally, once a month, we select a fortunate community member and design a webpage in their honor, accommodating their desired content within reasonable limits this will increase as my Team gets bigger.</p>
   <p class="community-benefits">Benefits of joining our community:</p>
   <ul class="community-benefits-list">
@@ -314,45 +312,50 @@
   </ul>
   <p class="community-cta">Don't miss out on the incredible opportunities awaiting you! Join our community today and embark on a journey filled with discovery, connections, and memorable experiences.</p>
   <div class="grid-container community-container">
-  <div class="grid-item community-item">
-    <i class="community-icon">🏠</i>
-    <p class="community-text">Community Exchange</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">🌞</i>
-    <p class="community-text">Elderly Assistance</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">🌍</i>
-    <p class="community-text">Community Service</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">🎉</i>
-    <p class="community-text">Free Services</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">🏰</i>
-    <p class="community-text">History of The Wirral</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">🎨</i>
-    <p class="community-text">Graffiti Wall/Website Change Request</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">📢</i>
-    <p class="community-text">Business Recommendations</p>
-  </div>
-  <div class="grid-item community-item">
-    <i class="community-icon">🎁</i>
-    <p class="community-text">Free Gifts</p>
-  </div>
-</div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🏠</i>
+      <p class="community-text">Community Exchange</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🌞</i>
+      <p class="community-text">Elderly Assistance</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🌍</i>
+      <p class="community-text">Community Service</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🎉</i>
+      <p class="community-text">Free Services</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🏰</i>
+      <p class="community-text">History of The Wirral</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🎨</i>
+      <p class="community-text">Graffiti Wall/Website Change Request</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">📢</i>
+      <p class="community-text">Business Recommendations</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🎁</i>
+      <p class="community-text">Free Gifts</p>
+    </div>
+  </div><div class="login-register">
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
   <h3>Graffitti wall</h3>
+
   <footer>
     <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
-  </footer><script>
+  </footer>
+  <script>
     const centerTriangle = document.getElementById('center-triangle');
     const leftTriangle = document.getElementById('left-triangle');
     const rightTriangle = document.getElementById('right-triangle');
@@ -368,5 +371,7 @@
         leftTriangle.style.transform = 'translate(-50%, -50%)';
         rightTriangle.style.transform = 'translate(-50%, -50%)';
       }
-    }</script>
-</body></html>
+    }
+  </script>
+</body>
+</html>
