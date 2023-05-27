@@ -44,7 +44,7 @@
       align-items: flex-start; 
     }
     .social div {
-      margin-bottom: 5px; 
+      margin-bottom: 0px; 
     }
     .social div a {
       display: flex;
@@ -60,7 +60,7 @@
       justify-content: end;
     }
     .login-register a {
-      margin-left: 10px;
+      margin-left: 0px;
       text-decoration: none;
       color: white;
       padding: 2px 5px;
