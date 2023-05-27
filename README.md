@@ -34,7 +34,7 @@
       background: linear-gradient(90deg, #00b3b3, #ffffff);
     }
     .header h1 {
-      font-size: 56px;
+      font-size: 36px;
       color: #ffffff;
       margin: 0;
       }.header p {
