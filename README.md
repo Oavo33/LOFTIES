@@ -252,6 +252,7 @@
 <body>
   <div class="header">
   <h1>CommUnityCentralHub</h1>
+  <p>Community-driven Collaboration: Strengthening Businesses, Inspiring Connections, and Fostering Change.</p>
   <div class="social">
     <div>
       <a href="#">
@@ -274,7 +275,7 @@
       </a>
     </div>
   </div>
-</div><p>Community-driven Collaboration: Strengthening Businesses, Inspiring Connections, and Fostering Change.</p>
+</div>
   </div>
   <div class="hub-card">
     <h1>Empowerment. Growth. Connection. Community.</h1>
