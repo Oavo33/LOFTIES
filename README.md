@@ -265,7 +265,7 @@
     <p class="community-text">Community Service</p>
   </div>
   <div class="grid-item community-item">
-    <i class="community-icon">🎁</i>
+    <i class="community-icon">🎉</i>
     <p class="community-text">Free Services</p>
   </div>
   <div class="grid-item community-item">
@@ -281,7 +281,7 @@
     <p class="community-text">Business Recommendations</p>
   </div>
   <div class="grid-item community-item">
-    <i class="community-icon">🎉</i>
+    <i class="community-icon">🎁</i>
     <p class="community-text">Free Gifts</p>
   </div>
 </div>
