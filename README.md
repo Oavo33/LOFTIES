@@ -33,7 +33,7 @@
       background: linear-gradient(90deg, #00b3b3, #ffffff);
     }
     .header h1 {
-      font-size: 55px;
+      font-size: 45px;
       color: #ffffff;
       margin: 0;
     }
