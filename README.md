@@ -35,7 +35,7 @@
       background: linear-gradient(90deg, #00b3b3, #ffffff);
     }
     .header h1 {
-      font-size: 24px;
+      font-size: 22px;
       color: #ffffff;
       margin: 0;
     }
@@ -333,7 +333,7 @@
     <li>Personalized Web Pages: As a unique and innovative offering, we provide a full web page for lucky community members to commemorate important events in their lives. Whether it's celebrating a birth, wedding, or creating a memorial for a lost loved one, these individuals will have full responsibility for the page. We provide them with the password and login details, allowing them to curate the content within limits set by our platform.</li>
     <li>The Engaging Graffiti Wall: We introduce an interactive feature called the "graffiti wall." Community members can submit their chosen nicknames, which we proudly display on this wall. This idea, developed for the community, promotes engagement and allows individuals of all ages to have their names forever associated with our hub.</li>
     <li>Encouraging Young Entrepreneurship: Every year, we invite three young individuals from the community, regardless of age, to submit their business plans. As long as their proposals demonstrate clear direction and comply with legal requirements, we offer them the opportunity to start a business with full autonomy. They can invest in any legal stock or materials without requiring adult assistance. We aim to inspire and support the entrepreneurial aspirations of our young community members #SavePoketMoney.</li>
-    <li>Monthly Prizes: We are considering implementing monthly prizes to further engage the community. While the details are still under consideration, our initial thoughts include hiding symbolic items like menus, scissors, or lucky chips on respective hub pages. However, we are mindful of ensuring that these items remain accessible within the hub and not taken away.</li>
+    <li>Monthly Prizes: We are considering implementing monthly prizes to further engage the community. While the details are still under consideration, our initial thoughts include hiding symbolic items like menus, scissors, or lucky chips on respective hub pages. However, we are mindful of ensuring that these items remain accessible within the hub and not taken away so we still need your feed back on this please.</li>
   </ul>
   <p class="community-cta">Don't miss out on the incredible opportunities awaiting you! Join our community today and embark on a journey filled with discovery, connections, and memorable experiences.</p>
   <div class="grid-container community-container">
@@ -355,19 +355,19 @@
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🏰</i>
-      <p class="community-text">Entrepreneurship</p>
+      <p class="community-text">Encouraging Young Entrepreneurship</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🎨</i>
-      <p class="community-text">Graffiti Wall/Website Change Request</p>
+      <p class="community-text">The Engaging Graffiti Wall</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">📢</i>
-      <p class="community-text">Business Recommendations</p>
+      <p class="community-text">Personalized Web Pages</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🎁</i>
-      <p class="community-text">Free Gifts</p>
+      <p class="community-text">Monthly Prizes</p>
     </div>
   </div>
   <div class="login-register">
