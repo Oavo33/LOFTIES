@@ -268,7 +268,10 @@
 <body>
   <div class="header">
     <h1>Collabor8</h1>
-    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p>
+    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p><div class="login-register">
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+  </div>
     <div class="social">
       <div>
         <a href="#">
@@ -371,12 +374,7 @@
       <i class="community-icon">🎁</i>
       <p class="community-text">Monthly Prizes</p>
     </div>
-  </div>
-  <div class="login-register">
-    <a href="#">Login</a>
-    <a href="#">Register</a>
-  </div>
-  <h3>Graffiti wall</h3>
+  </div><h3>Graffiti wall</h3>
   <footer>
     <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
