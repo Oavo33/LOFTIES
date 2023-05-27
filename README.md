@@ -270,19 +270,19 @@
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🏠</i>
-      <p class="community-text">H</p>
+      <p class="community-text">History of The Wirral</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🍽️</i>
-      <p class="community-text">Elderly Assistance</p>
+      <p class="community-text">Graffiti Wall Sign Up</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🌻</i>
-      <p class="community-text">Community Service</p>
+      <p class="community-text">Recommend a business</p>
     </div>
     <div class="grid-item community-item">
       <i class="community-icon">🎭</i>
-      <p class="community-text">Free Services</p>
+      <p class="community-text">Free Gifts</p>
     </div>
   </div>
   <h3>Graffitti wall</h3>
