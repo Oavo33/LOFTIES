@@ -278,7 +278,7 @@
   </div>
   <div class="grid-item community-item">
     <i class="community-icon">📢</i>
-    <p class="community-text">Recommend a Business</p>
+    <p class="community-text">Business Recommendations</p>
   </div>
   <div class="grid-item community-item">
     <i class="community-icon">🎉</i>
