@@ -179,7 +179,7 @@
     }
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 20px;
       background: linear-gradient(to bottom, #00b3b3, #ffffff);
       border-radius: 10px;
