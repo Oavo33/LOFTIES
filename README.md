@@ -277,7 +277,7 @@
   </div>
 </div><div class="hub-card">
     <h1>Uniting Business and Community: Empowering Collaboration and Growth</h1>
-    <p>Experience the power of collaboration at CommUnityCentralHub, where businesses and community converge. Discover opportunities for growth, ignite connections, and drive positive change. Empowering businesses, fostering unity, and nurturing a thriving community. Together, we create a vibrant ecosystem built on synergy and collective success.</p>
+    <p Join the Power of Collaboration at CommUnityCentralHub: Where Businesses and Community Come Together. Discover Growth Opportunities, Spark Meaningful Connections, and Drive Positive Change. Together, we Empower Businesses, Foster Unity, and Nurture a Thriving Community. Lets Create a Vibrant Ecosystem of Friendship and Success! </p>
     <div class="dropdown-container">
       <div class="dropdown">
         <select>
