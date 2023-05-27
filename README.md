@@ -40,17 +40,38 @@
     }
     .social {
       display: flex;
-      justify-content: space-between;  
-      width: 20px;  
-    }.social a {
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+    .social div {
+      margin-bottom: 5px; 
+    }
+    .social div a {
+      display: flex;
+      align-items: center;
       text-decoration: none;
       color: black;
-      transition: transform 0.3s ease-in-out;
-    }
-    .social a img {
+    }.social div a img {
       width: 15px; 
-      height: 15px;
-      }
+      height: 15px; 
+    }
+    .login-register {
+      display: flex;
+      justify-content: end;
+    }
+    .login-register a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 2px 5px;
+      font-size: 0.8em;
+      border-radius: 15px;
+      background: linear-gradient(90deg, #ffffff, #00b3b3);
+      transition: background .3s;
+    }
+    .login-register a:hover {
+      background: linear-gradient(90deg, #00b3b3, #ffffff);
+    }
       .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
