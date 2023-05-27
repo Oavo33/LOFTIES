@@ -41,19 +41,20 @@
     .social {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; 
+      align-items: flex-start;
     }
     .social div {
-      margin-bottom: 0px; 
+      margin-bottom: 5px;
     }
     .social div a {
       display: flex;
       align-items: center;
       text-decoration: none;
       color: black;
-    }.social div a img {
-      width: 15px; 
-      height: 15px; 
+    }
+    .social div a img {
+      width: 15px;
+      height: 15px;
     }
     .login-register {
       display: flex;
