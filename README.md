@@ -17,12 +17,13 @@
     .social {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: flex-start; 
+  justify-content: space-evenly; 
   height: 100%; 
+  margin-top: 50px; 
 }
 .social div {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 .social div a {
   display: flex;
