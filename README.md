@@ -66,7 +66,7 @@
       padding: 20px;
       text-align: center;
       max-width: 500px;
-      width: 90%;
+      width: 70%;
       margin: 0 auto;
       margin-top: -90px;
       position: relative;
