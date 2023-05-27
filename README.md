@@ -35,7 +35,7 @@
       background: linear-gradient(90deg, #00b3b3, #ffffff);
     }
     .header h1 {
-      font-size: 22px;
+      font-size: 35px;
       color: #ffffff;
       margin: 0;
     }
@@ -269,7 +269,7 @@
 </head>
 <body>
   <div class="header">
-    <h1>CommUnityCentralHub</h1>
+    <h1>Collabor8</h1>
     <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p>
     <div class="social">
       <div>
