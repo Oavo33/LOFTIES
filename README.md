@@ -277,9 +277,7 @@
   </div>
 </div><div class="hub-card">
     <h1>Uniting Business and Community: Empowering Collaboration and Growth</h1>
-    <p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p>
-</div>
-    <div class="dropdown-container">
+    <p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p><div class="dropdown-container">
       <div class="dropdown">
         <select>
           <option value="">Select a Local business</option>
@@ -290,7 +288,7 @@
         </select>
       </div>
     </div>
-  </div>
+  </div></div>
   <div class="container">
     <div id="center-triangle" class="triangle"></div>
     <div id="left-triangle" class="triangle"></div>
