@@ -267,13 +267,11 @@
 </head>
 <body>
   <div class="header">
-    <h1>Collabor8</h1>
-    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p>
-    <div class="login-register">
+    <h1>Collabor8</h1><div class="login-register">
       <a href="#">Login</a>
       <a href="#">Register</a>
     </div>
-    <div class="social">
+    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p><div class="social">
       <div>
         <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
