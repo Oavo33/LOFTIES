@@ -297,7 +297,7 @@
     </div>
   </div><div class="hub-card">
     <h1>Driving Growth Together: Empowering Businesses and Communities</h1>
-    <p>Join us at CommUnityCentralHub: Where Businesses and Communities Thrive!</p><div class="dropdown-container">
+    <p>Welcome to Collabor8, a community-driven hub that empowers businesses and fosters collaboration. Join us to unlock boundless growth opportunities and forge meaningful connections. With a focus on community involvement, we prioritize the 60/40 rule, giving the community a significant say in shaping the hub. Together, we challenge corporate dominance and redirect support towards local enterprises. Experience personalized exchanges, community services, and unique features like the engaging graffiti wall. Be part of our vibrant ecosystem, where businesses and communities thrive. Discover, connect, and create unforgettable experiences at Collabor8!</p><div class="dropdown-container">
     <div class="dropdown">
       <select>
         <option value="">Select a Local business</option>
