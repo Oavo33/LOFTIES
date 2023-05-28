@@ -266,11 +266,11 @@
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Collabor8</h1><div class="login-register">
+  <div class="header"><div class="login-register">
       <a href="#">Login</a>
       <a href="#">Register</a>
     </div>
+    <h1>Collabor8</h1>
     <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p><div class="social">
       <div>
         <a href="#">
