@@ -268,10 +268,11 @@
 <body>
   <div class="header">
     <h1>Collabor8</h1>
-    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p><div class="login-register">
-    <a href="#">Login</a>
-    <a href="#">Register</a>
-  </div>
+    <p>Empowering Communities: A Hub for Collaboration, Support, and Unforgettable Experiences</p>
+    <div class="login-register">
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
     <div class="social">
       <div>
         <a href="#">
@@ -294,26 +295,22 @@
         </a>
       </div>
     </div>
-  </div>
-  <div>
-  <div class="hub-card">
+  </div><div class="hub-card">
     <h1>Empowering Business-Community Integration: Driving Growth Together</h1>
     <p>Join us at CommUnityCentralHub: Where Businesses and Communities Thrive!</p>
-  </div>
-</div>
-    <p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p>
-    <div class="dropdown-container">
-      <div class="dropdown">
-        <select>
-          <option value="">Select a Local business</option>
-          <option value="astronaut">Chippy</option>
-          <option value="engineer">Window Cleaner</option>
-          <option value="scientist">Hairdresser</option>
-          <option value="pilot">RocketShip Parts</option>
-        </select>
-      </div>
+  </div><p>Join us at CommUnityCentralHub: Where Businesses and Community Embrace Friendship! Experience the amazing power of collaboration, uncover boundless growth opportunities, and ignite meaningful connections. We're here to empower businesses, foster unity, and create a thriving community. Let's build a vibrant and friendly ecosystem of success, together!</p>
+  <div class="dropdown-container">
+    <div class="dropdown">
+      <select>
+        <option value="">Select a Local business</option>
+        <option value="astronaut">Chippy</option>
+        <option value="engineer">Window Cleaner</option>
+        <option value="scientist">Hairdresser</option>
+        <option value="pilot">RocketShip Parts</option>
+      </select>
     </div>
   </div>
+</div>
   <div class="container">
     <div id="center-triangle" class="triangle"></div>
     <div id="left-triangle" class="triangle"></div>
