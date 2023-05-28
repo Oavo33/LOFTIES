@@ -69,7 +69,7 @@
       max-width: 500px;
       width: 70%;
       margin: 0 auto;
-      margin-top: -130px;
+      margin-top: -100px;
       position: relative;
       z-index: 1;
     }
