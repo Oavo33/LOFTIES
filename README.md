@@ -335,7 +335,7 @@
   </ul>
   <p class="community-cta">Don't miss out on the incredible opportunities awaiting you! As your hub grows, so does everything else related—helping more people, improvement to your area, better prizes, and more web pages developed. Instead of one every three months, it could be one every week! Instead of three entrepreneurs a year, we have 30 entrepreneurs a year. Imagine the possibilities! With 60% of profits going to the community, we can easily achieve this together. At Collabor8, we already have a team of 15 local people like you who want to make a change for the better after such a hard few years. Let's get our community back! Join our hub today and embark on a journey filled with discovery, connections, and memorable experiences.
 
-Hopefully, you might be thinking, "Well, what can I do?" You can leave a review and tell us how you want the hub to look. Help us find a sufficient and effective way to assist the elderly. Visit the site daily to get the most recent updates. Send in a picture of an unwanted item. Join us in litter picking. And let's get the little ones started on their business plans as we enter prosperity</p>
+Hopefully, you might be thinking, "Well, what can I do?" You can leave a review and tell us how you want the hub to look. Help us find a sufficient and effective way to assist the elderly. Make an application for the graffiti wall of web page deign,  Visit the site daily to get the most recent updates. Send in a picture of an unwanted item. Join us in litter picking. And let's get the little ones started on their business plans as we enter prosperity</p>
   <div class="grid-container community-container">
     <div class="grid-item community-item">
       <i class="community-icon">🏠</i>
