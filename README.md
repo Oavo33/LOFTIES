@@ -345,7 +345,7 @@
 </div>
   <div class="grid-item community-item">
     <i class="community-icon">🎁</i>
-    <p class="community-text">Monthly Prizes</p>
+    <p class="community-text">White Paper</p>
   </div>
 </div><footer>
     <div class="footer-container">
