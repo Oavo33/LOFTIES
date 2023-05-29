@@ -356,10 +356,10 @@ Hopefully, you might be thinking, "Well, what can I do?" You can leave a review 
     <i class="community-icon">🏰</i>
     <p class="community-text">Encouraging Young Entrepreneurship</p>
   </div>
-  <div class="grid-item community-item" onclick="window.location.href = 'https://https://oavo33.github.io/The.Community.Graffiti.Wall/';">
-    <i class="community-icon">🎨</i>
-    <p class="community-text">The Community Graffiti Wall</p>
-  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';">
+  <i class="community-icon">🎨</i>
+  <p class="community-text">The Community Graffiti Wall</p>
+</div>
   <div class="grid-item community-item">
     <i class="community-icon">📢</i>
     <p class="community-text">Personalized Web Pages</p>
