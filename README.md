@@ -343,9 +343,9 @@
     <i class="community-icon">📢</i>
     <p class="community-text">Personalized Web Pages</p>
 </div>
-  <div class="grid-item community-item" onclick="window.location.href = 'https://https://https://oavo33.github.io/White.Paper/'">
-    <i class="community-icon">📄</i>
-    <p class="community-text">White Paper</p>
+  <<div class="grid-item community-item" onclick="window.location.href = 'https://https://oavo33.github.io/White.Paper/'">
+  <i class="community-icon">📄</i>
+  <p class="community-text">White Paper</p>
 </div>
 </div><footer>
     <div class="footer-container">
