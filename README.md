@@ -295,7 +295,7 @@
     </div>
   </div><div class="hub-card">
     <h1>60% Community + 40% Local Business = Success</h1>
-    <p>Welcome to Collabor8, a community-driven hub that empowers businesses and fosters collaboration. Join us to unlock boundless growth opportunities and forge meaningful connections. With a focus on community involvement, we prioritize the 60/40 rule, giving the community a significant say in shaping the hub. Together, we challenge corporate dominance and redirect support towards local enterprises. Experience personalized exchanges, community services, and unique features like the engaging graffiti wall. Be part of our vibrant ecosystem, where businesses and communities thrive. Discover, connect, and create unforgettable experiences at Collabor8!</p><div class="dropdown-container">
+    <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed. We emphasize the "60/40 rule": our community gets a major say in shaping our space. We're all about supporting local businesses and challenging the big corporations. You'll find cool features like a graffiti wall, a variety of local businesses to explore, and more. Join us, create some amazing experiences, and let's make this space truly our own!</p><div class="dropdown-container">
     <div class="dropdown">
       <select>
         <option value="">Select a Local business</option>
