@@ -337,7 +337,7 @@
 
 Hopefully, you might be thinking, "Well, what can I do?" You can leave a review and tell us how you want the hub to look. Help us find a sufficient and effective way to assist the elderly. Make an application for the Graffiti wall or Web Page Design,  Visit the site daily to get the most recent updates. Send in a picture of an unwanted item. Join us in litter picking. And let's get the little ones started on their business plans as we enter prosperity.</p>
   <div class="grid-container community-container">
-  <div class="grid-item community-item" onclick="window.location.href = 'https://github.com/Oavo33/Personalized.Exchange.And.Free.Services.git';">
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
   <i class="community-icon">🏠</i>
   <p class="community-text">Community Giveaway</p>
 </div>
