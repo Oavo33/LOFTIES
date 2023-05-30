@@ -325,7 +325,7 @@
       <i class="community-icon">🤝</i>
       <p class="community-text">Community Giveaway</p>
     </div>
-    <div class="grid-item community-item">
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
       <i class="community-icon">🏠</i>
       <p class="community-text">Help Our Homeless</p>
     </div>
