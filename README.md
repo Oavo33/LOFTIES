@@ -325,9 +325,8 @@
       <i class="community-icon">🤝</i>
       <p class="community-text">Community Giveaway</p>
     </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
-      <i class="community-icon">🏠</i>
-      <p class="community-text">Help Our Homeless</p>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';"><i class="community-icon">🎨</i>
+      <p class="community-text">The Community Graffiti Wall</p>
     </div>
     <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
       <i class="community-icon">📸</i>
@@ -336,10 +335,9 @@
     <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
       <i class="community-icon">💼</i>
       <p class="community-text">Encouraging Young Entrepreneurship</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';">
-      <i class="community-icon">🎨</i>
-      <p class="community-text">The Community Graffiti Wall</p>
+    </div><div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
+      <i class="community-icon">🏠</i>
+      <p class="community-text">Help Our Homeless</p>
     </div>
     <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
       <i class="community-icon">🌐</i>
