@@ -329,7 +329,7 @@
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
     <i class="community-icon">🎉</i>
-    <p class="community-text">Our Vintage High Street Shop Photographs</p>
+    <p class="community-text">Our Vintage Shop Photographs</p>
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
     <i class="community-icon">🏰</i>
