@@ -1,6 +1,6 @@
 <html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lofties Astronauts</title>
+  <title>The Hub</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
@@ -316,39 +316,40 @@
     <div class="reflection">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
   </div>
 </div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
-  <i class="community-icon">🌞</i>
-  <p class="community-text">Elderly Assistance</p>
-</div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
-  <i class="community-icon">🏠</i>
-  <p class="community-text">Community Giveaway</p>
-</div>
-<div class="grid-item community-item">
-  <i class="community-icon">🌍</i>
-  <p class="community-text">Help Our Homeless</p>
-</div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
-  <i class="community-icon">🎉</i>
-  <p class="community-text">Our Vintage Shop Photographs</p>
-</div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
-  <i class="community-icon">🏰</i>
-  <p class="community-text">Encouraging Young Entrepreneurship</p>
-</div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';">
-  <i class="community-icon">🎨</i>
-  <p class="community-text">The Community Graffiti Wall</p>
-</div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
-  <i class="community-icon">📢</i>
-  <p class="community-text">FREE Personalized Web Pages</p>
-</div>
-<div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
-  <i class="community-icon">📄</i>
-  <p class="community-text">White Paper</p>
-</div>
-</div><footer>
+ <div class="grid-container">
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
+      <i class="community-icon">👵</i>
+      <p class="community-text">Elderly Assistance</p>
+    </div>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
+      <i class="community-icon">🤝</i>
+      <p class="community-text">Community Giveaway</p>
+    </div>
+    <div class="grid-item community-item">
+      <i class="community-icon">🏠</i>
+      <p class="community-text">Help Our Homeless</p>
+    </div>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
+      <i class="community-icon">📸</i>
+      <p class="community-text">Our Vintage Shop Photographs</p>
+    </div>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
+      <i class="community-icon">💼</i>
+      <p class="community-text">Encouraging Young Entrepreneurship</p>
+    </div>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';">
+      <i class="community-icon">🎨</i>
+      <p class="community-text">The Community Graffiti Wall</p>
+    </div>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
+      <i class="community-icon">🌐</i>
+      <p class="community-text">FREE Personalized Web Pages</p>
+    </div>
+    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
+      <i class="community-icon">📝</i>
+      <p class="community-text">White Paper</p>
+    </div>
+  </div><footer>
     <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
