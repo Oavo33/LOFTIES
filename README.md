@@ -318,7 +318,7 @@
 </div>
  <div class="grid-container">
     <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
-      <i class="community-icon">👵</i>
+      <i class="community-icon">👵👴🏽</i>
       <p class="community-text">Elderly Assistance</p>
     </div>
     <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
