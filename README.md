@@ -325,7 +325,7 @@
   </div>
   <div class="grid-item community-item">
     <i class="community-icon">🌍</i>
-    <p class="community-text">Community Service</p>
+    <p class="community-text">Help Our Homeless</p>
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
     <i class="community-icon">🎉</i>
