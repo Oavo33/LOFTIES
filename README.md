@@ -314,15 +314,12 @@
     <div class="reflect-container">
       <div class="reflect-text">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
       <div class="reflection">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
-    </div>
-  </div><div class="grid-container community-container">
-  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
-    <i class="community-icon">🏠</i>
-    <p class="community-text">Community Giveaway</p>
-  </div><div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
+    </div></div><div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">🌞</i>
     <p class="community-text">Elderly Assistance</p>
-  </div>
+  </div><div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
+    <i class="community-icon">🏠</i>
+    <p class="community-text">Community Giveaway</p></div>
   <div class="grid-item community-item">
     <i class="community-icon">🌍</i>
     <p class="community-text">Help Our Homeless</p>
