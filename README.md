@@ -95,7 +95,7 @@
     }
     .graffiti-left,
     .graffiti-right {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%; /* Add this line to center horizontally */
   transform: translate(-50%, -50%); /* Add this line to center vertically and horizontally */
