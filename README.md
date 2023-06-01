@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,13 @@
       background-color: #f2f2f2;
       color: #333333;
     }
-    .header {
+    header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 20px;
       text-align: center;
       position: relative;
     }
-    .header h1 {
+    header h1 {
       font-size: 45px;
       color: #ffffff;
       margin: 0;
@@ -99,7 +100,8 @@
       top: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Your-Graffiti-Font', cursive;
-      font-size: 12px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 12px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
     .graffiti-left {
@@ -113,7 +115,8 @@
       transform: rotate(-7deg);
       top: 10%;
       color: #00b3b3;
-    }.container {
+    }
+    .container {
       position: relative;
       width: 150px;
       height: 200px;
@@ -266,6 +269,7 @@
     }
   </style>
 </head>
+<body>
 <header>
   <div class="header">
     <div class="login-register">
@@ -296,88 +300,88 @@
       </div>
     </div>
     <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
-  </div><div class="hub-card">
-    <h1>60% Community + 40% Local Business = Success</h1>
-    <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed.</p>
-    <div class="dropdown-container">
-      <div class="dropdown">
-        <select>
-          <option value="">Select a Local business</option>
-          <option value="astronaut">Chippy</option>
-          <option value="engineer">Window Cleaner</option>
-          <option value="scientist">Hairdresser</option>
-          <option value="pilot">RocketShip Parts</option>
-        </select>
-      </div>
-    </div>
   </div>
 </header>
-  <body>
-  <div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
-  <div class="container">
-    <div id="center-triangle" class="triangle"></div>
-    <div id="left-triangle" class="triangle"></div>
-    <div id="right-triangle" class="triangle"></div>
-    <div class="reflect-container">
-      <div class="reflect-text">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
-      <div class="reflection">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
+<div class="hub-card">
+  <h1>60% Community + 40% Local Business = Success</h1>
+  <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed.</p>
+  <div class="dropdown-container">
+    <div class="dropdown">
+      <select>
+        <option value="">Select a Local business</option>
+        <option value="astronaut">Chippy</option>
+        <option value="engineer">Window Cleaner</option>
+        <option value="scientist">Hairdresser</option>
+        <option value="pilot">RocketShip Parts</option>
+      </select>
     </div>
+  </div></div>
+<div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
+<div class="container">
+  <div id="center-triangle" class="triangle"></div>
+  <div id="left-triangle" class="triangle"></div>
+  <div id="right-triangle" class="triangle"></div>
+  <div class="reflect-container">
+    <div class="reflect-text">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
+    <div class="reflection">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
   </div>
-  <div class="grid-container">
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
-      <i class="community-icon">👵👴🏽</i>
-      <p class="community-text">Elderly Assistance</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
-      <i class="community-icon">🤝</i>
-      <p class="community-text">Community Giveaway</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';">
-      <i class="community-icon">🎨</i>
-      <p class="community-text">The Community Graffiti Wall</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
-      <i class="community-icon">📸</i>
-      <p class="community-text">Our Vintage Shop Photographs</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
-      <i class="community-icon">💼</i>
-      <p class="community-text">Encouraging Young Entrepreneurship</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
-      <i class="community-icon">🏠</i>
-      <p class="community-text">Help Our Homeless</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
-      <i class="community-icon">🌐</i>
-      <p class="community-text">FREE Personalized Web Pages, Every Month</p>
-    </div>
-    <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
-      <i class="community-icon">📝</i>
-      <p class="community-text">White Paper</p>
-    </div>
+</div>
+<div class="grid-container">
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
+    <i class="community-icon">👵👴🏽</i>
+    <p class="community-text">Elderly Assistance</p>
   </div>
-  <footer>
-    <div class="footer-container">
-      <p>&copy; 2023 Lofties. All rights reserved.</p>
-    </div>
-  </footer>
-  <script>
-    const centerTriangle = document.getElementById('center-triangle');
-    const leftTriangle = document.getElementById('left-triangle');
-    const rightTriangle = document.getElementById('right-triangle');
-    centerTriangle.addEventListener('mouseover', handleTriangleHover);
-    centerTriangle.addEventListener('touchstart', handleTriangleHover);
-    centerTriangle.addEventListener('mouseout', handleTriangleHover);
-    centerTriangle.addEventListener('touchend', handleTriangleHover);
-    function handleTriangleHover(event) {
-      if (event.type === 'mouseover' || event.type === 'touchstart') {
-        leftTriangle.style.transform = 'translate(-50%, -50%) translateX(46px) translateY(2px)';
-        rightTriangle.style.transform = 'translate(-50%, -50%) translateX(46px) translateY(-58px)';
-      } else if (event.type === 'mouseout' || event.type === 'touchend') {
-        leftTriangle.style.transform = 'translate(-50%, -50%)';
-        rightTriangle.style.transform = 'translate(-50%, -50%)';
-      }
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Exchange.And.Free.Services/';">
+    <i class="community-icon">🤝</i>
+    <p class="community-text">Community Giveaway</p>
+  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Community.Graffiti.Wall/';">
+    <i class="community-icon">🎨</i>
+    <p class="community-text">The Community Graffiti Wall</p>
+  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
+    <i class="community-icon">📸</i>
+    <p class="community-text">Our Vintage Shop Photographs</p>
+  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
+    <i class="community-icon">💼</i>
+    <p class="community-text">Encouraging Young Entrepreneurship</p>
+  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
+    <i class="community-icon">🏠</i>
+    <p class="community-text">Help Our Homeless</p>
+  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
+    <i class="community-icon">🌐</i>
+    <p class="community-text">FREE Personalized Web Pages, Every Month</p>
+  </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
+    <i class="community-icon">📝</i>
+    <p class="community-text">White Paper</p>
+  </div>
+</div>
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2023 Lofties. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const centerTriangle = document.getElementById('center-triangle');
+  const leftTriangle = document.getElementById('left-triangle');
+  const rightTriangle = document.getElementById('right-triangle');
+  centerTriangle.addEventListener('mouseover', handleTriangleHover);
+  centerTriangle.addEventListener('touchstart', handleTriangleHover);
+  centerTriangle.addEventListener('mouseout', handleTriangleHover);
+  centerTriangle.addEventListener('touchend', handleTriangleHover);
+  function handleTriangleHover(event) {
+    if (event.type === 'mouseover' || event.type === 'touchstart') {
+      leftTriangle.style.transform = 'translate(-50%, -50%) translateX(46px) translateY(2px)';
+      rightTriangle.style.transform = 'translate(-50%, -50%) translateX(46px) translateY(-58px)';
+    } else if (event.type === 'mouseout' || event.type === 'touchend') {
+      leftTriangle.style.transform = 'translate(-50%, -50%)';
+      rightTriangle.style.transform = 'translate(-50%, -50%)';
     }
-  </script>
-</body></html>
+  }
+</script>
+</body>
+</html>
