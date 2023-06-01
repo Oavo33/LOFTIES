@@ -316,7 +316,7 @@
         </a>
       </div>
     </div>
-    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>You Community Need You !</div>
+    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>Your Community Needs You !</div>
   </div>
 </header>
 <div class="hub-card">
