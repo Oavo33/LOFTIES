@@ -316,7 +316,7 @@
         </a>
       </div>
     </div>
-    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
+    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
   </div>
 </header>
 <div class="hub-card">
@@ -333,9 +333,7 @@
       </select>
     </div>
   </div>
-</div>
-<div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
-<div class="container">
+</div><div class="container">
   <div id="center-triangle" class="triangle"></div>
   <div id="left-triangle" class="triangle"></div>
   <div id="right-triangle" class="triangle"></div>
