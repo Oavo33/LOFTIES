@@ -111,7 +111,7 @@
     }
     .graffiti-right {
       position: absolute;
-      top: 10%;
+      top: 21%;
       right: 14%;
       transform: translate(50%, -50%) rotate(7deg);
       font-family: 'Your-Graffiti-Font', cursive;
