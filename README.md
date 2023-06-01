@@ -11,6 +11,8 @@
       font-size: 14px;
       background-color: #f2f2f2;
       color: #333333;
+      margin: 0;
+      padding: 0;
     }
     header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
@@ -267,6 +269,25 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+      .hub-card {
+        width: 90%;
+      }
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 25px;
+      }
+      .hub-card {
+        width: 100%;
+      }
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
@@ -315,7 +336,8 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div></div>
+  </div>
+</div>
 <div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
