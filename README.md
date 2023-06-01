@@ -113,7 +113,7 @@
     .graffiti-right {
       left: 10px;
       transform: rotate(-7deg);
-      top: 10%;
+      top: 90%;
       color: #00b3b3;
     }
     .container {
