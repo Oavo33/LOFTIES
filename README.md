@@ -122,7 +122,8 @@
     <div class="login-register">
       <a href="#">Login</a>
       <a href="#">Register</a>
-    </div>
+    </div><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
+    <div class="graffiti-right">This whole Hub<br> Has been organized by <br>Local Small Business<br>And You ,We Need You !</div>
     <h1>Collabor8</h1>
     <div class="social">
       <div>
@@ -148,10 +149,7 @@
     </div>
   </div>
   <div class="hub-card"><div class="dropdown-container">
-    <div class="dropdown">
-    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
-    <div class="graffiti-right">This whole Hub<br> Has been organized by <br>Local Small Business<br>And You ,We Need You !</div>
-    <h1>60% Community + 40% Local Business = Success</h1>
+    <div class="dropdown"><h1>60% Community + 40% Local Business = Success</h1>
     <p>Hiyas, welcome to Collabor8! Think of us as your friendly neighborhood hub.</p>
   </div>
   <select>
