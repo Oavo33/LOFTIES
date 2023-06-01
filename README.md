@@ -110,14 +110,9 @@
       top: 10%;
     }
     .graffiti-right {
-      position: absolute;
-      top: 26%;
-      right: 18%;
-      transform: translate(50%, -50%) rotate(7deg);
-      font-family: 'Your-Graffiti-Font', cursive;
-      font-size: 12px;
-      z-index: 1;
-      text-align: center;
+      left: 10px;
+      transform: rotate(-7deg);
+      top: 10%;
     }.container {
       position: relative;
       width: 150px;
@@ -301,9 +296,7 @@
       </div>
     </div>
     <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
-  </div>
-  <div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
-  <div class="hub-card">
+  </div><div class="hub-card">
     <h1>60% Community + 40% Local Business = Success</h1>
     <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed.</p>
     <div class="dropdown-container">
@@ -318,6 +311,7 @@
       </div>
     </div>
   </div>
+  <div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
   <div class="container">
     <div id="center-triangle" class="triangle"></div>
     <div id="left-triangle" class="triangle"></div>
