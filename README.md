@@ -305,7 +305,7 @@
   <div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
   <div class="hub-card">
     <h1>60% Community + 40% Local Business = Success</h1>
-    <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed. We emphasize the "60/40 rule": our community gets a major say in every aspect of our Hub. We're all about supporting local businesses and challenging the big corporations. You'll find cool features like a graffiti wall, a variety of local businesses to explore, and more. Join us, create some amazing experiences, and let's make this space truly our own!</p>
+    <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed.</p>
     <div class="dropdown-container">
       <div class="dropdown">
         <select>
