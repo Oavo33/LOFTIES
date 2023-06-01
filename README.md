@@ -99,20 +99,20 @@
       top: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Your-Graffiti-Font', cursive;
-      font-size: 12px;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 12px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
     .graffiti-left {
       left: 10px;
       transform: rotate(-7deg);
       top: 10%;
+      color: white;
     }
     .graffiti-right {
       left: 10px;
       transform: rotate(-7deg);
       top: 10%;
+      color: #00b3b3;
     }.container {
       position: relative;
       width: 150px;
