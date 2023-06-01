@@ -49,7 +49,7 @@
       padding: 20px;
       text-align: center;
       max-width: 500px;
-      width: 60%;
+      width: 45%;
       margin: 0 auto;
       margin-top: -93px;
       position: relative;
@@ -113,7 +113,7 @@
     .graffiti-right {
       left: 25px;
       transform: rotate(-7deg);
-      bottom: 1%;
+      bottom: 50%;
       color: #00b3b3;
     }
     .container {
