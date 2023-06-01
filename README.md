@@ -97,8 +97,8 @@
     .graffiti-right {
   position: absolute;
   top: 50%;
-  left: 50%; /* Add this line to center horizontally */
-  transform: translate(-50%, -50%); /* Add this line to center vertically and horizontally */
+  left: 50%;
+  transform: translate(-50%, -50%); 
   font-family: 'Your-Graffiti-Font', cursive;
   font-size: 10px;
   color: #00b3b3;
