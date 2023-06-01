@@ -108,12 +108,12 @@
 .graffiti-left {
       left: 0px;
       transform: rotate(-7deg);
-      top: 60%
+      top: 80%
       }
       .graffiti-right {
       right: -35px;
       transform: rotate(7deg);
-      top: 90%
+      top: 80%
     }
   </style>
 </head>
