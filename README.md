@@ -56,19 +56,19 @@
       z-index: 2;
     }
     .hub-card h1 {
-      font-size: 18px;
+      font-size: 14px;
       margin-top: 0;
       margin-bottom: 0;
       color: #ffffff;
     }
     .hub-card p {
-      font-size: 12px;
+      font-size: 10px;
       margin-bottom: 10px;
       color: #ffffff;
     }
     .dropdown-container {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 17px;
     }
     .dropdown {
       display: inline-block;
@@ -76,8 +76,8 @@
     }
     .dropdown select {
       font-family: 'Space Mono', monospace;
-      font-size: 14px;
-      padding: 5px 10px;
+      font-size: 10px;
+      padding: 5px 5px;
       border-radius: 5px;
       border: 2px solid #ffffff;
       background-color: #008080;
