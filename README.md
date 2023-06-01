@@ -266,7 +266,7 @@
     }
   </style>
 </head>
-<body>
+<header>
   <div class="header">
     <div class="login-register">
       <a href="#">Login</a>
@@ -311,6 +311,8 @@
       </div>
     </div>
   </div>
+</header>
+  <body>
   <div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And You <br>We Need You !</div>
   <div class="container">
     <div id="center-triangle" class="triangle"></div>
