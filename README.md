@@ -100,7 +100,7 @@
       top: 50%;transform: translate(-50%, -50%);
       font-family: 'Your-Graffiti-Font', cursive;
       font-size: 12px;
-      color: #00b3b3;
+      color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
