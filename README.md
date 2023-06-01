@@ -49,7 +49,7 @@
       padding: 20px;
       text-align: center;
       max-width: 500px;
-      width: 70%;
+      width: 60%;
       margin: 0 auto;
       margin-top: -93px;
       position: relative;
