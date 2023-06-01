@@ -100,7 +100,7 @@
   left: 50%; /* Add this line to center horizontally */
   transform: translate(-50%, -50%); /* Add this line to center vertically and horizontally */
   font-family: 'Your-Graffiti-Font', cursive;
-  font-size: 20px;
+  font-size: 10px;
   color: #00b3b3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
