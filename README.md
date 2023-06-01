@@ -22,7 +22,8 @@
       font-size: 45px;
       color: #ffffff;
       margin: 0;
-    }.social {
+    }
+    .social {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -95,26 +96,29 @@
     }
     .graffiti-left,
     .graffiti-right {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  font-family: 'Your-Graffiti-Font', cursive;
-  font-size: 10px;
-  color: #00b3b3;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.graffiti-left {
-      left: 0px;
-      transform: rotate(-7deg);
-      top: 40%
-      }
-      .graffiti-right {
-      right: -35px;
-      transform: rotate(7deg);
-      top: 40%
+      position: absolute;
+      top: 50%;transform: translate(-50%, -50%);
+      font-family: 'Your-Graffiti-Font', cursive;
+      font-size: 12px;
+      color: #00b3b3;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 1;
     }
+    .graffiti-left {
+      left: 10px;
+      transform: rotate(-7deg);
+      top: 10%;
+    }
+    .graffiti-right {
+      position: absolute;
+      top: 10%;
+      right: 14%;
+      transform: translate(50%, -50%) rotate(7deg);
+      font-family: 'Your-Graffiti-Font', cursive;
+      font-size: 12px;
+      z-index: 1;
+      text-align: center;
+}
   </style>
 </head>
 <body>
@@ -122,8 +126,7 @@
     <div class="login-register">
       <a href="#">Login</a>
       <a href="#">Register</a>
-    </div><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
-    <div class="graffiti-right">This whole Hub<br> Has been organized by <br>Local Small Business<br>And You ,We Need You !</div>
+    </div>
     <h1>Collabor8</h1>
     <div class="social">
       <div>
@@ -147,12 +150,16 @@
         </a>
       </div>
     </div>
+    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
   </div>
-  <div class="hub-card"><div class="dropdown-container">
-    <div class="dropdown"><h1>60% Community + 40% Local Business = Success</h1>
-    <p>Hiyas, welcome to Collabor8! Think of us as your friendly neighborhood hub.</p>
-  </div>
-  <select>
+  <div class="graffiti-right">This whole Hub<br> Was devoloped by <br>Local Small Business<br>And You <br>We Need You !</div>
+  <div class="hub-card">
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <h1>60% Community + 40% Local Business = Success</h1>
+        <p>Hiyas, welcome to Collabor8! Think of us as your friendly neighborhood hub.</p>
+      </div>
+      <select>
         <option value="">Select a Local business</option>
         <option value="astronaut">Chippy</option>
         <option value="engineer">Window Cleaner</option>
@@ -160,5 +167,6 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div></body>
+  </div>
+</body>
 </html>
