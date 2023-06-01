@@ -111,9 +111,9 @@
       color: white;
     }
     .graffiti-right {
-      left: 10px;
+      left: 14px;
       transform: rotate(-7deg);
-      top: 90%;
+      top: 80%;
       color: #00b3b3;
     }
     .container {
