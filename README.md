@@ -252,6 +252,7 @@
     }
     .grid-item .hover-text {
       display: none;
+      font-size: 10px;
     }
     .grid-item:hover .hover-text {
       display: block;
@@ -380,7 +381,7 @@
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
     <i class="community-icon">📝</i>
     <p class="community-text">White Paper</p>
-    <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Section 6.4 please read, That's how our Community gets paid!</p>
+    <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Section 6.4 please read, That's how our Community gets paid!The more we interact with Local Business ,The more we get Paid by Them</p>
   </div>
 </div>
 <footer>
