@@ -115,7 +115,7 @@
       font-size: 7px;
       transform: rotate(-7deg);
       top: 210%;
-      color: #00b3b3;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
     }
     .container {
       position: relative;
@@ -259,7 +259,7 @@
     }
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
-      padding: 15px;
+      padding: 35px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
