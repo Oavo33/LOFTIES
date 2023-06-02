@@ -255,6 +255,12 @@
       transform: translateY(-3px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
     }
+    .grid-item .hover-text {
+  display: none;
+}
+.grid-item:hover .hover-text {
+  display: block;
+}
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 15px;
@@ -371,7 +377,7 @@
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
     <i class="community-icon">📝</i>
-    <p class="community-text">White Paper</p>
+    <p class="community-text">White Paper</p><p class="hover-text">Want to Know how Our Community will flurish BY local business ? Section 6.4 please read ,Thats how our Community gets paid !</p>
   </div>
 </div>
 <footer>
