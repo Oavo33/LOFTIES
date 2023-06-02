@@ -1,4 +1,5 @@
-<html><head>
+<html>
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
   <style>
@@ -96,7 +97,8 @@
     }
     .graffiti-left,
     .graffiti-right {
-      position: absolute;transform: translate(-50%, -50%);
+      position: absolute;
+      transform: translate(-50%, -50%);
       font-family: 'Space Mono', monospace;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
@@ -261,6 +263,10 @@
       color: #ffffff;
       text-align: center;
       font-size: 14px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
     }
     .footer-container {
       max-width: 1200px;
@@ -288,7 +294,8 @@
   </style>
 </head>
 <body>
-<header><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
+<header>
+  <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
   <div class="header">
     <div class="login-register">
       <a href="#">Login</a>
@@ -316,7 +323,8 @@
           <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
         </a>
       </div>
-    </div></div>
+    </div>
+  </div>
 </header>
 <div class="hub-card">
   <h1>60% Community + 40% Local Business = Success</h1>
@@ -332,7 +340,8 @@
       </select>
     </div>
   </div>
-</div><div class="container">
+</div>
+<div class="container">
   <div id="center-triangle" class="triangle"></div>
   <div id="left-triangle" class="triangle"></div>
   <div id="right-triangle" class="triangle"></div>
