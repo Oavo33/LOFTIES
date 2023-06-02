@@ -284,7 +284,12 @@
   </style>
 </head>
 <body>
-<header><div class="graffiti">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
+<header><div class="graffiti">
+  This is your Hub !<br>
+  Want to change it ?<br>
+  Submit Request <br>
+  <a href="your-link-here">Here</a>
+</div>
   <div class="header">
     <div class="login-register">
       <a href="#">Login</a>
