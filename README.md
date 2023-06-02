@@ -316,9 +316,7 @@
           <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
         </a>
       </div>
-    </div>
-    <div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>Your Community Needs You !</div>
-  </div>
+    </div></div>
 </header>
 <div class="hub-card">
   <h1>60% Community + 40% Local Business = Success</h1>
@@ -377,8 +375,8 @@
     <p class="community-text">White Paper</p>
   </div>
 </div>
-<footer><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>Your Community Needs You !</div>
-  <div class="footer-container">
+
+  <div class="footer-container"><footer><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>Your Community Needs You !</div>
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
