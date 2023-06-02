@@ -112,7 +112,7 @@
       left: 1px;
       font-size: 7px;
       transform: rotate(-7deg);
-      top: 195%;
+      top: 210%;
       color: #00b3b3;
     }
     .container {
