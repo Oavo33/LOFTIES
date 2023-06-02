@@ -381,15 +381,7 @@
   </div>
 </div>
 <footer>
-  <div class="footer-container">
-    <div class="graffiti-right">
-      This whole Hub<br>
-      Was developed by<br>
-      Local Small Business<br>
-      And Our Community<br>
-      Your Community Needs You!
-    </div>
-    <p>&copy; 2023 Lofties. All rights reserved.</p>
+  <div class="footer-container"><p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer><script>
   const centerTriangle = document.getElementById('center-triangle');
