@@ -103,16 +103,16 @@
     }
     .graffiti-left {
       left: 10px;
-      font-size: 12px;
+      font-size: 10px;
       transform: rotate(-7deg);
       top: 10%;
       color: white;
     }
     .graffiti-right {
       left: 1px;
-      font-size: 8px;
+      font-size: 7px;
       transform: rotate(-7deg);
-      top: 180%;
+      top: 195%;
       color: #00b3b3;
     }
     .container {
