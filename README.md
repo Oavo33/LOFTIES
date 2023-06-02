@@ -46,7 +46,7 @@
       border-radius: 10px;
       border: 2px solid #ffffff;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      padding: 20px;
+      padding: 10px;
       text-align: center;
       max-width: 200px;
       width: 45%;
