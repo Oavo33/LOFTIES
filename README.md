@@ -94,28 +94,19 @@
       font-size: 10px;
       color: #ffffff;
     }
-    .graffiti-left,
-    .graffiti-right {
+    .graffiti {
       position: absolute;transform: translate(-50%, -50%);
       font-family: 'Space Mono', monospace;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
-    .graffiti-left {
+    .graffiti {
       left: 10px;
       font-size: 10px;
       transform: rotate(-7deg);
       top: 10%;
       color: white;
-    }
-    .graffiti-right {
-      left: 1px;
-      font-size: 7px;
-      transform: rotate(-7deg);
-      top: 0%;
-      color: linear-gradient(to bottom, #00b3b3, #ffffff);
-    }
-    .container {
+    }.container {
       position: relative;
       width: 150px;
       height: 200px;
@@ -293,7 +284,7 @@
   </style>
 </head>
 <body>
-<header><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
+<header><div class="graffiti">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div>
   <div class="header">
     <div class="login-register">
       <a href="#">Login</a>
