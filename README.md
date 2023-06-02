@@ -97,7 +97,8 @@
       color: #ffffff;
     }
     .graffiti {
-      position: absolute;transform: translate(-50%, -50%);
+      position: absolute;
+      transform: translate(-50%, -50%);
       font-family: 'Space Mono', monospace;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
@@ -108,7 +109,8 @@
       transform: rotate(-7deg);
       top: 10%;
       color: white;
-    }.container {
+    }
+    .container {
       position: relative;
       width: 150px;
       height: 200px;
@@ -249,18 +251,19 @@
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
     }
     .grid-item .hover-text {
-  display: none;
-}
-.grid-item:hover .hover-text {
-  display: block;
-}
+      display: none;
+    }
+    .grid-item:hover .hover-text {
+      display: block;
+    }
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }.footer-container {
+    }
+    .footer-container {
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -286,12 +289,13 @@
   </style>
 </head>
 <body>
-<header><div class="graffiti">
-  This is your Hub !<br>
-  Want to change it ?<br>
-  Submit Request <br>
-  <a href="your-link-here">Here</a>
-</div>
+<header>
+  <div class="graffiti">
+    This is your Hub !<br>
+    Want to change it ?<br>
+    Submit Request <br>
+    <a href="#">Here</a>
+  </div>
   <div class="header">
     <div class="login-register">
       <a href="#">Login</a>
@@ -319,7 +323,8 @@
           <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
         </a>
       </div>
-    </div></div>
+    </div>
+  </div>
 </header>
 <div class="hub-card">
   <h1>60% Community + 40% Local Business = Success</h1>
@@ -335,7 +340,8 @@
       </select>
     </div>
   </div>
-</div><div class="container">
+</div>
+<div class="container">
   <div id="center-triangle" class="triangle"></div>
   <div id="left-triangle" class="triangle"></div>
   <div id="right-triangle" class="triangle"></div>
@@ -359,29 +365,30 @@
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
     <i class="community-icon">📸</i>
-    <p class="community-text">Our Vintage Shop Photographs</p>
-  </div>
-  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
-    <i class="community-icon">💼</i>
-    <p class="community-text">Encouraging Young Entrepreneurship</p>
-  </div>
+    <p class="community-text">Our Vintage Shop Photographs</p></div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
     <i class="community-icon">🏠</i>
     <p class="community-text">Help Our Homeless</p>
   </div>
+  <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
+    <i class="community-icon">💼</i>
+    <p class="community-text">Encouraging Young Entrepreneurship</p></div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
     <i class="community-icon">🌐</i>
     <p class="community-text">FREE Personalized Web Pages, Every Month</p>
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
     <i class="community-icon">📝</i>
-    <p class="community-text">White Paper</p><p class="hover-text">Want to Know how Our Community will flurish BY local business ? Section 6.4 please read ,Thats how our Community gets paid !</p>
+    <p class="community-text">White Paper</p>
+    <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Section 6.4 please read, That's how our Community gets paid!</p>
   </div>
 </div>
 <footer>
-  <div class="footer-container"><p>&copy; 2023 Lofties. All rights reserved.</p>
+  <div class="footer-container">
+    <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
-</footer><script>
+</footer>
+<script>
   const centerTriangle = document.getElementById('center-triangle');
   const leftTriangle = document.getElementById('left-triangle');
   const rightTriangle = document.getElementById('right-triangle');
