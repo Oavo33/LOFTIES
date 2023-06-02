@@ -375,8 +375,8 @@
     <p class="community-text">White Paper</p>
   </div>
 </div>
-
-  <div class="footer-container"><footer><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>Your Community Needs You !</div>
+<footer>
+  <div class="footer-container"><div class="graffiti-left">This is your Hub !<br> Want to change it ?<br>Submit Request <br>Here</div><div class="graffiti-right">This whole Hub<br> Was developed by <br>Local Small Business<br>And Our Community <br>Your Community Needs You !</div>
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
