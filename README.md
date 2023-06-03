@@ -364,7 +364,7 @@
   <a href="#">Login</a>
   <a href="#">Register</a>
   <div class="tooltip">
-    You don't need to Sign Up! You are already a Member of Our community. Save that time browsing what's on offer this week!
+    You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
   </div>
 </div>
     <h1>Collabor8</h1>
