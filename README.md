@@ -87,12 +87,12 @@
     .hub-card h1 {
       font-size: 14px;
       margin-top: 0;
-      margin-bottom: -1px;
+      margin-bottom: 2px;
       color: #ffffff;
     }
     .hub-card p {
       font-size: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       color: #ffffff;
     }
     .dropdown-container {
