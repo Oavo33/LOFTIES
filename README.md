@@ -322,7 +322,7 @@
 <header>
   <div class="graffiti">
     This is your Hub !<br>
-    Want to change it ?<br>
+    <span style="color: red;">Warning: about to see the future</span><br>
     Submit Request <br>
     <a href="#">Here</a>
   </div>
