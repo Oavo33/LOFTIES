@@ -411,29 +411,12 @@
 <footer>
   <div class="footer-container">
     <div class="text-box">
-      <input type="text" placeholder="Text Box 1">
+      <input type="text" placeholder="What Is GitHub ?">
     </div>
     <div class="text-box">
-      <input type="text" placeholder="Text Box 2">
+      <input type="text" placeholder="What Do The Community Already Think About Our Hub?">
     </div>
-  </div>
-  <div class="footer-container">
-    <div class="text-box">
-      <input type="text" placeholder="Text Box 3">
-    </div>
-    <div class="text-box">
-      <input type="text" placeholder="Text Box 4">
-    </div>
-  </div>
-  <div class="footer-container">
-    <div class="text-box">
-      <input type="text" placeholder="Text Box 5">
-    </div>
-    <div class="text-box">
-      <input type="text" placeholder="Text Box 6">
-    </div>
-  </div>
-  <div class="footer-container">
+  </div><div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
