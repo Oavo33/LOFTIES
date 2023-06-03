@@ -50,7 +50,7 @@
 .login {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 550px;
 }.login:hover .tooltip {
   visibility: visible;
   opacity: 1;
