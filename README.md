@@ -415,10 +415,7 @@
 </div>
 <footer><div class="footer-container">
     <div class="box" onclick="window.location.href = 'page1.html';"><h3>What Do You Think About Our Community Hub?</h3>
-    </div>
-    What Do You Think About Our Community Hub?
-  </div>
-  <div class="footer-container">
+    </div><div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
