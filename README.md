@@ -48,8 +48,8 @@
   align-items: center;
 }.login {
   position: absolute;
-  top: -14px;
-  right: -14px;
+  top: 14px;
+  right: 14px;
   display: flex;
   align-items: center;
 }.login:hover .tooltip {
