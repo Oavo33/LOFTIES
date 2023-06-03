@@ -47,18 +47,18 @@
   justify-content: flex-end;
   align-items: center;
 }
-.login-register {
+.login {
   display: flex;
   align-items: center;
   margin-right: 0px;
 }
-.login-register a {
+.login a {
   margin-left: 350px;
   color: white;
   text-decoration: none;
   font-size: 14px;
 }
-.login-register:hover .tooltip {
+.login:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
@@ -360,10 +360,8 @@
     Submit Request <br>
     <a href="#">Here</a>
   </div>
-  <div class="login-register">
-  <a href="#">Login</a>
-  <a href="#">Register</a>
-  <div class="tooltip">
+  <div class="login">
+  <a href="#">Login</a><div class="tooltip">
     You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
   </div>
 </div>
