@@ -369,15 +369,15 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div><span style="color: red; font-size: 10px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
+  </div><span style="color: blue; font-size: 10px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
 </div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
   <div id="left-triangle" class="triangle"></div>
   <div id="right-triangle" class="triangle"></div>
   <div class="reflect-container">
-    <div class="reflect-text">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
-    <div class="reflection">H<span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span>s</span></div>
+    <div class="reflect-text">L<span>o</span><span>f</span><span>t</span><span>i</span><span>e</span><span>s</span></div>
+    <div class="reflection">W<span>i</span><span>n</span><span>d</span><span>o</span><span>w</span><span>s</span></div>
   </div>
 </div>
 <div class="grid-container">
