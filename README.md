@@ -410,13 +410,29 @@
 </div>
 <footer>
   <div class="footer-container">
-    <div class="text-box">
-      <input type="text" placeholder="What Is GitHub ?">
+    <div class="footer-box" onclick="window.location.href = 'page1.html';">
+      <h3>Box 1</h3>
     </div>
-    <div class="text-box">
-      <input type="text" placeholder="What Do The Community Already Think About Our Hub?">
+    <div class="footer-box" onclick="window.location.href = 'page2.html';">
+      <h3>Box 2</h3>
     </div>
-  </div><div class="footer-container">
+  </div>
+  <div class="footer-container">
+    <div class="footer-box" onclick="window.location.href = 'page3.html';">
+      <h3>Box 3</h3>
+    </div>
+    <div class="footer-box" onclick="window.location.href = 'page4.html';">
+      <h3>Box 4</h3>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="footer-box" onclick="window.location.href = 'page5.html';">
+      <h3>Box 5</h3>
+    </div>
+    <div class="footer-box" onclick="window.location.href = 'page6.html';">
+      <h3>Box 6</h3>
+    </div></div>
+  <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
