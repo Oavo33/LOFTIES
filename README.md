@@ -50,10 +50,10 @@
 .login-register {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 .login-register a {
-  margin-left: 200px;
+  margin-left: 20px;
   color: white;
   text-decoration: none;
   font-size: 14px;
