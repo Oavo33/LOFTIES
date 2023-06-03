@@ -266,12 +266,13 @@
 }
 .footer-container {
   max-width: 1200px;
-  margin: 0 auto;display: flex;
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.footer-container .text-box {
+.footer-container .box {
   background-color: #00b3b3;
   color: #ffffff;
   border-radius: 10px;
@@ -279,8 +280,15 @@
   padding: 10px;
   text-align: center;
   margin: 10px;
+  cursor: pointer;
 }
-.footer-container .text-box input[type="text"] {
+.footer-container .box h3 {
+  margin: 0;
+}
+.footer-container p {
+  margin-top: 10px;
+}
+.footer-container input[type="text"] {
   width: 100%;
   padding: 5px;
   border-radius: 5px;
@@ -405,16 +413,15 @@
     <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Please read : Section 6.4 ,That's how our Community gets paid ! The more we interact with Local Business ,The more we get Paid by Them ,Pop in say Thanks</p>
   </div>
 </div>
-<footer>
-  <footer>
+<footer><div class="footer-container">
+    <div class="box" onclick="window.location.href = 'page1.html';">
+      <h3>What Is GitHub? Find Out Here!</h3>
+    </div>
+    <div class="box" onclick="window.location.href = 'page2.html';">
+      <h3>What Do You Think About Our Community Hub?</h3>
+    </div>
+  </div>
   <div class="footer-container">
-    <div class="footer-box" onclick="window.location.href = 'page1.html';">
-      <h3>What Is GitHub ? Find Out Here !</h3>
-    </div>
-    <div class="footer-box" onclick="window.location.href = 'page2.html';">
-      <h3>What Do You Think About Our Community Hub ?</h3>
-    </div>
-  </div><div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
