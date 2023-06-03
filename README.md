@@ -101,28 +101,28 @@
       color: #ffffff;
     }
     .dropdown-container {
-      text-align: center;
-      margin-top: 4px;
-    }
-    .dropdown {
-      display: inline-block;
-      position: relative;
-    }
-    .dropdown select {
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
-      padding: 5px 5px;
-      border-radius: 5px;
-      border: 2px solid #ffffff;
-      background-color: #008080;
-      color: #ffffff;
-      appearance: none;
-      outline: none;
-      background-image: url('https://img.icons8.com/android/12/ffffff/chevron-down.png');
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-origin: content-box;
-    }
+text-align: center;
+margin-top: 4px;
+}
+.dropdown {
+display: inline-block;
+position: relative;
+}
+.dropdown select {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+padding: 5px 5px;
+border-radius: 5px;
+border: 2px solid #ffffff;
+background-color: #008080;
+color: #ffffff;
+appearance: none;
+outline: none;
+background-image: url('https://img.icons8.com/material-rounded/12/ffffff/keyboard-arrow-down--v1.png');
+background-repeat: no-repeat;
+background-position: right center;
+background-origin: content-box;
+}
     .graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -396,7 +396,7 @@
   <div class="dropdown-container">
     <div class="dropdown">
       <select>
-        <option value="">Select a Local business</option>
+        <option value="">Find A Local Business</option>
         <option value="astronaut">Chippy</option>
         <option value="engineer">Window Cleaner</option>
         <option value="scientist">Hairdresser</option>
