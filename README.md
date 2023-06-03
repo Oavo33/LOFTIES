@@ -48,18 +48,18 @@
   align-items: center;
 }
 .login {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   align-items: center;
-  margin-right: auto;
-}
-.login:hover .tooltip {
+}.login:hover .tooltip {
   visibility: visible;
   opacity: 1;
-}
-.tooltip {
+}.tooltip {
   position: absolute;
   top: calc(100% + 10px);
-  left: 0;
+  right: 0;
   width: 200px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
