@@ -360,11 +360,13 @@
     Submit Request <br>
     <a href="#">Here</a>
   </div>
-  <div class="header">
-    <div class="login-register">
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-    </div>
+  <div class="login-register">
+  <a href="#">Login</a>
+  <a href="#">Register</a>
+  <div class="tooltip">
+    You don't need to Sign Up! You are already a Member of Our community. Save that time browsing what's on offer this week!
+  </div>
+</div>
     <h1>Collabor8</h1>
     <div class="social">
       <div>
