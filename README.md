@@ -53,7 +53,7 @@
   margin-right: 20px;
 }
 .login-register a {
-  margin-left: 10px;
+  margin-left: 200px;
   color: white;
   text-decoration: none;
   font-size: 14px;
