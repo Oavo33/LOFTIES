@@ -104,7 +104,7 @@
     }
     .dropdown-container {
       text-align: center;
-      margin-top: 17px;
+      margin-top: 4px;
     }
     .dropdown {
       display: inline-block;
@@ -405,7 +405,7 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div><span style="color: blue; font-size: 10px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
+  </div><span style="color: blue; font-size: 10px;margin-top: 4px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
 </div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
