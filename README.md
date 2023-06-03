@@ -50,15 +50,16 @@
 .login {
   display: flex;
   align-items: center;
-  margin-right: 550px;
-}.login:hover .tooltip {
+  margin-left: auto;
+}
+.login:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
 .tooltip {
   position: absolute;
   top: calc(100% + 10px);
-  right: 0;
+  left: 0;
   width: 200px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
