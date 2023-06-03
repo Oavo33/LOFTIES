@@ -42,35 +42,40 @@
     .social div a img {
       width: 15px;
       height: 15px;
-    }.header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}.login {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: flex;
-  align-items: center;
-}.login:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}.tooltip {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  width: 200px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 14px;
-  color: #333333;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease-in-out;
-}.hub-card {
+    }
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .login {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+    }
+    .login:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+    .tooltip {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      width: 200px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease-in-out;
+    }
+    .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
@@ -113,15 +118,10 @@
       color: #ffffff;
       appearance: none;
       outline: none;
-    }
-    .dropdown::after {
-      content: '\25BC';
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      font-size: 10px;
-      color: #ffffff;
+      background-image: url('https://img.icons8.com/android/12/ffffff/chevron-down.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-origin: content-box;
     }
     .graffiti {
       position: absolute;
@@ -285,45 +285,45 @@
       display: block;
     }
     footer {
-  background: linear-gradient(to bottom, #ffffff, #00b3b3);
-  padding: 35px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.footer-container .box {
-  background-color: #00b3b3;
-  color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  text-align: center;
-  margin: 10px;
-  cursor: pointer;
-}
-.footer-container .box h3 {
-  margin: 0;
-}
-.footer-container p {
-  margin-top: 10px;
-}
-.footer-container input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  background-color: #008080;
-  color: #ffffff;
-  margin-top: 5px;
-}
+      background: linear-gradient(to bottom, #ffffff, #00b3b3);
+      padding: 35px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-container .box {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .footer-container .box h3 {
+      margin: 0;
+    }
+    .footer-container p {
+      margin-top: 10px;
+    }
+    .footer-container input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #008080;
+      color: #ffffff;
+      margin-top: 5px;
+    }
     @media (max-width: 768px) {
       header h1 {
         font-size: 30px;
@@ -403,7 +403,8 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div><span style="color: blue; font-size: 10px;margin-top: 4px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
+  </div>
+  <span style="color: blue; font-size: 10px;margin-top: 4px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
 </div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
@@ -429,14 +430,16 @@
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Vintage.High.Street/';">
     <i class="community-icon">📸</i>
-    <p class="community-text">Our Vintage Shop Photographs</p></div>
+    <p class="community-text">Our Vintage Shop Photographs</p>
+  </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Help/';">
     <i class="community-icon">🏠</i>
     <p class="community-text">Help Our Homeless</p>
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/The.Hub/';">
     <i class="community-icon">💼</i>
-    <p class="community-text">Encouraging Young Entrepreneurship</p></div>
+    <p class="community-text">Encouraging Young Entrepreneurship</p>
+  </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
     <i class="community-icon">🌐</i>
     <p class="community-text">FREE Personalized Web Pages, Every Month</p>
@@ -444,7 +447,7 @@
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
     <i class="community-icon">📝</i>
     <p class="community-text">White Paper</p>
-    <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Please read : Section 6.4 ,That's how our Community gets paid ! The more we interact with Local Business ,The more we get Paid by Them ,Pop in say Thanks</p>
+    <p class="hover-text">Want to Know how Our Community will flourish BY local business? Please read: Section 6.4, That's how our Community gets paid! The more we interact with Local Business, The more we get Paid by Them, Pop in say Thanks</p>
   </div>
 </div>
 <footer>
