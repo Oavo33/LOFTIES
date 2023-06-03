@@ -42,7 +42,42 @@
     .social div a img {
       width: 15px;
       height: 15px;
-    }
+    }.login-register {
+    position: relative;
+  }
+  .login-register:hover::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+  .login-register:hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #f9f9f9 transparent;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+  .login-register:hover {
+    cursor: pointer;
+  }
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
