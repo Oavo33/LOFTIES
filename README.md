@@ -369,7 +369,7 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div><span style="color: red;">Be Prepared: Your about to see the future With moving planets and Hidden Prizes</span>
+  </div><span style="color: red; font-size: 10px;">Be Prepared: Your about to see the future With moving planets and Hidden Prizes</span>
 </div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
