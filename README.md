@@ -381,7 +381,7 @@
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
     <i class="community-icon">📝</i>
     <p class="community-text">White Paper</p>
-    <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Please read : Section 6.4 ,That's how our Community gets paid ! The more we interact with Local Business ,The more we get Paid by Them ,pop in say Thanks</p>
+    <p class="hover-text">Want to Know how Our Community will flourish BY local business ? Please read : Section 6.4 ,That's how our Community gets paid ! The more we interact with Local Business ,The more we get Paid by Them ,Pop in say Thanks</p>
   </div>
 </div>
 <footer>
