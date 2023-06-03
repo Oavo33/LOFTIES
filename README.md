@@ -44,15 +44,14 @@
       height: 15px;
     }.login-register {
     position: relative;
+    margin-right: 20px;
   }
   .login-register:hover::before {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    height: 50px;
-    background-color: #f9f9f9;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 200px;background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -64,10 +63,10 @@
     transition: visibility 0s, opacity 0.3s ease-in-out;
   }
   .login-register:hover::after {
-    content: "You don't need to Sign Up ! You are already a Member of Our community. Save that time browsing whats on offer this week !";
+    content: "You don't need to Sign Up! You are already a Member of Our community. Save that time browsing what's on offer this week!";
     position: absolute;
-    top: 100%;
-    left: 10px;
+    top: calc(100% + 10px);
+    right: 10px;
     width: 0;
     height: 0;
     border-style: solid;
