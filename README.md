@@ -64,7 +64,7 @@
     transition: visibility 0s, opacity 0.3s ease-in-out;
   }
   .login-register:hover::after {
-    content: "";
+    content: "You don't need to Sign Up ! You are already a Member of Our community. Save that time browsing whats on offer this week !";
     position: absolute;
     top: 100%;
     left: 10px;
