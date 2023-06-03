@@ -268,6 +268,30 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-container .text-box {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+    }
+    .footer-container .text-box input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #008080;
+      color: #ffffff;
+      margin-top: 5px;
+    }
     @media (max-width: 768px) {
       header h1 {
         font-size: 30px;
@@ -385,6 +409,30 @@
   </div>
 </div>
 <footer>
+  <div class="footer-container">
+    <div class="text-box">
+      <input type="text" placeholder="Text Box 1">
+    </div>
+    <div class="text-box">
+      <input type="text" placeholder="Text Box 2">
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="text-box">
+      <input type="text" placeholder="Text Box 3">
+    </div>
+    <div class="text-box">
+      <input type="text" placeholder="Text Box 4">
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="text-box">
+      <input type="text" placeholder="Text Box 5">
+    </div>
+    <div class="text-box">
+      <input type="text" placeholder="Text Box 6">
+    </div>
+  </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
