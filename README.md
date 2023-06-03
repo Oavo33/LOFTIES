@@ -46,8 +46,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-.login {
+}.login {
   position: absolute;
   top: -14;
   right: -14;
