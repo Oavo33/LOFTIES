@@ -50,15 +50,8 @@
 .login {
   display: flex;
   align-items: center;
-  margin-right: 0px;
-}
-.login a {
-  margin-left: 350px;
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-.login:hover .tooltip {
+  margin-right: 10px;
+}.login:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
@@ -94,7 +87,7 @@
     .hub-card h1 {
       font-size: 14px;
       margin-top: 0;
-      margin-bottom: -4px;
+      margin-bottom: -1px;
       color: #ffffff;
     }
     .hub-card p {
