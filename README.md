@@ -60,7 +60,7 @@
     .hub-card h1 {
       font-size: 14px;
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       color: #ffffff;
     }
     .hub-card p {
