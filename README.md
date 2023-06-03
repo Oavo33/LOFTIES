@@ -322,7 +322,7 @@
 <header>
   <div class="graffiti">
     This is your Hub !<br>
-    <span style="color: red;">Warning: about to see the future</span><br>
+    Do you want to change It ?<br>
     Submit Request <br>
     <a href="#">Here</a>
   </div>
@@ -369,7 +369,7 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div>
+  </div><span style="color: red;">Warning: about to see the future</span>
 </div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
