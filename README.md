@@ -49,8 +49,8 @@
 }
 .login {
   position: absolute;
-  top: 14;
-  right: 14;
+  top: -14;
+  right: -14;
   display: flex;
   align-items: center;
 }.login:hover .tooltip {
