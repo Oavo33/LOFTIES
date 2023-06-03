@@ -344,6 +344,13 @@
       }
     }
   </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZG8MP5HRX');
+</script>
 </head>
 <body>
 <header>
