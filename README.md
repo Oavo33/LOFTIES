@@ -414,7 +414,7 @@
   </div>
 </div>
 <footer><div class="footer-container">
-    <div class="box" onclick="window.location.href = 'page1.html';"><h3>What Do You Think About Our Community Hub?</h3>
+    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';"><h3>What Do You Think About Our Community Hub?</h3>
     </div><div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
