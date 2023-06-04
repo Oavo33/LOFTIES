@@ -359,8 +359,8 @@
     This is your Hub !<br>
     Do you want to change It ?<br>
     Submit Request <br>
-    <a href="#">Here</a>
-  </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true" target="_blank">Here</a>
+</div>
   <div class="login">
   <a href="#">Login</a><div class="tooltip">
     You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
