@@ -125,18 +125,24 @@
   cursor: pointer;
 }
     .graffiti {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      font-family: 'Space Mono', monospace;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      z-index: 1;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-family: 'Space Mono', monospace;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;left: 10px;
+            font-size: 10px;
+            transform: rotate(-7deg);
+            top: 10%;
+            color: white;
+        }    .box {
+        display: inline-block;
+        padding: 5px;
+        background-color: black;
     }
-    .graffiti {
-      left: 10px;
-      font-size: 10px;
-      transform: rotate(-7deg);
-      top: 10%;
-      color: white;
+
+    .box a {
+        color: white;
+        text-decoration: none;
     }
     .container {
       position: relative;
@@ -356,11 +362,11 @@
 <body>
 <header>
   <div class="graffiti">
-    This is your Hub !<br>
-    Do you want to change It ?<br>
-    Submit Request <br>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true" target="_blank">Here</a>
-</div>
+        This is your Hub !<br>
+        Do you want to change It ?<br>
+        Submit Request <br>
+        <span class="box"><a href="https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true" target="_blank">Here</a></span>
+    </div>
   <div class="login">
   <a href="#">Login</a><div class="tooltip">
     You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
