@@ -129,19 +129,23 @@
             transform: translate(-50%, -50%);
             font-family: 'Space Mono', monospace;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            z-index: 1;left: 10px;
+            z-index: 1;
+            left: 10px;
             font-size: 10px;
             transform: rotate(-7deg);
             top: 10%;
             color: white;
-        }    .box {
-        display: inline-block;
-        padding: 5px;
-        background-color: #E53E3E; 
-    }.box a {
-        color: white;
-        text-decoration: none;
-    }
+        }
+        .box {
+            display: inline-block;
+            padding: 5px;
+            border: 2px solid #E53E3E;
+            background-color: transparent;
+        }
+        .box a {
+            color: white;
+            text-decoration: none;
+        }
     .container {
       position: relative;
       width: 150px;
