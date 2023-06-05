@@ -138,9 +138,7 @@
         display: inline-block;
         padding: 5px;
         background-color: black;
-    }
-
-    .box a {
+    }.box a {
         color: white;
         text-decoration: none;
     }
