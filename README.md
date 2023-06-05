@@ -413,7 +413,7 @@
       </select>
     </div>
   </div>
-  <span style="color: blue; font-size: 10px;margin-top: 4px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
+  <span style="color: yellow; font-size: 10px;margin-top: 4px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
 </div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
