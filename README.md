@@ -50,6 +50,7 @@
     }
     .login {
       position: absolute;
+      color: yellow;
       top: 14px;
       right: 14px;
       display: flex;
