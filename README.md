@@ -85,7 +85,7 @@
       max-width: 200px;
       width: 45%;
       margin: 0 auto;
-      margin-top: -93px;
+      margin-top: -73px;
       position: relative;
       z-index: 2;
     }
@@ -412,9 +412,7 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div>
-  <span style="color: yellow; font-size: 10px;margin-top: 4px;">Be Prepared: Your about to see the future ! With moving planets and Hidden Prizes and much more offered by each Small Local Business.</span>
-</div>
+  </div></div>
 <div class="container">
   <div id="center-triangle" class="triangle"></div>
   <div id="left-triangle" class="triangle"></div>
