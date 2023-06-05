@@ -139,7 +139,7 @@
         .box {
             display: inline-block;
             padding: 3px;
-            border: 2px solid #E53E3E;
+            border: 1px solid #E53E3E;
             background-color: transparent;
         }
         .box a {
